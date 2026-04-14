@@ -56,12 +56,3 @@ npm i or yarn add
 
 ```
 
-- Run Webpage
-
-```
-
-
-
-```
-
--
