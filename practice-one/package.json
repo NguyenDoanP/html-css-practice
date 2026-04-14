@@ -4,7 +4,7 @@
   "description": "Practice project focused on building with HTML and CSS",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "cd .. && husky practice-one/.husky",
+    "prepare": "husky install",
     "format": "prettier --write ."
   },
   "repository": {

@@ -1,1 +1,2 @@
-npx --no-install commitlint --edit "$1"
+#!/bin/sh
+npx commitlint --edit "$1" --config practice-one/commitlint.config.js

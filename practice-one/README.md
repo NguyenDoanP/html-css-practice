@@ -44,7 +44,7 @@ This document provides the list of important technologies that would be used to 
 
 ```
 
-git checkout practice-one
+git checkout practice1
 
 ```
 
