@@ -1,0 +1,29 @@
+{
+  "name": "html-css-practice-one",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NguyenDoanP/html-css-practice-one.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NguyenDoanP/html-css-practice-one/issues"
+  },
+  "homepage": "https://github.com/NguyenDoanP/html-css-practice-one#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.8.2"
+  }
+}
