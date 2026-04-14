@@ -32,7 +32,7 @@ This document provides the list of important technologies that would be used to 
 - Clone repo:
 
 ```
-git clone git@gitlab.asoft-python.com:g-nguyentrathao/html-css-training.git
+
 ```
 
 - Checkout branch:
