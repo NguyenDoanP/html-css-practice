@@ -1,113 +1,67 @@
-# PRACTICE HTML/CSS 1 
+# PRACTICE HTML/CSS 1
 
- 
+Build a Webpage in HTML/CSS.
 
-Build a Webpage in HTML/CSS. 
+## OVERVIEW
 
- 
+This document provides the list of important technologies that would be used to implement the project.
 
-## OVERVIEW 
+## DESIGN
 
- 
+[Figma](https://www.figma.com/design/n6uUyzXiYFFc4Z03zHh4WY/Responsive-Landing-Page--Community-?node-id=36-32&p=f&t=5fjN7QPwhFbyrcMq-0)
 
-This document provides the list of important technologies that would be used to implement the project. 
+## TECHNICAL STACK
 
- 
+### LANGUAGES
 
-## DESIGN 
+- HTML5
 
- 
+- CSS3
 
-[Figma](https://www.figma.com/design/n6uUyzXiYFFc4Z03zHh4WY/Responsive-Landing-Page--Community-?node-id=36-32&p=f&t=5fjN7QPwhFbyrcMq-0) 
+### TIMELINE
 
- 
+- 5 days
 
-## TECHNICAL STACK 
+#### TARGET
 
- 
+- HTML inspector
 
-### LANGUAGES 
+- HTML5, CSS3
 
- 
+- Flexbox
 
-- HTML5 
+## GETTING STARTED
 
-- CSS3 
+- Clone repo:
 
- 
+```
 
-### TIMELINE 
+ git clone https://github.com/NguyenDoanP/html-css-practice
 
- 
+```
 
-- 5 days 
+- Checkout branch:
 
- 
+```
 
-#### TARGET 
+git checkout practice-one
 
- 
+```
 
-- HTML inspector 
+- Install packages dependencies
 
-- HTML5, CSS3 
+```
 
-- Flexbox 
+npm i or yarn add
 
- 
+```
 
-## GETTING STARTED 
+- Run Webpage
 
- 
+```
 
-- Clone repo: 
 
- 
 
-``` 
+```
 
- 
-
-``` 
-
- 
-
-- Checkout branch: 
-
- 
-
-``` 
-
-git checkout practice-one 
-
-``` 
-
- 
-
-- Install packages dependencies 
-
- 
-
-``` 
-
-npm i or yarn add 
-
-``` 
-
- 
-
-- Run Webpage 
-
- 
-
-``` 
-
- 
-
-``` 
-
- 
-
-- 
-
- 
+-
