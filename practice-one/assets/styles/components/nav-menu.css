@@ -1,0 +1,31 @@
+.nav {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+/* item */
+.nav-item {
+  position: relative;
+  color: var(--color-white-50);
+  font-size: var(--font-size-xl);
+  text-decoration: none;
+}
+
+/* active */
+.nav-item.is-active {
+  color: var(--color-white);
+  font-weight: var(--font-weight-bold);
+}
+
+/* dot below */
+.nav-item.is-active::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+}
