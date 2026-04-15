@@ -1,0 +1,28 @@
+{
+  "name": "html-css-practice",
+  "version": "1.0.0",
+  "description": "Practice project focused on building with HTML and CSS",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "cd .. && husky practice-one/.husky",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NguyenDoanP/html-css-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NguyenDoanP/html-css-practice/issues"
+  },
+  "homepage": "https://github.com/NguyenDoanP/html-css-practice#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.8.3"
+  }
+}
