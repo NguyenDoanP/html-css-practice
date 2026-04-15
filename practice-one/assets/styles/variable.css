@@ -1,0 +1,75 @@
+:root {
+  /* Colors */
+  --color-primary: #0b153c;
+  --color-accent: #17c2ec;
+  --color-white: #ffffff;
+  --color-white-70: rgba(255, 255, 255, 0.7);
+  --color-white-50: rgba(255, 255, 255, 0.5);
+  --color-white-20: rgba(255, 255, 255, 0.2);
+  --color-glass: rgba(196, 196, 196, 0.1);
+  --color-glass-50: rgba(196, 196, 196, 0.5);
+  --color-glass-20: rgba(196, 196, 196, 0.2);
+  --color-dark-glass: rgba(11, 21, 60, 0.15);
+  --color-black: #000000;
+  --color-black-50: rgba(0, 0, 0, 0.5);
+  --color-black-25: rgba(0, 0, 0, 0.25);
+
+  /* Typography */
+  --font-family-primary: 'Montserrat', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-md: 18px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 32px;
+  --font-size-3xl: 48px;
+
+  /* Border */
+  --border-xs: 3px;
+
+  /* Radius */
+  --radius-xs: 10px;
+  --radius-sm: 20px;
+
+  /* Shadows */
+  --shadow-sm: 0 4px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  /* Spacing */
+  --spacing-xs: 10px;
+  --spacing-sm: 20px;
+  --spacing-md: 25px;
+  --spacing-lg: 26px;
+  --spacing-xl: 44px;
+  --spacing-xxl: 50px;
+  --spacing-3xl: 100px;
+
+  /* Avatar */
+  --avatar-size-sm: 60px;
+  --avatar-size-md: 70px;
+
+  /* Card */
+  --card-width-sm: 374px;
+  --card-height-sm: 100px;
+  --card-radius: 20px;
+
+  /* Input */
+  --input-height: 50px;
+  --input-radius: 10px;
+
+  /* Icon */
+  --icon-box-size: 100px;
+
+  /* Stats */
+  --stats-avatar-group-width: 167px;
+  --stats-avatar-group-height: 60px;
+
+  /* Hero image */
+  --image-hero-width: 622px;
+  --image-hero-height: 617px;
+}
