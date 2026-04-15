@@ -1,32 +1,32 @@
 .btn {
-    font-size: var(--font-size-xl);
-    padding: 20px 26px;
-    border-radius: 20px;
-    box-shadow: var(--shadow-md);
-    cursor: pointer;
-    font-weight: bold;
-    border: none;
-    /* default */
+  font-size: var(--font-size-xl);
+  padding: 20px 26px;
+  border-radius: 20px;
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  /* default */
 }
 
 .btn-primary {
-    background-color: var(--color-accent);
-    color: var(--color-white);
+  background-color: var(--color-accent);
+  color: var(--color-white);
 }
 
 .btn-outline {
-    background: var(--color-glass);
-    color: var(--color-white);
-    border: 2px solid var(--color-accent);
+  background: var(--color-glass);
+  color: var(--color-white);
+  border: 2px solid var(--color-accent);
 }
 
 .btn-normal {
-    background: var(--color-glass);
-    color: var(--color-accent);
+  background: var(--color-glass);
+  color: var(--color-accent);
 }
 
 .btn-deco {
-    background: var(--color-glass);
-    color: var(--color-accent);
-    border: 2px solid var(--color-accent);
+  background: var(--color-glass);
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
 }
