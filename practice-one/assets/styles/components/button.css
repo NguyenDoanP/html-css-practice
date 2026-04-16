@@ -1,11 +1,14 @@
 .btn {
   font-size: var(--font-size-xl);
-  padding: 20px 26px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   border-radius: 20px;
   box-shadow: var(--shadow-md);
   cursor: pointer;
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
   border: none;
+  padding: 20px 26px;
 }
 
 .btn-primary {
