@@ -17,6 +17,7 @@
 .hero-content {
   max-width: 603px;
   margin-bottom: 150px;
+  padding-left: 40px;
 }
 
 .hero-subtitle {
@@ -57,9 +58,8 @@
 .hero-image__main {
   position: absolute;
   top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 532.13px;
+  right: 71px;
+  width: 532px;
   height: 571px;
   border-radius: var(--radius-sm);
   object-fit: cover;
@@ -71,7 +71,6 @@
   position: absolute;
   background: var(--color-white);
   border-radius: 16px;
-  /* padding: 10px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,7 +86,7 @@
 
 /* ── Badge left ── */
 .hero-image__badge--left {
-  left: 0;
+  left: -20px;
   top: 50%;
   transform: translateY(-50%);
   width: 80px;
@@ -96,7 +95,7 @@
 
 /* ── Badge right ── */
 .hero-image__badge--right {
-  right: 0;
+  right: 41px;
   top: 50%;
   transform: translateY(-50%);
   width: 80px;
@@ -107,7 +106,7 @@
 .hero-image__doctors {
   position: absolute;
   bottom: -40px;
-  left: 0px;
+  left: -20px;
   background: var(--color-glass-20);
   decoration: var(--shadow-sm);
   border-radius: var(--radius-sm);
@@ -122,7 +121,7 @@
 /* Stack 3 avatar */
 .doctors__avatars {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .doctors__avatars img {
