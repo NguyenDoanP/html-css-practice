@@ -6,18 +6,25 @@
 }
 
 .hero {
-  display: flex;
-  padding: 0px 70px;
-  justify-content: space-between;
-  align-items: center;
+  /* display: flex; */
+  /* padding: 0px 70px; */
+  /* justify-content: space-between;
+  align-items: center; */
   /* margin-bottom: 30px; */
   font-weight: var(--font-weight-bold);
+}
+
+.hero-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 100px; */
 }
 
 .hero-content {
   max-width: 603px;
   margin-bottom: 150px;
-  padding-left: 40px;
+  /* padding-left: 40px; */
 }
 
 .hero-subtitle {
@@ -52,14 +59,15 @@
   position: relative;
   width: 622px;
   height: 617px;
+  left: 40px;
 }
 
 /* ── Main image at center ── */
 .hero-image__main {
   position: absolute;
   top: 20px;
-  right: 71px;
-  width: 532px;
+  /* right: 71px; */
+  width: 533px;
   height: 571px;
   border-radius: var(--radius-sm);
   object-fit: cover;
@@ -86,7 +94,7 @@
 
 /* ── Badge left ── */
 .hero-image__badge--left {
-  left: -20px;
+  left: -40px;
   top: 50%;
   transform: translateY(-50%);
   width: 80px;
@@ -95,7 +103,7 @@
 
 /* ── Badge right ── */
 .hero-image__badge--right {
-  right: 41px;
+  right: 40px;
   top: 50%;
   transform: translateY(-50%);
   width: 80px;
@@ -106,7 +114,7 @@
 .hero-image__doctors {
   position: absolute;
   bottom: -40px;
-  left: -20px;
+  left: -40px;
   background: var(--color-glass-20);
   decoration: var(--shadow-sm);
   border-radius: var(--radius-sm);

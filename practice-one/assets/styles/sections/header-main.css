@@ -5,7 +5,7 @@
 .header-inner {
   height: 69px;
   display: flex;
-  padding: 41px 70px;
+  padding: 41px 0px;
   align-items: center;
   justify-content: space-between;
   /* gap: var(--spacing-4xl); */
