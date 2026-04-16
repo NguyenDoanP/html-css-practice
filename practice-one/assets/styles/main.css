@@ -1,12 +1,19 @@
 /* reset */
-@import url(/html-css-practice/practice-one/assets/styles/reset.css);
+@import url(./reset.css);
 
 /* Variables */
-@import url(/html-css-practice/practice-one/assets/styles/variable.css);
+@import url(./variable.css);
 
 /* Components */
-@import url(/html-css-practice/practice-one/assets/styles/components/button.css);
-@import url(/html-css-practice/practice-one/assets/styles/components/nav-menu.css);
+@import url(./components/button.css);
+@import url(./components/nav-menu.css);
 
 /* Sections */
-@import url(/html-css-practice/practice-one/assets/styles/sections/header-main.css);
+@import url(./sections/header-main.css);
+
+.desktop {
+  background-image: url('../images/banner-dark.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
