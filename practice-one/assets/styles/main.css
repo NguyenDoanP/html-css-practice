@@ -1,0 +1,12 @@
+/* reset */
+@import url(/html-css-practice/practice-one/assets/styles/reset.css);
+
+/* Variables */
+@import url(/html-css-practice/practice-one/assets/styles/variable.css);
+
+/* Components */
+@import url(/html-css-practice/practice-one/assets/styles/components/button.css);
+@import url(/html-css-practice/practice-one/assets/styles/components/nav-menu.css);
+
+/* Sections */
+@import url(/html-css-practice/practice-one/assets/styles/sections/header-main.css);
