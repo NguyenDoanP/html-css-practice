@@ -4,3 +4,157 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.hero {
+  display: flex;
+  padding: 0px 70px;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 30px; */
+  font-weight: var(--font-weight-bold);
+}
+
+.hero-content {
+  max-width: 603px;
+  margin-bottom: 150px;
+}
+
+.hero-subtitle {
+  color: var(--color-accent);
+  font-size: var(--font-size-xl);
+}
+
+.hero-title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-extra-bold);
+  color: var(--color-white);
+  margin-top: 40px;
+}
+
+.hero-title span {
+  color: var(--color-accent);
+}
+
+.hero-desc {
+  color: var(--color-white-70);
+  margin-top: 50px;
+  font-size: var(--font-size-xl);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.hero-image {
+  position: relative;
+  width: 622px;
+  height: 617px;
+}
+
+/* ── Main image at center ── */
+.hero-image__main {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 532.13px;
+  height: 571px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Floating badge common ── */
+.hero-image__badge {
+  position: absolute;
+  background: var(--color-white);
+  border-radius: 16px;
+  /* padding: 10px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image__badge img {
+  width: 52px;
+  height: 52px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+/* ── Badge left ── */
+.hero-image__badge--left {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+}
+
+/* ── Badge right ── */
+.hero-image__badge--right {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+}
+
+/* ── Doctors cluster at the bottom left ── */
+.hero-image__doctors {
+  position: absolute;
+  bottom: -40px;
+  left: 0px;
+  background: var(--color-glass-20);
+  decoration: var(--shadow-sm);
+  border-radius: var(--radius-sm);
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 374px;
+  height: 100px;
+}
+
+/* Stack 3 avatar */
+.doctors__avatars {
+  display: flex;
+  /* align-items: center; */
+}
+
+.doctors__avatars img {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-xs);
+  object-fit: cover;
+  margin-left: -5px;
+  display: block;
+}
+
+.doctors__avatars img:first-child {
+  margin-left: 0;
+}
+
+/* Text next to avatar */
+.doctors__info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.doctors__count {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  line-height: 100%;
+}
+
+.doctors__label {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent);
+  line-height: 100%;
+}
