@@ -3,12 +3,12 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  padding: 20px 25px;
   border-radius: 20px;
   box-shadow: var(--shadow-md);
   cursor: pointer;
   font-weight: var(--font-weight-bold);
   border: none;
+  padding: 20px 26px;
 }
 
 .btn-primary {

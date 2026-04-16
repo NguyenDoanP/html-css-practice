@@ -1,14 +1,14 @@
 .header {
+  min-height: 69px;
 }
 
-.header-container {
-  max-width: 1299px;
-  margin: 0 auto;
-  padding: 41px 70px;
+.header-inner {
+  height: 69px;
+  padding: 41px 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--spacing-5xl);
+  /* gap: var(--spacing-4xl); */
 }
 
 .logo {
