@@ -6,11 +6,6 @@
 }
 
 .hero {
-  /* display: flex; */
-  /* padding: 0px 70px; */
-  /* justify-content: space-between;
-  align-items: center; */
-  /* margin-bottom: 30px; */
   font-weight: var(--font-weight-bold);
 }
 
@@ -18,13 +13,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* gap: 100px; */
+  /* use flex to center the content and image vertically */
 }
 
 .hero-content {
   max-width: 603px;
   margin-bottom: 150px;
-  /* padding-left: 40px; */
 }
 
 .hero-subtitle {
@@ -55,23 +49,22 @@
   margin-top: 50px;
 }
 
+/* ── Hero image wrapper ── */
 .hero-image {
   position: relative;
-  width: 622px;
-  height: 617px;
-  left: 40px;
+  display: flex;
+  /* use flex to center the main image */
+  align-items: center;
+  justify-content: center;
 }
 
-/* ── Main image at center ── */
+/* ── Main image ── */
 .hero-image__main {
-  position: absolute;
   top: 20px;
-  /* right: 71px; */
-  width: 533px;
-  height: 571px;
   border-radius: var(--radius-sm);
   object-fit: cover;
   display: block;
+  padding-right: 41px;
 }
 
 /* ── Floating badge common ── */
@@ -80,6 +73,7 @@
   background: var(--color-white);
   border-radius: 16px;
   display: flex;
+  /* keep flex */
   align-items: center;
   justify-content: center;
 }
@@ -103,32 +97,34 @@
 
 /* ── Badge right ── */
 .hero-image__badge--right {
-  right: 40px;
+  right: 0px;
   top: 50%;
   transform: translateY(-50%);
   width: 80px;
   height: 80px;
 }
 
-/* ── Doctors cluster at the bottom left ── */
+/* ── Doctors cluster ── */
 .hero-image__doctors {
   position: absolute;
   bottom: -40px;
   left: -40px;
   background: var(--color-glass-20);
-  decoration: var(--shadow-sm);
+  box-shadow: var(--shadow-sm);
   border-radius: var(--radius-sm);
-  padding: 20px 20px;
+  padding: 20px;
   display: flex;
+  /* keep flex */
   align-items: center;
   gap: 10px;
   width: 374px;
   height: 100px;
 }
 
-/* Stack 3 avatar */
+/* ── Avatars stack ── */
 .doctors__avatars {
   display: flex;
+  /* keep flex */
   align-items: center;
 }
 
@@ -145,10 +141,15 @@
   margin-left: 0;
 }
 
-/* Text next to avatar */
+/* ── Doctors info ── */
 .doctors__info {
   display: flex;
+  /* keep flex */
   flex-direction: column;
+  justify-content: center;
+  /* add to vertical center the text */
+  gap: 6px;
+  /* replace padding-left with gap */
   padding-left: 20px;
 }
 
