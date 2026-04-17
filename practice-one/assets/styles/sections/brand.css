@@ -1,8 +1,8 @@
 /* BRAND */
 .brand-section {
   position: relative;
-  height: 110px;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
   background: var(--color-white);
 }
 
