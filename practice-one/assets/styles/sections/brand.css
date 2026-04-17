@@ -1,0 +1,26 @@
+/* BRAND */
+.brand-section {
+  position: relative;
+  height: 110px;
+  padding: 20px 0;
+  background: var(--color-white);
+}
+
+.brand-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-white-50);
+  /* add layer for glass effect */
+  z-index: 1;
+  /* above the content */
+}
+
+.brand-logos {
+  display: flex;
+  /* keep flex */
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
