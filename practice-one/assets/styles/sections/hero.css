@@ -112,13 +112,14 @@
   background: var(--color-glass-20);
   box-shadow: var(--shadow-sm);
   border-radius: var(--radius-sm);
-  padding: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
   display: flex;
   /* keep flex */
   align-items: center;
-  gap: 10px;
-  width: 374px;
-  height: 100px;
+  gap: 20px;
+  width: 354px;
+  height: 80px;
 }
 
 /* ── Avatars stack ── */
@@ -133,7 +134,7 @@
   height: 60px;
   border-radius: var(--radius-xs);
   object-fit: cover;
-  margin-left: -5px;
+  /* margin-left: -5px; */
   display: block;
 }
 
@@ -148,9 +149,6 @@
   flex-direction: column;
   justify-content: center;
   /* add to vertical center the text */
-  gap: 6px;
-  /* replace padding-left with gap */
-  padding-left: 20px;
 }
 
 .doctors__count {
