@@ -42,7 +42,7 @@
   border-radius: 20px;
 
   background: transparent;
-  border: 3px solid rgba(196, 196, 196, 0.15);
+  border: 3px solid #c4c4c426;
   font-size: var(--font-size-xl);
 }
 
@@ -58,7 +58,7 @@
 .check-info {
   border-radius: var(--radius-sm);
   margin: 0 93px 31px;
-  background: rgba(255, 255, 255, 0.05);
+  background: #ffffff0d;
   text-align: center;
   justify-content: center;
   color: var(--color-accent);
