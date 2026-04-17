@@ -1,12 +1,11 @@
 /* SECTION */
 .check-section {
-  margin-top: 62px;
-  padding-bottom: 62px;
+  padding: 62px 0px;
 }
 
 /* CARD */
 .check-card {
-  border-radius: 20px;
+  border-radius: var(--radius-sm);
   background: var(--color-glass);
   padding-bottom: 31px;
 }
@@ -17,13 +16,10 @@
   font-weight: var(--font-weight-bold);
   color: var(--color-white);
   background-color: var(--color-glass);
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-radius: 20px 20px 0 0;
   display: flex;
   align-items: center;
-  padding-top: 36px;
-  padding-bottom: 36px;
-  padding-left: 93px;
+  padding: 36px 0 36px 93px;
 }
 
 /* FORM */
@@ -31,10 +27,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  padding-left: 93px;
-  padding-right: 93px;
+  padding: 35px 93px;
   justify-content: space-between;
 }
 
@@ -46,23 +39,13 @@
 /* INPUT */
 .input {
   flex: 1;
-
-  padding-top: 20px;
-  padding-left: 25px;
-  padding-bottom: 20px;
+  padding: 20px 0px 20px 25px;
   border-radius: 20px;
 
   background: transparent;
   border: 3px solid rgba(196, 196, 196, 0.15);
   font-size: var(--font-size-xl);
-  /* color: var(--color-white); */
 }
-
-/* INPUT FOCUS */
-/* .input:focus {
-  outline: none;
-  border-color: var(--color-accent);
-} */
 
 .input.is-active {
   border-color: var(--color-accent);
@@ -74,10 +57,8 @@
 
 /* INFO BAR */
 .check-info {
-  border-radius: 20px;
-  margin-left: 93px;
-  margin-right: 93px;
-  margin-bottom: 31px;
+  border-radius: var(--radius-sm);
+  margin: 0 93px 31px;
   background: rgba(255, 255, 255, 0.05);
   text-align: center;
   justify-content: center;
@@ -88,15 +69,12 @@
 }
 
 .check-info p {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0px;
   color: var(--color-accent);
 }
 
 .check-info a {
   color: var(--color-accent);
   text-decoration: underline;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 5px;
+  padding: 20px 0px 20px 5px;
 }
