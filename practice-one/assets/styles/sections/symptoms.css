@@ -1,0 +1,122 @@
+/* SECTION */
+.symptoms {
+  background-image: url(../../images/banner-dark.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--color-white);
+  padding-top: 67px;
+  text-align: center;
+}
+
+/* HEADER */
+.symptoms-subtitle {
+  margin-bottom: 20px;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+}
+
+.symptoms-title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-extra-bold);
+  margin-bottom: 40px;
+}
+
+.symptoms-title span {
+  color: var(--color-accent);
+}
+
+.symptoms-desc {
+  max-width: 953px;
+  margin: 0 auto 179px;
+  color: var(--color-white-50);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+}
+
+/* CONTENT */
+.symptoms-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* IMAGE */
+.symptoms-image img {
+  width: 709px;
+  height: 530px;
+  display: block;
+}
+
+/* LIST */
+.symptoms-list {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-accent);
+  padding-top: 35px;
+}
+
+/* LEFT & RIGHT POSITION */
+.symptoms-list.left {
+  gap: 120px;
+  transform: translateY(6px);
+}
+
+.symptoms-list.left .symptom-item:nth-child(1) {
+  transform: translateX(142px);
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.symptoms-list.left .symptom-item:nth-child(2) {
+  transform: translateX(57px);
+  padding-right: 10px;
+}
+
+.symptoms-list.left .symptom-item:nth-child(3) {
+  transform: translateX(-7px);
+  padding: 23px 60px;
+}
+
+.symptoms-list.right {
+  gap: 120px;
+  transform: translateY(6px);
+  align-items: flex-end;
+}
+
+.symptoms-list.right .symptom-item:nth-child(1) {
+  transform: translateX(-57px);
+}
+
+.symptoms-list.right .symptom-item:nth-child(2) {
+  transform: translateX(-7px);
+}
+
+.symptoms-list.right .symptom-item:nth-child(3) {
+  transform: translateX(27px);
+  padding: 23px 60px;
+}
+
+/* ITEM */
+.symptom-item {
+  position: relative;
+  background: var(--color-glass-20);
+  padding: 23px 40px;
+  border-radius: var(--radius-xs);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  width: fit-content;
+}
+
+/* ICON (virus) */
+.symptom-item::before {
+  content: '';
+  position: absolute;
+  left: -70px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 100px;
+  background: url('../../images/virus-pink.png') no-repeat center/cover;
+}
