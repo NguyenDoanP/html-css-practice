@@ -284,5 +284,95 @@
         </div>
       </div>
     </section>
+
+    <!-- GET-VACCINE -->
+    <section class="get-vaccine">
+      <div class="container get-vaccine-inner">
+        <!-- LEFT -->
+        <div class="get-vaccine__form">
+          <h2 class="get-vaccine__title">
+            Get your vaccine registration today
+          </h2>
+
+          <!-- FORM START -->
+          <form>
+            <!-- Name -->
+            <label class="get-vaccine__label" for="full-name">
+              Patient's Full Name
+            </label>
+            <input
+              id="full-name"
+              type="text"
+              class="get-vaccine__input"
+              placeholder="Full name"
+              required
+            />
+
+            <!-- Phone -->
+            <label class="get-vaccine__label" for="phone">
+              Mobile Number
+            </label>
+            <p class="get-vaccine__desc">
+              Notifications for appointment and reminders will be sent to this
+              provided number
+            </p>
+
+            <div class="phone-group">
+              <div class="phone-input">
+                <img
+                  src="./assets/images/icon-flag-nigeria.svg"
+                  class="flag"
+                  alt="Nigeria flag"
+                />
+                <img
+                  src="./assets/images/icon-chevron-down.svg"
+                  class="chevron-down"
+                  alt=""
+                />
+                <span class="divider"></span>
+
+                <input
+                  id="phone"
+                  type="tel"
+                  class="get-vaccine__input"
+                  placeholder="Phone number"
+                  required
+                />
+              </div>
+
+              <!-- type="button" to not submit the form -->
+              <button type="button" class="btn btn-primary">Verify</button>
+            </div>
+
+            <!-- Submit -->
+            <div class="submit-btn">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+          <!-- FORM END -->
+
+          <p class="get-vaccine__link">
+            Already registered ? <a href="#">Check your status</a>
+          </p>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="get-vaccine__card">
+          <img src="./assets/images/virus-red.png" alt="" class="virus" />
+
+          <div class="card">
+            <h3 class="card-title">COVID-19<br />Vaccine</h3>
+
+            <img
+              src="./assets/images/vaccine2.png"
+              alt="Vaccine illustration"
+              class="card-img"
+            />
+
+            <button class="btn btn-normal card-btn">Verify Status</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
