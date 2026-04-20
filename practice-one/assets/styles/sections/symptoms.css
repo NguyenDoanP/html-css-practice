@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
+  color: var(--color-white);
   padding-top: 67px;
   text-align: center;
 }
@@ -29,11 +29,10 @@
 
 .symptoms-desc {
   max-width: 953px;
-  margin: 0 auto 0;
-  margin-bottom: 179px;
+  margin: 0 auto 179px;
   color: var(--color-white-50);
   font-size: var(--font-size-xl);
-  font-weight: var(--font-size-medium);
+  font-weight: var(--font-weight-medium);
 }
 
 /* CONTENT */
