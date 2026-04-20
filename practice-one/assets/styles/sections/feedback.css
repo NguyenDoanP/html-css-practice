@@ -13,31 +13,13 @@
   position: absolute;
   inset: 0;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bg-item {
-  position: absolute;
-  width: 294px;
-  height: 479px;
   opacity: 1;
-}
-
-.left {
-  left: 18%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.center {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.right {
-  right: 19%;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .feedback-subtitle {
