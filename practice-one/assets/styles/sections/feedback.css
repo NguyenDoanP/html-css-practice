@@ -1,0 +1,113 @@
+.feedback {
+  padding: 57px 0 250px;
+  text-align: center;
+  background: url(../../images/banner-blur.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--color-black);
+  position: relative;
+}
+
+.feedback-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-item {
+  opacity: 1;
+}
+
+.feedback-subtitle {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xl);
+  margin-bottom: 20px;
+}
+
+.feedback-title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-extra-bold);
+  margin-bottom: 40px;
+}
+
+.feedback-desc {
+  max-width: 953px;
+  margin: 0 auto 100px;
+  color: var(--color-black-50);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+}
+
+.feedback-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.feedback-card {
+  padding: 30px 30px 44px;
+  border-radius: 20px;
+  background: var(--color-glass-50);
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.feedback-card.active {
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+.feedback-card.active .user-location {
+  color: var(--color-white);
+}
+
+.feedback-card.active .feedback-text {
+  color: var(--color-white);
+  margin: 0 -12px;
+}
+
+.feedback-user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.feedback-user .user-name {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 5px;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.feedback-user .user-location {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  justify-content: flex-start;
+  display: flex;
+  color: var(--color-black-50);
+}
+
+.feedback-user img {
+  width: 70px;
+  height: 70px;
+  border-radius: var(--radius-sm);
+}
+
+.feedback-text {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+  color: var(--color-black-50);
+}
+
+.highlight {
+  color: var(--color-accent);
+}
