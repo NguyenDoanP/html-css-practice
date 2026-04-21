@@ -7,6 +7,7 @@
 
 .hero {
   font-weight: var(--font-weight-bold);
+  margin-top: 50px;
 }
 
 .hero-inner {
@@ -107,13 +108,12 @@
 /* ── Doctors cluster ── */
 .hero-image__doctors {
   position: absolute;
-  bottom: -40px;
+  bottom: -50px;
   left: -40px;
   background: var(--color-glass-20);
   box-shadow: var(--shadow-sm);
   border-radius: var(--radius-sm);
-  padding-left: 10px;
-  padding-top: 10px;
+  padding: 10px 0 10px 20px;
   display: flex;
   /* keep flex */
   align-items: center;
