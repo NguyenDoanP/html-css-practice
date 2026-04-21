@@ -12,13 +12,13 @@
       <!-- HEADER -->
       <header class="header">
         <div class="container header-inner">
-          <div class="logo">Vaccination.ng</div>
+          <a href="#" class="logo">Vaccination.ng</a>
 
-          <nav class="nav">
-            <a class="nav-item is-active">Home</a>
-            <a class="nav-item">Services</a>
-            <a class="nav-item">Schedule</a>
-            <a class="nav-item">Contact us</a>
+          <nav class="nav header-nav" aria-label="Main navigation">
+            <a href="#" class="nav-item is-active">Home</a>
+            <a href="#" class="nav-item">Services</a>
+            <a href="#" class="nav-item">Schedule</a>
+            <a href="#" class="nav-item">Contact us</a>
           </nav>
 
           <button class="btn btn-normal">Check Status</button>
@@ -146,7 +146,7 @@
               </div>
             </div>
 
-            <button class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </div>
       </section>
@@ -518,12 +518,13 @@
 
             <form class="quote-form">
               <input
+                id="email"
                 type="email"
                 placeholder="lenux.ng@gmail.com"
                 class="quote-input"
               />
 
-              <button class="quote-btn">
+              <button type="submit" class="quote-btn">
                 <img src="./assets/images/icon-send.svg" alt="Send" />
               </button>
             </form>
@@ -531,5 +532,37 @@
         </div>
       </div>
     </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <!-- Logo -->
+        <a href="#" class="logo">Vaccination.ng</a>
+
+        <!-- Nav -->
+        <nav class="nav footer-nav" aria-label="Footer navigation">
+          <a href="#" class="nav-item is-active">Home</a>
+          <a href="#" class="nav-item">Services</a>
+          <a href="#" class="nav-item">Schedule</a>
+          <a href="#" class="nav-item">Contact us</a>
+        </nav>
+
+        <!-- Social -->
+        <div class="footer-social">
+          <a href="#"
+            ><img src="./assets/images/icon-youtube.svg" alt="YouTube"
+          /></a>
+          <a href="#"
+            ><img src="./assets/images/icon-instagram.svg" alt="Instagram"
+          /></a>
+          <a href="#"
+            ><img src="./assets/images/icon-twitter.svg" alt="Twitter"
+          /></a>
+          <a href="#"
+            ><img src="./assets/images/icon-facebook.svg" alt="Facebook"
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
