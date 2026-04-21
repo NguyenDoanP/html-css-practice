@@ -24,3 +24,16 @@
   background-position: left bottom;
   padding-bottom: 5px;
 }
+
+/* dot below */
+.header-nav .is-active::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+}

@@ -1,0 +1,31 @@
+.footer {
+  padding: 400px 0 123px;
+  position: relative;
+  z-index: 1;
+  margin-top: -200px;
+  background-image: url(../../images/banner-dark.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* SOCIAL */
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-social a:last-child {
+  margin-left: -10px;
+}
