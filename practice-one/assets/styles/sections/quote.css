@@ -1,0 +1,88 @@
+/* SECTION */
+.quote {
+  position: relative;
+  margin-top: -200px;
+  z-index: 2;
+}
+
+/* CARD */
+.quote-card {
+  background: var(--color-accent);
+  border-radius: 50px;
+  text-align: center;
+  padding: 70px 0 107px;
+  max-width: 1031px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* class base cho effect */
+.card-overlay {
+  position: relative;
+}
+
+.card-overlay::before {
+  content: '';
+  position: absolute;
+  height: 430px;
+  width: 1070px;
+  background: #c4c4c426;
+  border-radius: 50px;
+  z-index: 0;
+  transform: translate(115px, -20px);
+}
+
+/* TITLE */
+.quote-title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+/* DESC */
+.quote-desc {
+  color: var(--color-white);
+  margin-bottom: 40px;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+}
+
+/* FORM */
+.quote-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-white);
+  border-radius: 30px;
+  overflow: hidden;
+  height: 75px;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/* INPUT */
+.quote-input {
+  flex: 1;
+  border: none;
+  padding: 28px 40px;
+  font-size: var(--font-size-lg);
+  outline: none;
+}
+
+/* BUTTON */
+.quote-btn {
+  width: 100px;
+  height: 75px;
+  background: var(--color-primary);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.quote-btn img {
+  padding: 17px 30px;
+}
