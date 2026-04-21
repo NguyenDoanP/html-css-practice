@@ -98,4 +98,5 @@
 
 .schedule-bar .btn {
   margin-left: 90px;
+  z-index: 1;
 }
