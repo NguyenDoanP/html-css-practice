@@ -13,13 +13,11 @@
 .hero-inner {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   /* use flex to center the content and image vertically */
 }
 
 .hero-content {
   max-width: 603px;
-  /* margin-bottom: 150px; */
 }
 
 .hero-subtitle {
@@ -33,7 +31,6 @@
   font-weight: var(--font-weight-extra-bold);
   color: var(--color-white);
   margin-bottom: 50px;
-  line-height: 100%;
 }
 
 .hero-title span {
