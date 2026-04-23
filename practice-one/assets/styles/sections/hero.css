@@ -3,6 +3,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  line-height: var(--line-height-md);
 }
 
 .hero {
@@ -31,6 +32,7 @@
   font-weight: var(--font-weight-extra-bold);
   color: var(--color-white);
   margin-bottom: 50px;
+  line-height: var(--line-height-lg);
 }
 
 .hero-title span {
@@ -101,7 +103,7 @@
 /* ── Doctors cluster ── */
 .hero-image__doctors {
   position: absolute;
-  bottom: -50px;
+  bottom: -45px;
   left: -50px;
   background: var(--color-glass-20);
   box-shadow: var(--shadow-sm);
@@ -130,6 +132,11 @@
   display: block;
 }
 
+.doctors__avatars img + img {
+  margin-left: -5px;
+  /* stack the images */
+}
+
 /* ── Doctors info ── */
 .doctors__info {
   display: flex;
@@ -143,12 +150,11 @@
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   color: var(--color-white);
-  line-height: 100%;
 }
 
 .doctors__label {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   color: var(--color-accent);
-  line-height: 100%;
+  margin-top: -5px;
 }
