@@ -1,29 +1,41 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practice-one</title>
-    <link rel="stylesheet" href="./assets/styles/main.css" />
-  </head>
 
-  <body>
-    <div class="hero-wrapper">
-      <!-- HEADER -->
-      <header class="header">
-        <div class="container header-inner">
-          <a href="#" class="logo">Vaccination.ng</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Practice-one</title>
+  <link rel="stylesheet" href="./assets/styles/main.css" />
+</head>
 
-          <nav class="nav header-nav" aria-label="Main navigation">
-            <a href="#" class="nav-item is-active">Home</a>
-            <a href="#" class="nav-item">Services</a>
-            <a href="#" class="nav-item">Schedule</a>
-            <a href="#" class="nav-item">Contact us</a>
-          </nav>
+<body>
+  <div class="hero-wrapper">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header-inner">
+        <a href="#" class="logo">Vaccination.ng</a>
 
-          <button type="button" class="btn btn-normal">Check Status</button>
-        </div>
-      </header>
+        <nav class="nav nav--header" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li class="nav-item is-active">
+              <a href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#schedule">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+
+
+        <button type="button" class="btn btn-normal">Check Status</button>
+      </div>
+
 
       <!-- HERO -->
       <section class="hero" aria-labelledby="hero-title">
@@ -55,11 +67,7 @@
           <!-- RIGHT -->
           <div class="hero-image">
             <!-- Main image -->
-            <img
-              class="hero-image__main"
-              src="./assets/images/vaccine1.png"
-              alt="Person receiving COVID-19 vaccine"
-            />
+            <img class="hero-image__main" src="./assets/images/vaccine1.png" alt="Person receiving COVID-19 vaccine" />
 
             <!-- Badge left (decorative) -->
             <div class="hero-image__badge hero-image__badge--left">
@@ -68,11 +76,7 @@
 
             <!-- Badge right (decorative) -->
             <div class="hero-image__badge hero-image__badge--right">
-              <img
-                src="./assets/images/virus-pink.png"
-                alt=""
-                aria-hidden="true"
-              />
+              <img src="./assets/images/virus-pink.png" alt="" aria-hidden="true" />
             </div>
 
             <!-- Doctors cluster -->
@@ -100,19 +104,14 @@
               <div class="bar-item__icon">
                 <img src="./assets/images/icon-clock.svg" alt="Clock Icon" />
               </div>
-              <span class="schedule-header__title"
-                >Schedule your Vaccination</span
-              >
+              <span class="schedule-header__title">Schedule your Vaccination</span>
             </div>
           </div>
 
           <div class="schedule-bar">
             <div class="bar-item">
               <div class="bar-item__icon">
-                <img
-                  src="./assets/images/icon-map-pin.svg"
-                  alt="Location Icon"
-                />
+                <img src="./assets/images/icon-map-pin.svg" alt="Location Icon" />
               </div>
               <div class="bar-item__text">
                 <span class="bar-item__label">Location</span>
@@ -122,10 +121,7 @@
 
             <div class="bar-item">
               <div class="bar-item__icon">
-                <img
-                  src="./assets/images/icon-calendar.svg"
-                  alt="Calendar Icon"
-                />
+                <img src="./assets/images/icon-calendar.svg" alt="Calendar Icon" />
               </div>
               <div class="bar-item__text">
                 <span class="bar-item__label">Date</span>
@@ -147,7 +143,11 @@
           </div>
         </div>
       </section>
-    </div>
+    </header>
+  </div>
+
+  <main>
+
 
     <!-- BRANDS -->
     <section class="brand-section">
@@ -155,10 +155,7 @@
         <div class="brand-logos">
           <img src="./assets/images/logo-moderna.png" alt="Moderna Logo" />
           <img src="./assets/images/logo-pfizer.png" alt="Pfizer Logo" />
-          <img
-            src="./assets/images/logo-astrazeneca.png"
-            alt="AstraZeneca Logo"
-          />
+          <img src="./assets/images/logo-astrazeneca.png" alt="AstraZeneca Logo" />
           <img src="./assets/images/logo-sinovac.png" alt="Sinovac Logo" />
         </div>
       </div>
@@ -209,10 +206,7 @@
           <!-- BIG CARD -->
           <div class="why-card why-card--primary">
             <div class="card-icon">
-              <img
-                src="./assets/images/icon-shield.svg"
-                alt="Shield icon representing immune protection"
-              />
+              <img src="./assets/images/icon-shield.svg" alt="Shield icon representing immune protection" />
             </div>
 
             <div class="card-primary">
@@ -229,10 +223,8 @@
 
               <a href="#" class="card-link">
                 <span>Read more</span>
-                <img
-                  src="./assets/images/icon-arrow-right-accent.svg"
-                  alt="Arrow icon indicating navigation to more details"
-                />
+                <img src="./assets/images/icon-arrow-right-accent.svg"
+                  alt="Arrow icon indicating navigation to more details" />
               </a>
             </div>
           </div>
@@ -241,40 +233,30 @@
             <!-- SMALL CARD 1 -->
             <div class="why-card why-card--secondary">
               <div class="card-icon">
-                <img
-                  src="./assets/images/icon-human.svg"
-                  alt="Human figure icon representing virus transmission"
-                />
+                <img src="./assets/images/icon-human.svg" alt="Human figure icon representing virus transmission" />
               </div>
 
               <h3 class="card-title">Minimize the spread of the Virus</h3>
 
               <a href="#" class="card-link">
                 <span>Read more</span>
-                <img
-                  src="./assets/images/icon-arrow-right.svg"
-                  alt="Arrow icon indicating navigation to more details"
-                />
+                <img src="./assets/images/icon-arrow-right.svg"
+                  alt="Arrow icon indicating navigation to more details" />
               </a>
             </div>
 
             <!-- SMALL CARD 2 -->
             <div class="why-card why-card--secondary">
               <div class="card-icon">
-                <img
-                  src="./assets/images/icon-thermometer.svg"
-                  alt="Thermometer icon representing health monitoring"
-                />
+                <img src="./assets/images/icon-thermometer.svg" alt="Thermometer icon representing health monitoring" />
               </div>
 
               <h3 class="card-title">Protect yourself</h3>
 
               <a href="#" class="card-link">
                 <span>Read more</span>
-                <img
-                  src="./assets/images/icon-arrow-right.svg"
-                  alt="Arrow icon indicating navigation to more details"
-                />
+                <img src="./assets/images/icon-arrow-right.svg"
+                  alt="Arrow icon indicating navigation to more details" />
               </a>
             </div>
           </div>
@@ -297,13 +279,7 @@
             <label class="get-vaccine__label" for="full-name">
               Patient's Full Name
             </label>
-            <input
-              id="full-name"
-              type="text"
-              class="get-vaccine__input"
-              placeholder="Full name"
-              required
-            />
+            <input id="full-name" type="text" class="get-vaccine__input" placeholder="Full name" required />
 
             <!-- Phone -->
             <label class="get-vaccine__label" for="phone">
@@ -316,25 +292,11 @@
 
             <div class="phone-group">
               <div class="phone-input">
-                <img
-                  src="./assets/images/icon-flag-nigeria.svg"
-                  class="flag"
-                  alt="Nigeria flag"
-                />
-                <img
-                  src="./assets/images/icon-chevron-down.svg"
-                  class="chevron-down"
-                  alt=""
-                />
+                <img src="./assets/images/icon-flag-nigeria.svg" class="flag" alt="Nigeria flag" />
+                <img src="./assets/images/icon-chevron-down.svg" class="chevron-down" alt="" />
                 <span class="divider"></span>
 
-                <input
-                  id="phone"
-                  type="tel"
-                  class="get-vaccine__input"
-                  placeholder="Phone number"
-                  required
-                />
+                <input id="phone" type="tel" class="get-vaccine__input" placeholder="Phone number" required />
               </div>
 
               <!-- type="button" to not submit the form -->
@@ -360,11 +322,7 @@
           <div class="card">
             <h3 class="card-title">COVID-19<br />Vaccine</h3>
 
-            <img
-              src="./assets/images/vaccine2.png"
-              alt="Vaccine illustration"
-              class="card-img"
-            />
+            <img src="./assets/images/vaccine2.png" alt="Vaccine illustration" class="card-img" />
 
             <button type="button" class="btn btn-normal card-btn">
               Verify Status
@@ -399,10 +357,7 @@
 
           <!-- Center image -->
           <div class="symptoms-image">
-            <img
-              src="./assets/images/headache-man.png"
-              alt="Man wearing mask holding head due to COVID-19 symptoms"
-            />
+            <img src="./assets/images/headache-man.png" alt="Man wearing mask holding head due to COVID-19 symptoms" />
           </div>
 
           <!-- Right items -->
@@ -443,10 +398,7 @@
           <!-- Card 1 -->
           <article class="feedback-card">
             <div class="feedback-user">
-              <img
-                src="./assets/images/avatar-patient1.png"
-                alt="Photo of Oyindamola Maja"
-              />
+              <img src="./assets/images/avatar-patient1.png" alt="Photo of Oyindamola Maja" />
               <div>
                 <p class="user-name">Oyindamola Maja</p>
                 <span class="user-location">Badagry, Lagos</span>
@@ -463,10 +415,7 @@
           <!-- Card 2 -->
           <article class="feedback-card active" aria-current="true">
             <div class="feedback-user">
-              <img
-                src="./assets/images/avatar-patient2.png"
-                alt="Photo of Okeowo Lekan"
-              />
+              <img src="./assets/images/avatar-patient2.png" alt="Photo of Okeowo Lekan" />
               <div>
                 <p class="user-name">Okeowo Lekan</p>
                 <span class="user-location">Ikeja, Lagos</span>
@@ -483,10 +432,7 @@
           <!-- Card 3 -->
           <article class="feedback-card">
             <div class="feedback-user">
-              <img
-                src="./assets/images/avatar-patient3.png"
-                alt="Photo of Kafaru Temitope"
-              />
+              <img src="./assets/images/avatar-patient3.png" alt="Photo of Kafaru Temitope" />
               <div>
                 <p class="user-name">Kafaru Temitope</p>
                 <span class="user-location">Obanikoro, Lagos</span>
@@ -512,12 +458,7 @@
             <p class="quote-desc">Please do enter your email address below</p>
 
             <form class="quote-form">
-              <input
-                id="email"
-                type="email"
-                placeholder="lenux.ng@gmail.com"
-                class="quote-input"
-              />
+              <input id="email" type="email" placeholder="lenux.ng@gmail.com" class="quote-input" />
 
               <button type="submit" class="quote-btn">
                 <img src="./assets/images/icon-send.svg" alt="Send" />
@@ -527,37 +468,40 @@
         </div>
       </div>
     </section>
+  </main>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <!-- Logo -->
+      <a href="#" class="logo">Vaccination.ng</a>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="container footer-inner">
-        <!-- Logo -->
-        <a href="#" class="logo">Vaccination.ng</a>
+      <!-- Nav -->
+      <nav class="nav nav--footer" aria-label="Footer navigation">
+        <ul class="nav-list">
+          <li class="nav-item is-active">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav__link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#schedule" class="nav__link">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav__link">Contact us</a>
+          </li>
+        </ul>
+      </nav>
 
-        <!-- Nav -->
-        <nav class="nav footer-nav" aria-label="Footer navigation">
-          <a href="#" class="nav-item is-active">Home</a>
-          <a href="#" class="nav-item">Services</a>
-          <a href="#" class="nav-item">Schedule</a>
-          <a href="#" class="nav-item">Contact us</a>
-        </nav>
-
-        <!-- Social -->
-        <div class="footer-social">
-          <a href="#"
-            ><img src="./assets/images/icon-youtube.svg" alt="YouTube"
-          /></a>
-          <a href="#"
-            ><img src="./assets/images/icon-instagram.svg" alt="Instagram"
-          /></a>
-          <a href="#"
-            ><img src="./assets/images/icon-twitter.svg" alt="Twitter"
-          /></a>
-          <a href="#"
-            ><img src="./assets/images/icon-facebook.svg" alt="Facebook"
-          /></a>
-        </div>
+      <!-- Social -->
+      <div class="footer-social">
+        <a href="#"><img src="./assets/images/icon-youtube.svg" alt="YouTube" /></a>
+        <a href="#"><img src="./assets/images/icon-instagram.svg" alt="Instagram" /></a>
+        <a href="#"><img src="./assets/images/icon-twitter.svg" alt="Twitter" /></a>
+        <a href="#"><img src="./assets/images/icon-facebook.svg" alt="Facebook" /></a>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
