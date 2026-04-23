@@ -1,4 +1,4 @@
-.nav {
+.nav-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,7 +6,7 @@
 }
 
 /* item */
-.nav-item {
+.nav-item a {
   position: relative;
   color: var(--color-white-50);
   font-size: var(--font-size-xl);
@@ -14,7 +14,7 @@
 }
 
 /* active */
-.nav-item.is-active {
+.nav-item.is-active a {
   color: var(--color-white);
   font-weight: var(--font-weight-bold);
 }
