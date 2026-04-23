@@ -67,19 +67,16 @@
 
 .symptoms-list.left .symptom-item:nth-child(1) {
   margin-left: 177px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding: 23px 60px;
 }
 
 .symptoms-list.left .symptom-item:nth-child(2) {
-  padding-left: 35px;
-  padding-right: 18px;
+  padding: 23px 18px 23px 35px;
   margin-left: 77px;
 }
 
 .symptoms-list.left .symptom-item:nth-child(3) {
-  padding-right: 63px;
-  padding-left: 63px;
+  padding: 23px 63px;
   margin-left: 27px;
 }
 
@@ -90,20 +87,17 @@
 }
 
 .symptoms-list.right .symptom-item:nth-child(1) {
-  padding-right: 33px;
-  padding-left: 56px;
+  padding: 23px 33px 23px 56px;
   margin-right: 60px;
 }
 
 .symptoms-list.right .symptom-item:nth-child(2) {
-  padding-right: 20px;
-  padding-left: 52px;
+  padding: 23px 20px 23px 52px;
   margin-right: 10px;
 }
 
 .symptoms-list.right .symptom-item:nth-child(3) {
-  padding-right: 57px;
-  padding-left: 74px;
+  padding: 23px 57px 23px 74px;
   margin-right: -35px;
 }
 
@@ -111,7 +105,6 @@
 .symptom-item {
   position: relative;
   background: var(--color-glass-20);
-  padding: 23px 0;
   border-radius: var(--radius-xs);
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-semibold);

@@ -55,7 +55,6 @@
   position: relative;
   display: flex;
   /* use flex to center the main image */
-  align-items: center;
   justify-content: center;
 }
 
