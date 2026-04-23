@@ -30,7 +30,8 @@
   background: #c4c4c426;
   border-radius: 50px;
   z-index: 0;
-  transform: translate(115px, -20px);
+  inset: 0;
+  margin: auto;
 }
 
 /* TITLE */

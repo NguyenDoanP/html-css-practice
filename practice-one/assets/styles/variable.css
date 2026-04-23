@@ -59,6 +59,12 @@
   --font-size-2xl: 32px;
   --font-size-3xl: 48px;
 
+  /* line-height */
+  --line-height-xs: 22px;
+  --line-height-sm: 24px;
+  --line-height-md: 29px;
+  --line-height-lg: 59px;
+
   /* Border */
   --border-xs: 3px;
 

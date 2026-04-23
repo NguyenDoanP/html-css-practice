@@ -47,12 +47,14 @@
   width: 709px;
   height: 530px;
   display: block;
+  align-items: center;
 }
 
 /* LIST */
 .symptoms-list {
   display: flex;
   flex-direction: column;
+  position: absolute;
   color: var(--color-accent);
   padding-top: 35px;
 }
@@ -60,49 +62,49 @@
 /* LEFT & RIGHT POSITION */
 .symptoms-list.left {
   gap: 120px;
-  transform: translateY(6px);
+  left: 0;
 }
 
 .symptoms-list.left .symptom-item:nth-child(1) {
-  transform: translateX(142px);
-  padding-left: 60px;
-  padding-right: 60px;
+  margin-left: 177px;
+  padding: 23px 60px;
 }
 
 .symptoms-list.left .symptom-item:nth-child(2) {
-  transform: translateX(57px);
-  padding-right: 10px;
+  padding: 23px 18px 23px 35px;
+  margin-left: 77px;
 }
 
 .symptoms-list.left .symptom-item:nth-child(3) {
-  transform: translateX(-7px);
-  padding: 23px 60px;
+  padding: 23px 63px;
+  margin-left: 27px;
 }
 
 .symptoms-list.right {
   gap: 120px;
-  transform: translateY(6px);
+  right: 0;
   align-items: flex-end;
 }
 
 .symptoms-list.right .symptom-item:nth-child(1) {
-  transform: translateX(-57px);
+  padding: 23px 33px 23px 56px;
+  margin-right: 60px;
 }
 
 .symptoms-list.right .symptom-item:nth-child(2) {
-  transform: translateX(-7px);
+  padding: 23px 20px 23px 52px;
+  margin-right: 10px;
 }
 
 .symptoms-list.right .symptom-item:nth-child(3) {
-  transform: translateX(27px);
-  padding: 23px 60px;
+  padding: 23px 57px 23px 74px;
+  margin-right: -35px;
 }
 
 /* ITEM */
 .symptom-item {
   position: relative;
   background: var(--color-glass-20);
-  padding: 23px 40px;
   border-radius: var(--radius-xs);
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-semibold);
