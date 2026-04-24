@@ -52,30 +52,15 @@
   gap: 40px;
 }
 
-.feedback-card {
-  padding: 30px 30px 44px;
-  border-radius: 20px;
-  background: var(--color-glass-50);
-  flex: 1;
-  position: relative;
-  z-index: 2;
-}
-
-.feedback-card:hover {
-  background: var(--color-accent);
-  color: var(--color-white);
-  box-shadow: 0 5px 10px var(--color-black-25);
-}
-
-.feedback-card:hover .user-location {
+.testimonial-card:hover .user-location {
   color: var(--color-white);
 }
 
-.feedback-card:hover .feedback-text {
+.testimonial-card:hover .feedback-text {
   color: var(--color-white);
 }
 
-.feedback-card:hover .highlight {
+.testimonial-card:hover .highlight {
   color: var(--color-white);
 }
 

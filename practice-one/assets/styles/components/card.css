@@ -1,0 +1,115 @@
+.card-icon {
+  border-radius: 16px;
+  background: var(--color-glass);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TITLE */
+.card-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+}
+
+/* DESCRIPTION */
+.card-desc {
+  padding: 30px 0 40px 0;
+  max-width: 352px;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-white);
+  line-height: var(--line-height-xs);
+}
+
+/* LINK */
+.card-link {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.card--primary {
+  max-width: 400px;
+  padding: 40px 0 77px 40px;
+  background: var(--color-glass-20);
+  border-radius: 50px 150px 50px 50px;
+}
+
+.card--secondary {
+  max-width: 350px;
+  padding: 40px 0 63px 40px;
+  border: 3px solid var(--color-white-50);
+  border-radius: 50px;
+}
+
+.card--primary .card-icon {
+  margin: 0px 310px 40px 0px;
+  border-radius: 30px;
+  height: 100px;
+  width: 100px;
+  box-shadow: var(--shadow-sm);
+}
+
+.card--primary .card-icon img {
+  height: 70px;
+  width: 70px;
+}
+
+.card--primary .card-title {
+  color: var(--color-accent);
+}
+
+.card--secondary .card-icon {
+  margin: 0px 240px 40px 0px;
+  border-radius: 20px;
+  height: 70px;
+  width: 70px;
+}
+
+.card--secondary .card-icon img {
+  height: 49px;
+  width: 49px;
+}
+
+.card--secondary .card-title {
+  height: 58px;
+  max-width: 257px;
+  margin-bottom: 53px;
+}
+
+.card--primary .card-link {
+  color: var(--color-accent);
+}
+
+.card--primary .card-link:hover {
+  color: var(--color-white);
+}
+
+.card--secondary .card-link {
+  color: var(--color-white-50);
+}
+
+.card--secondary .card-link:hover {
+  color: var(--color-accent);
+}
+
+/* TESTIMONIAL */
+.testimonial-card {
+  padding: 30px 30px 44px;
+  border-radius: 20px;
+  background: var(--color-glass-50);
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.testimonial-card:hover {
+  background: var(--color-accent);
+  color: var(--color-white);
+  box-shadow: 0 5px 10px var(--color-black-25);
+}
