@@ -44,7 +44,7 @@
 .checker__hint {
   border-radius: var(--radius-sm);
   margin: 0 93px 31px;
-  background: #c4c4c40d;
+  background: var(--color-glass-30);
   text-align: center;
   justify-content: center;
   color: var(--color-accent);

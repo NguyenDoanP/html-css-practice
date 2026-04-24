@@ -28,7 +28,7 @@
   position: absolute;
   height: 430px;
   width: 1070px;
-  background: #c4c4c426;
+  background: var(--color-glass-10);
   border-radius: 50px;
   z-index: 0;
   inset: 0;
