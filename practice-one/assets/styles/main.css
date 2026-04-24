@@ -8,6 +8,8 @@
 /* Components */
 @import url(./components/button.css);
 @import url(./components/nav-menu.css);
+@import url(./components/card.css);
+@import url(./components/input.css);
 
 /* Sections */
 @import url(./sections/header-main.css);
