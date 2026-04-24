@@ -1,4 +1,4 @@
-.card-icon {
+.card__icon {
   border-radius: 16px;
   background: var(--color-glass);
   display: flex;
@@ -7,14 +7,14 @@
 }
 
 /* TITLE */
-.card-title {
+.card__title {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   color: var(--color-white);
 }
 
 /* DESCRIPTION */
-.card-desc {
+.card__desc {
   padding: 30px 0 40px 0;
   max-width: 352px;
   font-size: var(--font-size-md);
@@ -24,7 +24,7 @@
 }
 
 /* LINK */
-.card-link {
+.card__link {
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-medium);
   text-decoration: none;
@@ -47,7 +47,7 @@
   border-radius: 50px;
 }
 
-.card--primary .card-icon {
+.card--primary .card__icon {
   margin: 0px 310px 40px 0px;
   border-radius: 30px;
   height: 100px;
@@ -55,51 +55,51 @@
   box-shadow: var(--shadow-sm);
 }
 
-.card--primary .card-icon img {
+.card--primary .card__icon img {
   height: 70px;
   width: 70px;
 }
 
-.card--primary .card-title {
+.card--primary .card__title {
   color: var(--color-accent);
 }
 
-.card--secondary .card-icon {
+.card--secondary .card__icon {
   margin: 0px 240px 40px 0px;
   border-radius: 20px;
   height: 70px;
   width: 70px;
 }
 
-.card--secondary .card-icon img {
+.card--secondary .card__icon img {
   height: 49px;
   width: 49px;
 }
 
-.card--secondary .card-title {
+.card--secondary .card__title {
   height: 58px;
   max-width: 257px;
   margin-bottom: 53px;
 }
 
-.card--primary .card-link {
+.card--primary .card__link {
   color: var(--color-accent);
 }
 
-.card--primary .card-link:hover {
+.card--primary .card__link:hover {
   color: var(--color-white);
 }
 
-.card--secondary .card-link {
+.card--secondary .card__link {
   color: var(--color-white-50);
 }
 
-.card--secondary .card-link:hover {
+.card--secondary .card__link:hover {
   color: var(--color-accent);
 }
 
 /* TESTIMONIAL */
-.testimonial-card {
+.testimonial {
   padding: 30px 30px 44px;
   border-radius: 20px;
   background: var(--color-glass-50);
@@ -108,7 +108,7 @@
   z-index: 2;
 }
 
-.testimonial-card:hover {
+.testimonial:hover {
   background: var(--color-accent);
   color: var(--color-white);
   box-shadow: 0 5px 10px var(--color-black-25);

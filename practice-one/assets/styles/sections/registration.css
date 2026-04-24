@@ -1,4 +1,4 @@
-.get-vaccine {
+.registration {
   padding: 40px 0 33px;
   background-image: url('../../images/banner-blur.jpg');
   background-size: cover;
@@ -7,32 +7,32 @@
   line-height: var(--line-height-md);
 }
 
-.get-vaccine-inner {
+.registration__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 241px;
 }
 
-.get-vaccine__form {
+.registration__form-wrap {
   max-width: 654px;
 }
 
-.get-vaccine__title {
+.registration__title {
   font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-bold);
   margin-bottom: 40px;
   line-height: var(--line-height-lg);
 }
 
-.get-vaccine__label {
+.registration__label {
   display: block;
   width: 100%;
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
 }
 
-.get-vaccine__input {
+.registration__input {
   width: 100%;
   box-sizing: border-box;
   display: block;
@@ -44,21 +44,21 @@
   margin: 20px 0 40px;
 }
 
-.get-vaccine__desc {
+.registration__hint {
   font-size: var(--font-size-lg);
   color: var(--color-black-50);
   margin: 20px 0;
   line-height: var(--line-height-sm);
 }
 
-.phone-group {
+.phone-field {
   display: flex;
   gap: 36px;
   margin-bottom: 40px;
   align-items: center;
 }
 
-.phone-input {
+.phone-field__input-wrap {
   display: flex;
   align-items: center;
   border-radius: var(--radius-sm);
@@ -69,20 +69,20 @@
   height: 70px;
 }
 
-.flag {
+.phone-field__flag {
   width: 40px;
   height: 40px;
   object-fit: cover;
   margin-right: 10px;
 }
 
-.chevron-down {
+.phone-field__chevron {
   width: 24px;
   height: 24px;
   margin-right: 10px;
 }
 
-.divider {
+.phone-field__divider {
   width: 3px;
   height: 40px;
   background-color: #0000001a;
@@ -90,7 +90,7 @@
   margin-right: 10px;
 }
 
-.phone-input .get-vaccine__input {
+.phone-field__input-wrap .registration__input {
   align-items: center;
   margin: 20px 0;
   padding-left: 0px;
@@ -100,21 +100,21 @@
   height: 100%;
 }
 
-.phone-group .btn {
+.phone-field .btn {
   padding: 20px 70px;
   box-shadow: none;
 }
 
-.submit-btn {
+.registration__submit {
   margin-bottom: 40px;
 }
 
-.submit-btn .btn {
+.registration__submit .btn {
   width: 100%;
   box-shadow: none;
 }
 
-.get-vaccine__link {
+.registration__login-hint {
   color: var(--color-black-50);
   display: flex;
   align-items: center;
@@ -124,18 +124,18 @@
   font-weight: var(--font-weight-semibold);
 }
 
-.get-vaccine__link a {
+.registration__login-hint a {
   color: var(--color-accent);
   text-decoration: none;
   font-weight: var(--font-weight-bold);
 }
 
-.get-vaccine__link a:hover {
+.registration__login-hint a:hover {
   color: var(--color-black-50);
 }
 
 /* wrapper */
-.get-vaccine__card {
+.registration__card-wrap {
   position: relative;
   display: flex;
   justify-content: center;
@@ -143,7 +143,7 @@
 }
 
 /* virus icon */
-.virus {
+.registration__virus {
   position: absolute;
   top: -25px;
   left: -20px;
@@ -153,7 +153,7 @@
 }
 
 /* main card */
-.get-card {
+.vaccine-card {
   margin-bottom: 20px;
   border-radius: var(--radius-sm);
   object-fit: cover;
@@ -163,7 +163,7 @@
 }
 
 /* title */
-.get-card .card-title {
+.vaccine-card__title {
   position: relative;
   top: 40px;
   display: flex;
@@ -175,14 +175,14 @@
 }
 
 /* image */
-.get-card-img {
+.vaccine-card__img {
   border-radius: var(--radius-sm);
   object-fit: cover;
   display: block;
 }
 
 /* button overlay */
-.get-card-btn {
+.vaccine-card__btn {
   position: absolute;
   bottom: 80px;
   display: flex;
@@ -199,7 +199,7 @@
   background: var(--color-glass-20);
 }
 
-.get-card-btn:hover {
+.vaccine-card__btn {
   transition: opacity 150ms ease;
   opacity: 0.85;
 }

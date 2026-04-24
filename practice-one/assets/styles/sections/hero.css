@@ -1,4 +1,4 @@
-.hero-wrapper {
+.site-hero {
   background-image: url('../../images/banner-dark.jpg');
   background-size: cover;
   background-position: center;
@@ -11,23 +11,23 @@
   margin-top: 100px;
 }
 
-.hero-inner {
+.hero__inner {
   display: flex;
   justify-content: space-between;
   /* use flex to center the content and image vertically */
 }
 
-.hero-content {
+.hero__content {
   max-width: 603px;
 }
 
-.hero-subtitle {
+.hero__subtitle {
   color: var(--color-accent);
   font-size: var(--font-size-xl);
   margin-bottom: 40px;
 }
 
-.hero-title {
+.hero__title {
   font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-extra-bold);
   color: var(--color-white);
@@ -35,23 +35,23 @@
   line-height: var(--line-height-lg);
 }
 
-.hero-title span {
+.hero__title span {
   color: var(--color-accent);
 }
 
-.hero-desc {
+.hero__desc {
   color: var(--color-white-70);
   margin-bottom: 50px;
   font-size: var(--font-size-xl);
 }
 
-.hero-actions {
+.hero__actions {
   display: flex;
   gap: 15px;
 }
 
 /* ── Hero image wrapper ── */
-.hero-image {
+.hero__visual {
   position: relative;
   display: flex;
   /* use flex to center the main image */
@@ -59,7 +59,7 @@
 }
 
 /* ── Main image ── */
-.hero-image__main {
+.hero__img {
   border-radius: var(--radius-sm);
   object-fit: cover;
   display: block;
@@ -67,7 +67,7 @@
 }
 
 /* ── Floating badge common ── */
-.hero-image__badge {
+.hero__badge {
   position: absolute;
   background: var(--color-white);
   border-radius: 16px;
@@ -77,14 +77,14 @@
   justify-content: center;
 }
 
-.hero-image__badge img {
+.hero__badge img {
   object-fit: cover;
   display: block;
   width: 80px;
 }
 
 /* ── Badge left ── */
-.hero-image__badge--left {
+.hero__badge--doctor {
   left: -50px;
   top: 50%;
   transform: translateY(-50%);
@@ -92,7 +92,7 @@
 }
 
 /* ── Badge right ── */
-.hero-image__badge--right {
+.hero__badge--virus {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -100,7 +100,7 @@
 }
 
 /* ── Doctors cluster ── */
-.hero-image__doctors {
+.hero__doctors {
   position: absolute;
   bottom: -45px;
   left: -50px;
@@ -137,7 +137,7 @@
 }
 
 /* ── Doctors info ── */
-.doctors__info {
+.doctors__meta {
   display: flex;
   /* keep flex */
   flex-direction: column;

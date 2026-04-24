@@ -1,4 +1,4 @@
-.feedback {
+.testimonials {
   padding: 57px 0 350px;
   text-align: center;
   background: url(../../images/banner-blur.jpg);
@@ -10,7 +10,7 @@
   line-height: var(--line-height-md);
 }
 
-.feedback-bg {
+.testimonials__bg {
   position: absolute;
   inset: 0;
   z-index: 1;
@@ -20,25 +20,25 @@
   transform: translateY(-50px);
 }
 
-.bg-item {
+.testimonials__bg-img {
   opacity: 1;
 }
 
-.feedback-subtitle {
+.testimonials__subtitle {
   color: var(--color-accent);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-xl);
   margin-bottom: 20px;
 }
 
-.feedback-title {
+.testimonials__title {
   font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-extra-bold);
   margin-bottom: 40px;
   line-height: var(--line-height-lg);
 }
 
-.feedback-desc {
+.testimonials__desc {
   max-width: 953px;
   margin: 0 auto 100px;
   color: var(--color-black-50);
@@ -46,32 +46,32 @@
   font-weight: var(--font-weight-medium);
 }
 
-.feedback-list {
+.testimonials__list {
   display: flex;
   justify-content: center;
   gap: 40px;
 }
 
-.testimonial-card:hover .user-location {
+.testimonial:hover .user-location {
   color: var(--color-white);
 }
 
-.testimonial-card:hover .feedback-text {
+.testimonial:hover .feedback-text {
   color: var(--color-white);
 }
 
-.testimonial-card:hover .highlight {
+.testimonial:hover .highlight {
   color: var(--color-white);
 }
 
-.feedback-user {
+.testimonial__user {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-bottom: 40px;
 }
 
-.feedback-user .user-name {
+.testimonial__user .testimonial__name {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   margin-bottom: 5px;
@@ -79,7 +79,7 @@
   display: flex;
 }
 
-.feedback-user .user-location {
+.testimonial__user .testimonial__location {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-bold);
   justify-content: flex-start;
@@ -88,19 +88,19 @@
   line-height: var(--line-height-xxs);
 }
 
-.feedback-user img {
+.testimonial__user img {
   width: 70px;
   height: 70px;
   border-radius: var(--radius-sm);
 }
 
-.feedback-text {
+.testimonial__quote {
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-xs);
   color: var(--color-black-50);
 }
 
-.highlight {
+.testimonial__highlight {
   color: var(--color-accent);
 }

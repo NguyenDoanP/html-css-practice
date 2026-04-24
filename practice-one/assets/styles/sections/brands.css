@@ -1,12 +1,12 @@
 /* BRAND */
-.brand-section {
+.brands {
   position: relative;
   padding-top: 20px;
   padding-bottom: 10px;
   background: var(--color-white);
 }
 
-.brand-section::before {
+.brands::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -16,7 +16,7 @@
   /* above the content */
 }
 
-.brand-logos {
+.brands__logos {
   display: flex;
   /* keep flex */
   position: relative;

@@ -1,5 +1,5 @@
 /* SECTION */
-.quote {
+.newsletter {
   position: relative;
   margin-top: -200px;
   z-index: 2;
@@ -7,7 +7,7 @@
 }
 
 /* CARD */
-.quote-card {
+.newsletter__card {
   background: var(--color-accent);
   border-radius: 50px;
   text-align: center;
@@ -19,11 +19,11 @@
 }
 
 /* class base cho effect */
-.card-overlay {
+.newsletter__wrapper {
   position: relative;
 }
 
-.card-overlay::before {
+.newsletter__wrapper::before {
   content: '';
   position: absolute;
   height: 430px;
@@ -36,7 +36,7 @@
 }
 
 /* TITLE */
-.quote-title {
+.newsletter__title {
   font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-bold);
   color: var(--color-white);
@@ -45,7 +45,7 @@
 }
 
 /* DESC */
-.quote-desc {
+.newsletter__desc {
   color: var(--color-white);
   margin-bottom: 40px;
   font-size: var(--font-size-xl);
@@ -53,7 +53,7 @@
 }
 
 /* FORM */
-.quote-form {
+.newsletter__form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,7 +66,7 @@
 }
 
 /* INPUT */
-.quote-input {
+.newsletter__input {
   flex: 1;
   border: none;
   padding: 28px 40px;
@@ -75,7 +75,7 @@
 }
 
 /* BUTTON */
-.quote-btn {
+.newsletter__submit {
   width: 100px;
   height: 75px;
   background: var(--color-primary);
@@ -86,11 +86,11 @@
   cursor: pointer;
 }
 
-.quote-btn img {
+.newsletter__submit img {
   padding: 17px 30px;
 }
 
-.quote-btn:hover {
+.newsletter__submit:hover {
   transition: opacity 150ms ease;
   opacity: 0.7;
 }

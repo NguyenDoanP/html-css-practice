@@ -1,4 +1,4 @@
-.nav-list {
+.menu__list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,19 +6,19 @@
 }
 
 /* item */
-.nav-item a {
+.menu__item a {
   position: relative;
   color: var(--color-white-50);
   font-size: var(--font-size-xl);
   text-decoration: none;
 }
 
-.nav-item a:hover {
+.menu__item a:hover {
   color: var(--color-white);
 }
 
 /* active */
-.nav-item.is-active a {
+.menu__item.menu__item--active a {
   color: var(--color-white);
   font-weight: var(--font-weight-bold);
 }

@@ -12,14 +12,14 @@
 @import url(./components/input.css);
 
 /* Sections */
-@import url(./sections/header-main.css);
+@import url(./sections/topbar.css);
 @import url(./sections/hero.css);
-@import url(./sections/shcedule.css);
-@import url(./sections/brand.css);
-@import url(./sections/check.css);
-@import url(./sections/why-vaccinate.css);
-@import url(./sections/get-vaccine.css);
+@import url(./sections/shceduler.css);
+@import url(./sections/brands.css);
+@import url(./sections/checker.css);
+@import url(./sections/reasons.css);
+@import url(./sections/registration.css);
 @import url(./sections/symptoms.css);
-@import url(./sections/feedback.css);
-@import url(./sections/quote.css);
-@import url(./sections/footer.css);
+@import url(./sections/testimonials.css);
+@import url(./sections/newsletter.css);
+@import url(./sections/site-footer.css);

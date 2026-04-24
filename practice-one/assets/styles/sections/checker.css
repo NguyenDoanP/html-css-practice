@@ -1,5 +1,5 @@
 /* SECTION */
-.check-section {
+.checker {
   padding: 62px 0px;
   background-image: url('../../images/banner-dark.jpg');
   background-size: cover;
@@ -9,14 +9,14 @@
 }
 
 /* CARD */
-.check-card {
+.checker__card {
   border-radius: var(--radius-sm);
   background: var(--color-glass);
   padding-bottom: 31px;
 }
 
 /* TITLE */
-.check-title {
+.checker__title {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   color: var(--color-white);
@@ -28,7 +28,7 @@
 }
 
 /* FORM */
-.check-form {
+.checker__form {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -36,12 +36,12 @@
   justify-content: space-between;
 }
 
-.check-form .btn {
+.checker__form .btn {
   padding: 20px 46px;
 }
 
 /* INFO BAR */
-.check-info {
+.checker__hint {
   border-radius: var(--radius-sm);
   margin: 0 93px 31px;
   background: #c4c4c40d;
@@ -53,17 +53,17 @@
   display: flex;
 }
 
-.check-info p {
+.checker__hint p {
   padding: 20px 0px;
   color: var(--color-accent);
 }
 
-.check-info a {
+.checker__hint a {
   color: var(--color-accent);
   text-decoration: underline;
   padding: 20px 0px 20px 5px;
 }
 
-.check-info a:hover {
+.checker__hint a:hover {
   color: var(--color-white);
 }

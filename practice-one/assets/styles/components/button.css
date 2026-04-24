@@ -11,23 +11,23 @@
   padding: 20px 26px;
 }
 
-.btn-primary {
+.btn--primary {
   background-color: var(--color-accent);
   color: var(--color-white);
 }
 
-.btn-outline {
+.btn--outline {
   background: var(--color-glass);
   color: var(--color-white);
   border: 2px solid var(--color-accent);
 }
 
-.btn-normal {
+.btn--ghost {
   background: var(--color-glass);
   color: var(--color-accent);
 }
 
-.btn-deco {
+.btn--accent {
   background: var(--color-glass);
   color: var(--color-accent);
   border: 2px solid var(--color-accent);

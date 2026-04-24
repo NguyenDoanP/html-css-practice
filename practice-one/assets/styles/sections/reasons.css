@@ -1,5 +1,5 @@
 /* SECTION */
-.why-vaccinate {
+.reasons {
   background-image: url('../../images/banner-dark.jpg');
   background-size: cover;
   background-position: center;
@@ -10,7 +10,7 @@
 }
 
 /* HEADER */
-.why-header {
+.reasons__header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -18,13 +18,13 @@
   margin-bottom: 40px;
 }
 
-.why-title {
+.reasons__title {
   font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-lg);
 }
 
-.why-desc {
+.reasons__desc {
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-regular);
   color: var(--color-white-50);
@@ -33,21 +33,21 @@
 }
 
 /* GRID */
-.why-grid {
+.reasons__grid {
   display: flex;
   align-items: end;
   gap: 70px;
 }
 
 /* BASE CARD */
-.why-card {
+.card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 /*  SMALL CARD WRAPPER */
-.why-smalls {
+.reasons__secondary-cards {
   display: flex;
   gap: 70px;
   align-items: flex-end;

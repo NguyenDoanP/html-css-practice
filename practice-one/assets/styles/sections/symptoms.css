@@ -11,25 +11,25 @@
 }
 
 /* HEADER */
-.symptoms-subtitle {
+.symptoms__subtitle {
   margin-bottom: 20px;
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   color: var(--color-white);
 }
 
-.symptoms-title {
+.symptoms__title {
   font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-extra-bold);
   margin-bottom: 40px;
   line-height: var(--line-height-lg);
 }
 
-.symptoms-title span {
+.symptoms__title span {
   color: var(--color-accent);
 }
 
-.symptoms-desc {
+.symptoms__desc {
   max-width: 953px;
   margin: 0 auto 179px;
   color: var(--color-white-50);
@@ -38,14 +38,14 @@
 }
 
 /* CONTENT */
-.symptoms-content {
+.symptoms__content {
   position: relative;
   display: flex;
   justify-content: center;
 }
 
 /* IMAGE */
-.symptoms-image img {
+.symptoms__visual img {
   width: 709px;
   height: 530px;
   display: block;
@@ -53,7 +53,7 @@
 }
 
 /* LIST */
-.symptoms-list {
+.symptoms__list {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -63,49 +63,49 @@
 }
 
 /* LEFT & RIGHT POSITION */
-.symptoms-list.left {
+.symptoms__list--primary {
   gap: 120px;
   left: 0;
 }
 
-.symptoms-list.left .symptom-item:nth-child(1) {
+.symptoms__list--primary .symptoms__item:nth-child(1) {
   margin-left: 177px;
   padding: 23px 60px;
 }
 
-.symptoms-list.left .symptom-item:nth-child(2) {
+.symptoms__list--primary .symptoms__item:nth-child(2) {
   padding: 23px 18px 23px 35px;
   margin-left: 77px;
 }
 
-.symptoms-list.left .symptom-item:nth-child(3) {
+.symptoms__list--primary .symptoms__item:nth-child(3) {
   padding: 23px 63px;
   margin-left: 27px;
 }
 
-.symptoms-list.right {
+.symptoms__list--secondary {
   gap: 120px;
   right: 0;
   align-items: flex-end;
 }
 
-.symptoms-list.right .symptom-item:nth-child(1) {
+.symptoms__list--secondary .symptoms__item:nth-child(1) {
   padding: 23px 33px 23px 56px;
   margin-right: 60px;
 }
 
-.symptoms-list.right .symptom-item:nth-child(2) {
+.symptoms__list--secondary .symptoms__item:nth-child(2) {
   padding: 23px 20px 23px 52px;
   margin-right: 10px;
 }
 
-.symptoms-list.right .symptom-item:nth-child(3) {
+.symptoms__list--secondary .symptoms__item:nth-child(3) {
   padding: 23px 57px 23px 74px;
   margin-right: -35px;
 }
 
 /* ITEM */
-.symptom-item {
+.symptoms__item {
   position: relative;
   background: var(--color-glass-20);
   border-radius: var(--radius-xs);
@@ -115,7 +115,7 @@
 }
 
 /* ICON (virus) */
-.symptom-item::before {
+.symptoms__item::before {
   content: '';
   position: absolute;
   left: -70px;

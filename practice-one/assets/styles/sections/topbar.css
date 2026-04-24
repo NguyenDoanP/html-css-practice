@@ -1,9 +1,9 @@
-.header {
+.topbar {
   min-height: 69px;
   /* padding-bottom: 100px; */
 }
 
-.header-inner {
+.topbar__inner {
   height: 69px;
   display: flex;
   padding-top: 41px;
@@ -26,7 +26,7 @@
 }
 
 /* dot below */
-.nav-item.is-active a::after {
+.menu-item.menu__item--active a::after {
   content: '';
   position: absolute;
   bottom: -15px;
