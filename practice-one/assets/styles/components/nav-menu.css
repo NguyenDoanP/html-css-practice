@@ -13,6 +13,10 @@
   text-decoration: none;
 }
 
+.nav-item a:hover {
+  color: var(--color-white);
+}
+
 /* active */
 .nav-item.is-active a {
   color: var(--color-white);
