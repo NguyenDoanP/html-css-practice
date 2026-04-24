@@ -130,6 +130,10 @@
   font-weight: var(--font-weight-bold);
 }
 
+.get-vaccine__link a:hover {
+  color: var(--color-black-50);
+}
+
 /* wrapper */
 .get-vaccine__card {
   position: relative;
@@ -196,5 +200,6 @@
 }
 
 .card-btn:hover {
-  transform: translate(-100px, -2px);
+  transition: opacity 150ms ease;
+  opacity: 0.85;
 }
