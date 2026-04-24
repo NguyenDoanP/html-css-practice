@@ -16,15 +16,14 @@
   color: var(--color-white);
 }
 
-.btn--outline {
-  background: var(--color-glass);
-  color: var(--color-white);
-  border: 2px solid var(--color-accent);
-}
-
+.btn--outline,
 .btn--ghost {
   background: var(--color-glass);
   color: var(--color-accent);
+}
+
+.btn--outline {
+  border: 2px solid var(--color-accent);
 }
 
 .btn--accent {
