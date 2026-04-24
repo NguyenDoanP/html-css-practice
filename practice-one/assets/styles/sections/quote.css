@@ -3,6 +3,7 @@
   position: relative;
   margin-top: -200px;
   z-index: 2;
+  line-height: var(--line-height-md);
 }
 
 /* CARD */
@@ -40,6 +41,7 @@
   font-weight: var(--font-weight-bold);
   color: var(--color-white);
   margin-bottom: 20px;
+  line-height: var(--line-height-lg);
 }
 
 /* DESC */
@@ -86,4 +88,8 @@
 
 .quote-btn img {
   padding: 17px 30px;
+}
+
+.quote-btn:hover {
+  background: var(--color-black-25);
 }

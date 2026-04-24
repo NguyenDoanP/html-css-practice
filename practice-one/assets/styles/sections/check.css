@@ -5,6 +5,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  line-height: var(--line-height-md);
 }
 
 /* CARD */
@@ -50,11 +51,8 @@
   font-size: var(--font-size-xl);
 }
 
-.input.is-active {
+.input:hover {
   border-color: var(--color-accent);
-}
-
-.input.is-active::placeholder {
   color: var(--color-white);
 }
 
@@ -80,4 +78,8 @@
   color: var(--color-accent);
   text-decoration: underline;
   padding: 20px 0px 20px 5px;
+}
+
+.check-info a:hover {
+  color: var(--color-white);
 }

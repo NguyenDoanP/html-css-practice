@@ -4,6 +4,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  line-height: var(--line-height-md);
 }
 
 .get-vaccine-inner {
@@ -21,6 +22,7 @@
   font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-bold);
   margin-bottom: 40px;
+  line-height: var(--line-height-lg);
 }
 
 .get-vaccine__label {
@@ -46,6 +48,7 @@
   font-size: var(--font-size-lg);
   color: var(--color-black-50);
   margin: 20px 0;
+  line-height: var(--line-height-sm);
 }
 
 .phone-group {
@@ -99,6 +102,7 @@
 
 .phone-group .btn {
   padding: 20px 70px;
+  box-shadow: none;
 }
 
 .submit-btn {
@@ -107,6 +111,7 @@
 
 .submit-btn .btn {
   width: 100%;
+  box-shadow: none;
 }
 
 .get-vaccine__link {
@@ -163,7 +168,6 @@
   z-index: 2;
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
-  line-height: 1.2;
 }
 
 /* image */
@@ -189,4 +193,8 @@
   border-radius: var(--radius-xs);
   font-size: var(--font-size-lg);
   background: var(--color-glass-20);
+}
+
+.card-btn:hover {
+  transform: translate(-100px, -2px);
 }
