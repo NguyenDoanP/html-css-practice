@@ -1,29 +1,29 @@
 /* SECTION */
-.schedule-section {
+.scheduler {
   margin-top: 30px;
 }
 
 /* HEADER */
-.schedule-header {
+.scheduler__header {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.schedule-header__left {
+.scheduler__header-icon {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.schedule-header__title {
+.scheduler__title {
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-xl);
   color: var(--color-white);
 }
 
 /* BAR CONTAINER */
-.schedule-bar {
+.scheduler__bar {
   position: relative;
   z-index: 1;
   /* add layer above */
@@ -39,7 +39,7 @@
 }
 
 /* add layer */
-.schedule-bar::before {
+.scheduler__bar::before {
   content: '';
   position: absolute;
   top: -10px;
@@ -55,14 +55,14 @@
 }
 
 /* ITEM */
-.bar-item {
+.scheduler__field {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
 /* ICON */
-.bar-item__icon {
+.scheduler__field-icon {
   width: 50px;
   height: 50px;
   background: var(--color-glass);
@@ -73,29 +73,29 @@
   justify-content: center;
 }
 
-.bar-item__icon img {
+.scheduler__field-icon img {
   width: 30px;
   height: 30px;
 }
 
 /* TEXT */
-.bar-item__text {
+.scheduler__field-text {
   display: flex;
   flex-direction: column;
   font-size: var(--font-size-xl);
 }
 
-.bar-item__label {
+.scheduler__field-label {
   color: var(--color-white-50);
   font-weight: var(--font-weight-semibold);
 }
 
-.bar-item__value {
+.scheduler__field-value {
   font-weight: var(--font-weight-bold);
   color: var(--color-white);
 }
 
-.schedule-bar .btn {
+.scheduler__bar .btn {
   margin-left: 90px;
   z-index: 1;
 }
