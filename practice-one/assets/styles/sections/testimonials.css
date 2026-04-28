@@ -52,15 +52,15 @@
   gap: 40px;
 }
 
-.testimonial:hover .user-location {
+.testimonial:hover .testimonial__location {
   color: var(--color-white);
 }
 
-.testimonial:hover .feedback-text {
+.testimonial:hover .testimonial__quote {
   color: var(--color-white);
 }
 
-.testimonial:hover .highlight {
+.testimonial:hover .testimonial__highlight {
   color: var(--color-white);
 }
 
