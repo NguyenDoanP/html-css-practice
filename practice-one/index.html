@@ -82,10 +82,23 @@
               </div>
 
               <div class="hero__doctors">
-                <div class="doctors__avatars">
-                  <img src="./assets/images/avatar-doctor1.png" alt="Doctor" />
-                  <img src="./assets/images/avatar-doctor2.png" alt="Doctor" />
-                  <img src="./assets/images/avatar-doctor3.png" alt="Doctor" />
+                <div
+                  class="doctors__avatars"
+                  role="img"
+                  aria-label="Team of 20+ medical specialists"
+                >
+                  <img
+                    src="./assets/images/avatar-doctor1.png"
+                    aria-hidden="true"
+                  />
+                  <img
+                    src="./assets/images/avatar-doctor2.png"
+                    aria-hidden="true"
+                  />
+                  <img
+                    src="./assets/images/avatar-doctor3.png"
+                    aria-hidden="true"
+                  />
                 </div>
                 <div class="doctors__meta">
                   <span class="doctors__count">20+</span>
@@ -158,7 +171,7 @@
 
     <main>
       <!-- ===================== BRANDS ===================== -->
-      <section class="brands">
+      <section class="brands" aria-label="Vaccine brands">
         <div class="container brands__inner">
           <div class="brands__logos">
             <img src="./assets/images/logo-moderna.png" alt="Moderna Logo" />
@@ -173,16 +186,18 @@
       </section>
 
       <!-- ===================== CHECKER ===================== -->
-      <section class="checker">
+      <section class="checker" aria-label="Check COVID-19 result">
         <div class="container checker__inner">
           <div class="checker__card">
             <h2 class="checker__title">
               Check your COVID-19 result on our Database
             </h2>
 
-            <form class="checker__form">
+            <form class="checker__form" aria-label="Check COVID-19 result">
               <input type="text" class="input" placeholder="Okeowo" />
+
               <input type="text" class="input" placeholder="NIK Number" />
+
               <button type="submit" class="btn btn--accent">Check</button>
             </form>
 
@@ -195,10 +210,12 @@
       </section>
 
       <!-- ===================== WHY VACCINATE ===================== -->
-      <section class="reasons">
+      <section class="reasons" aria-labelledby="reasons-title">
         <div class="container">
           <div class="reasons__header">
-            <h2 class="reasons__title">Why get vaccinated today?</h2>
+            <h2 id="reasons-title" class="reasons__title">
+              Why get vaccinated today?
+            </h2>
             <p class="reasons__desc">
               Magna adipiscing at elit at ornare lectus nibh lorem. Ac, sed ac
               lorem pellentesque vestibulum risus mattis. In molestie
@@ -277,15 +294,15 @@
       </section>
 
       <!-- ===================== REGISTRATION ===================== -->
-      <section class="registration">
+      <section class="registration" aria-labelledby="registration-title">
         <div class="container registration__inner">
           <!-- LEFT: Form -->
           <div class="registration__form-wrap">
-            <h2 class="registration__title">
+            <h2 id="registration-title" class="registration__title">
               Get your vaccine registration today
             </h2>
 
-            <form class="registration__form">
+            <form class="registration__form" aria-label="Vaccine registration">
               <label class="registration__label" for="full-name"
                 >Patient's Full Name</label
               >
@@ -365,11 +382,13 @@
       </section>
 
       <!-- ===================== SYMPTOMS ===================== -->
-      <section class="symptoms">
+      <section class="symptoms" aria-labelledby="symptoms-title">
         <div class="container symptoms__inner">
           <div class="symptoms__header">
             <p class="symptoms__subtitle">Covid-19 Prevention</p>
-            <h2 class="symptoms__title"><span>COVID-19</span> Symptoms</h2>
+            <h2 id="symptoms-title" class="symptoms__title">
+              <span>COVID-19</span> Symptoms
+            </h2>
             <p class="symptoms__desc">
               Adipiscing nec etiam tortor elit quisque. Arcu aliquet convallis
               aenean eu velit. Mi vestibulum, ullamcorper venenatis imperdiet
@@ -442,10 +461,7 @@
               </p>
             </article>
 
-            <article
-              class="testimonial testimonial--active"
-              aria-current="true"
-            >
+            <article class="testimonial">
               <div class="testimonial__user">
                 <img
                   src="./assets/images/avatar-patient2.png"
@@ -484,24 +500,34 @@
       </section>
 
       <!-- ===================== NEWSLETTER ===================== -->
-      <section class="newsletter">
+      <section class="newsletter" aria-labelledby="newsletter-title">
         <div class="container">
           <div class="newsletter__wrapper">
             <div class="newsletter__card">
-              <h2 class="newsletter__title">Get a quote</h2>
+              <h2 id="newsletter-title" class="newsletter__title">
+                Get a quote
+              </h2>
               <p class="newsletter__desc">
                 Please do enter your email address below
               </p>
 
-              <form class="newsletter__form">
+              <form class="newsletter__form" aria-label="Get a quote">
                 <input
                   id="email"
                   type="email"
                   placeholder="lenux.ng@gmail.com"
                   class="newsletter__input"
                 />
-                <button type="submit" class="newsletter__submit">
-                  <img src="./assets/images/icon-send.svg" alt="Send" />
+                <button
+                  type="submit"
+                  class="newsletter__submit"
+                  aria-label="Submit email"
+                >
+                  <img
+                    src="./assets/images/icon-send.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
                 </button>
               </form>
             </div>
