@@ -60,8 +60,9 @@
   --font-size-md: 18px;
   --font-size-lg: 20px;
   --font-size-xl: 24px;
-  --font-size-2xl: 32px;
-  --font-size-3xl: 48px;
+  --font-size-2xl: 26px;
+  --font-size-3xl: 32px;
+  --font-size-4xl: 48px;
 
   /* line-height */
   --line-height-3xs: 15px;
