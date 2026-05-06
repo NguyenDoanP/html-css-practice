@@ -1,2 +1,2 @@
-cd practice-two
-npx lint-staged
+#!/bin/sh
+npx prettier --write .
