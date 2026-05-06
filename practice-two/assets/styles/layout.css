@@ -10,24 +10,22 @@ select {
 }
 
 .container {
-  max-width: 375px;
+  width: 100%;
+  max-width: 767px;
   margin: 0 auto;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding: 0 35px;
 }
 
 @media (min-width: 768px) {
   .container {
     max-width: 1023px;
-    padding-left: 49px;
-    padding-right: 49px;
+    padding: 0 49px;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
     max-width: 1440px;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 0 70px;
   }
 }

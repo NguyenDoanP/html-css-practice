@@ -64,6 +64,7 @@
   --font-size-3xl: 48px;
 
   /* line-height */
+  --line-height-3xs: 15px;
   --line-height-xxs: 17px;
   --line-height-xs: 22px;
   --line-height-sm: 24px;

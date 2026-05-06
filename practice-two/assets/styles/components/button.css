@@ -9,6 +9,7 @@
   font-weight: var(--font-weight-bold);
   border: none;
   padding: 16px 25px;
+  transition: all 0.3s ease;
 }
 
 .btn--primary {
@@ -32,12 +33,7 @@
   border: 2px solid var(--color-accent);
 }
 
-.btn {
-  transition: all 0.3s ease;
-}
-
 .btn:hover {
-  transition: opacity 150ms ease;
   opacity: 0.7;
 }
 
