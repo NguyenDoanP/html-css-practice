@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: var(--shadow-md);
   cursor: pointer;
   font-weight: var(--font-weight-bold);
@@ -48,5 +48,6 @@
   .btn {
     font-size: var(--font-size-xl);
     padding: 20px 26px;
+    border-radius: 20px;
   }
 }
