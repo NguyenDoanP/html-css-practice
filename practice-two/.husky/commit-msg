@@ -1,2 +1,2 @@
 #!/bin/sh
-npx commitlint --edit "$1" --config practice-two/commitlint.config.js
+npx --prefix practice-two commitlint --edit "$1" --config practice-two/commitlint.config.js

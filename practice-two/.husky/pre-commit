@@ -1,1 +1,2 @@
-npm test
+cd practice-two
+npx lint-staged
