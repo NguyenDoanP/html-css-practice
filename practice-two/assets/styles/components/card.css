@@ -1,0 +1,115 @@
+.card__icon {
+  border-radius: 16px;
+  background: var(--color-glass);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TITLE */
+.card__title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+}
+
+/* DESCRIPTION */
+.card__desc {
+  padding: 20px 0 25px 0;
+  max-width: 235px;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-white);
+  line-height: var(--line-height-3xs);
+}
+
+/* LINK */
+.card__link {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.card--primary {
+  max-width: 276px;
+  padding: 20px 21px 30px 20px;
+  background: var(--color-glass-20);
+  border-radius: 20px 80px 20px 20px;
+}
+
+.card--secondary {
+  max-width: 188px;
+  padding: 21px 0 24px 20px;
+  border: 3px solid var(--color-white-50);
+  border-radius: 20px;
+}
+
+.card--primary .card__icon {
+  margin: 0px 206px 20px 0px;
+  border-radius: 10px;
+  height: 100px;
+  width: 100px;
+  box-shadow: var(--shadow-sm);
+}
+
+.card--primary .card__icon img {
+  height: 50px;
+  width: 50px;
+}
+
+.card--primary .card__title {
+  color: var(--color-accent);
+}
+
+.card--secondary .card__icon {
+  margin: 0px 240px 40px 0px;
+  border-radius: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.card--secondary .card__icon img {
+  height: 49px;
+  width: 49px;
+}
+
+.card--secondary .card__title {
+  height: 36px;
+  max-width: 156px;
+  margin-bottom: 20px;
+}
+
+.card--primary .card__link {
+  color: var(--color-accent);
+}
+
+.card--primary .card__link:hover {
+  color: var(--color-white);
+}
+
+.card--secondary .card__link {
+  color: var(--color-white-50);
+}
+
+.card--secondary .card__link:hover {
+  color: var(--color-accent);
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  padding: 23px 23px 34px;
+  border-radius: 14px;
+  background: var(--color-glass-50);
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.testimonial:hover {
+  background: var(--color-accent);
+  color: var(--color-white);
+  box-shadow: 0 5px 10px var(--color-black-25);
+}
