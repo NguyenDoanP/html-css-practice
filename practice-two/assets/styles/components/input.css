@@ -1,0 +1,15 @@
+/* INPUT */
+.input {
+  flex: 1;
+  padding: 16px 0px 16px 23px;
+  border-radius: 10px;
+
+  background: transparent;
+  border: 3px solid var(--color-glass-10);
+  font-size: var(--font-size-xl);
+}
+
+.input:hover {
+  border-color: var(--color-accent);
+  color: var(--color-white);
+}

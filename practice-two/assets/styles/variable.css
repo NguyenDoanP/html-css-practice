@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+:root {
+  /* Colors */
+  --color-primary: #0b153c;
+  --color-accent: #17c2ec;
+  --color-white: #ffffff;
+  --color-white-70: #ffffffb3;
+  --color-white-50: #ffffff80;
+  --color-white-20: #ffffff33;
+  --color-glass: #c4c4c41a;
+  --color-glass-50: #c4c4c480;
+  --color-glass-30: #c4c4c40d;
+  --color-glass-20: #c4c4c433;
+  --color-glass-10: #c4c4c426;
+  --color-dark-glass: #0b153c26;
+  --color-black: #000000;
+  --color-black-50: #00000080;
+  --color-black-25: #00000040;
+  --color-black-10: #0000001a;
+
+  /* Typography */
+  --font-family-primary: 'Montserrat', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-md: 18px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 32px;
+  --font-size-3xl: 48px;
+
+  /* line-height */
+  --line-height-3xs: 15px;
+  --line-height-xxs: 17px;
+  --line-height-xs: 22px;
+  --line-height-sm: 24px;
+  --line-height-md: 29px;
+  --line-height-lg: 59px;
+
+  /* Border */
+  --border-xs: 3px;
+
+  /* Radius */
+  --radius-xs: 10px;
+  --radius-sm: 20px;
+
+  /* Shadows */
+  --shadow-sm: 0 4px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  /* Spacing */
+  --spacing-xs: 10px;
+  --spacing-sm: 20px;
+  --spacing-md: 25px;
+  --spacing-lg: 26px;
+  --spacing-xl: 44px;
+  --spacing-xxl: 50px;
+  --spacing-3xl: 100px;
+  --spacing-4xl: 150px;
+  --spacing-5xl: 181px;
+}

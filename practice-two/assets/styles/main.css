@@ -1,0 +1,25 @@
+/* Base */
+@import url(./reset.css);
+@import url(./layout.css);
+
+/* Variables */
+@import url(./variable.css);
+
+/* Components */
+@import url(./components/button.css);
+@import url(./components/nav-menu.css);
+@import url(./components/card.css);
+@import url(./components/input.css);
+
+/* Sections */
+@import url(./sections/topbar.css);
+@import url(./sections/hero.css);
+@import url(./sections/scheduler.css);
+@import url(./sections/brands.css);
+@import url(./sections/checker.css);
+@import url(./sections/reasons.css);
+@import url(./sections/registration.css);
+@import url(./sections/symptoms.css);
+@import url(./sections/testimonials.css);
+@import url(./sections/newsletter.css);
+@import url(./sections/site-footer.css);
