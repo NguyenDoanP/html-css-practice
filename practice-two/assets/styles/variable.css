@@ -54,6 +54,7 @@
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
   --font-weight-extra-bold: 800;
+  --font-size-2xs: 10px;
   --font-size-xs: 12px;
   --font-size-sm: 14px;
   --font-size-base: 16px;
@@ -66,6 +67,7 @@
   --font-size-5xl: 48px;
 
   /* line-height */
+  --line-height-4xs: 12px;
   --line-height-3xs: 15px;
   --line-height-xxs: 17px;
   --line-height-xs: 22px;
