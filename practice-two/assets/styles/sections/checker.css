@@ -8,10 +8,6 @@
   display: flex;
 }
 
-.checker__inner {
-  max-width: 305px;
-}
-
 /* CARD */
 .checker__card {
   border-radius: var(--radius-sm);
@@ -84,10 +80,6 @@
     padding: 50px 0;
   }
 
-  .checker__inner {
-    max-width: 667px;
-  }
-
   .checker__title {
     padding: 18px 98px 13px;
     font-size: var(--font-size-lg);
@@ -106,7 +98,6 @@
   }
 
   .checker__form .btn {
-    width: fit-content;
     padding: 20px 53px;
     font-size: var(--font-size-lg);
     border-radius: var(--radius-sm);
@@ -128,10 +119,6 @@
 @media screen and (min-width: 1024px) {
   .checker {
     padding: 62px 0;
-  }
-
-  .checker__inner {
-    max-width: 1299px;
   }
 
   .checker__card {
