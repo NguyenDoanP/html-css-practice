@@ -34,8 +34,8 @@
   gap: 14px;
 
   padding: 20px 0 10px 10px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: var(--radius-sm);
+  border-top-right-radius: var(--radius-sm);
   background: var(--color-glass);
 }
 
@@ -48,8 +48,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: var(--radius-sm);
+  border-top-right-radius: var(--radius-sm);
   background: var(--color-glass-30);
   z-index: -1;
 }
@@ -67,7 +67,7 @@
 .scheduler__field-icon {
   width: 30px;
   height: 30px;
-  border-radius: 10px;
+  border-radius: var(--radius-xs);
   background: var(--color-glass);
   display: flex;
   align-items: center;
@@ -141,7 +141,7 @@
   .scheduler__field-icon {
     width: 50px;
     height: 50px;
-    border-radius: 10px;
+    border-radius: var(--radius-xs);
   }
 
   .scheduler__field-icon img {
@@ -156,7 +156,7 @@
   }
 
   .scheduler__bar .btn {
-    border-radius: 20px;
+    border-radius: var(--radius-sm);
     padding: 20px 89px;
   }
 }
@@ -179,23 +179,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
     padding: 50px 40px 40px;
-  }
-
-  .scheduler__field {
-    gap: 20px;
-  }
-
-  .scheduler__field-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-  }
-
-  .scheduler__field-icon img {
-    width: 30px;
-    height: 30px;
   }
 
   .scheduler__field-label,
