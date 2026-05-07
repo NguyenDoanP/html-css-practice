@@ -11,7 +11,7 @@ select {
 
 .container {
   width: 100%;
-  max-width: 375px;
+  max-width: 305px;
   margin: 0 auto;
   padding: 0 35px;
 }
