@@ -1,0 +1,72 @@
+/* BRAND */
+.brands {
+  display: flex;
+  position: relative;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  background: var(--color-white);
+}
+
+.brands .container {
+  max-width: 326px;
+  padding: 0;
+}
+
+.brands::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-white-50);
+  z-index: 1;
+}
+
+.brands__logos {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.brands__logos img {
+  width: 72px;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .brands {
+    padding-top: 11px;
+    padding-bottom: 8px;
+  }
+
+  .brands .container {
+    max-width: 668px;
+  }
+
+  .brands__logos {
+    gap: 25px;
+  }
+
+  .brands__logos img {
+    width: 149px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .brands {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .brands .container {
+    max-width: 1299px;
+  }
+
+  .brands__logos {
+    gap: 48px;
+  }
+
+  .brands__logos img {
+    width: 289px;
+  }
+}
