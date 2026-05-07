@@ -11,21 +11,21 @@ select {
 
 .container {
   width: 100%;
-  max-width: 375px;
+  max-width: 305px;
   margin: 0 auto;
   padding: 0 35px;
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 1023px;
+    max-width: 667px;
     padding: 0 49px;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
-    max-width: 1440px;
+    max-width: 1299px;
     padding: 0 70px;
   }
 }
