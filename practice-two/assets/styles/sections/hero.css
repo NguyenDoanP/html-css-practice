@@ -1,0 +1,399 @@
+.site-hero {
+  background-image: url('../../images/banner-dark.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  line-height: var(--line-height-md);
+}
+
+/* HERO */
+
+.hero {
+  font-weight: var(--font-weight-bold);
+  display: flex;
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    padding: 100px 0 100px;
+  }
+
+  .hero__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+/* CONTENT */
+
+.hero__content {
+  /* width: 100%; */
+  max-width: 296px;
+}
+
+@media (min-width: 768px) {
+  .hero__content {
+    max-width: 502px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero__content {
+    max-width: 603px;
+  }
+}
+
+/* SUBTITLE */
+
+.hero__subtitle {
+  color: var(--color-accent);
+  font-size: var(--font-size-xs);
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .hero__subtitle {
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-xs);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero__subtitle {
+    font-size: var(--font-size-xl);
+    margin-bottom: 40px;
+  }
+}
+
+/* TITLE */
+
+.hero__title {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-sm);
+  font-weight: var(--font-weight-extra-bold);
+  color: var(--color-white);
+  margin-bottom: 24px;
+}
+
+.hero__title span {
+  color: var(--color-accent);
+}
+
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: var(--font-size-4xl);
+    line-height: 44px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero__title {
+    font-size: var(--font-size-5xl);
+    margin-bottom: 50px;
+    line-height: var(--line-height-lg);
+  }
+}
+
+/* DESC */
+
+.hero__desc {
+  color: var(--color-white-70);
+  margin-bottom: 40px;
+  font-size: var(--font-size-sm);
+  max-width: 277px;
+  line-height: var(--line-height-xxs);
+}
+
+@media (min-width: 768px) {
+  .hero__desc {
+    max-width: 502px;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-sm);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero__desc {
+    max-width: 100%;
+    font-size: var(--font-size-xl);
+    margin-bottom: 50px;
+    line-height: var(--line-height-md);
+  }
+}
+
+/* ACTIONS */
+
+.hero__actions {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.hero__actions button {
+  flex: 1;
+  padding: 16px 25px;
+  font-size: var(--font-size-sm);
+  white-space: nowrap;
+  border-radius: 20px;
+}
+
+.hero__actions .btn--outline {
+  color: var(--color-white);
+}
+
+@media (min-width: 768px) {
+  .hero__actions {
+    max-width: 370px;
+  }
+
+  .hero__actions button {
+    font-size: var(--font-size-lg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero__actions {
+    max-width: 420px;
+  }
+
+  .hero__actions button {
+    font-size: var(--font-size-xl);
+  }
+}
+
+.hero__visual {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .hero__visual {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* IMAGE */
+
+.hero__img {
+  width: 256px;
+  border-radius: 24px;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .hero__img {
+    width: 532px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero__img {
+    max-width: 520px;
+    border-radius: var(--radius-sm);
+    object-fit: cover;
+    display: block;
+  }
+}
+
+/* BADGES */
+
+.hero__badge {
+  position: absolute;
+  background: var(--color-white);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__badge img {
+  width: 40px;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .hero__badge {
+    border-radius: 20px;
+  }
+
+  .hero__badge img {
+    width: 80px;
+    object-fit: cover;
+  }
+}
+
+/* LEFT BADGE */
+
+.hero__badge--doctor {
+  left: -20px;
+  top: 45%;
+  transform: translateY(-50%);
+  padding: 9px 5px;
+}
+
+/* RIGHT BADGE */
+
+.hero__badge--virus {
+  right: -20px;
+  top: 45%;
+  transform: translateY(-50%);
+  padding: 7px 5px;
+}
+
+@media (min-width: 768px) {
+  .hero__badge--doctor {
+    padding: 17px 10px;
+    left: -50px;
+  }
+
+  .hero__badge--virus {
+    padding: 14px 10px;
+    right: -40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero__badge img {
+    width: 70px;
+  }
+
+  .hero__badge--doctor {
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 17px 10px;
+  }
+
+  .hero__badge--virus {
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 13px 10px;
+  }
+}
+
+/* DOCTORS CARD */
+
+.hero__doctors {
+  position: absolute;
+  left: 37%;
+  bottom: -35px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  background: var(--color-glass-20);
+  border-radius: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+@media (min-width: 768px) {
+  .hero__doctors {
+    left: -50px;
+    transform: none;
+    bottom: -45px;
+    gap: 20px;
+    padding: 20px 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero__doctors {
+    bottom: -45px;
+    left: -50px;
+    gap: 20px;
+    width: 354px;
+    height: 80px;
+    padding: 10px 0 10px 20px;
+  }
+}
+
+/* AVATARS */
+
+.doctors__avatars {
+  display: flex;
+  align-items: center;
+}
+
+.doctors__avatars img {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+}
+
+.doctors__avatars img + img {
+  margin-left: -3px;
+}
+
+@media (min-width: 768px) {
+  .doctors__avatars img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .doctors__avatars img + img {
+    margin-left: -5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .doctors__avatars img {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--radius-xs);
+  }
+}
+
+/* META */
+
+.doctors__meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.doctors__count,
+.doctors__label {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-xxs);
+}
+
+.doctors__count {
+  color: var(--color-white);
+}
+
+.doctors__label {
+  color: var(--color-accent);
+}
+
+@media (min-width: 768px) {
+  .doctors__count,
+  .doctors__label {
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-md);
+  }
+}
+
+@media (min-width: 1024px) {
+  .doctors__count,
+  .doctors__label {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+  }
+
+  .doctors__label {
+    margin-top: -5px;
+  }
+}

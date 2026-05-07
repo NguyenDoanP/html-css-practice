@@ -8,39 +8,115 @@
   </head>
 
   <body>
-    <header class="topbar">
-      <div class="container topbar__inner">
-        <a href="#" class="logo">Vaccination.ng</a>
+    <div class="site-hero">
+      <header class="topbar">
+        <div class="container topbar__inner">
+          <a href="#" class="logo">Vaccination.ng</a>
 
-        <nav class="menu menu--topbar" aria-label="Main navigation">
-          <ul class="menu__list">
-            <li class="menu__item menu__item--active">
-              <a href="#home">Home</a>
-            </li>
-            <li class="menu__item">
-              <a href="#services">Services</a>
-            </li>
-            <li class="menu__item">
-              <a href="#schedule">Schedule</a>
-            </li>
-            <li class="menu__item">
-              <a href="#contact">Contact us</a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="menu menu--topbar" aria-label="Main navigation">
+            <ul class="menu__list">
+              <li class="menu__item menu__item--active">
+                <a href="#home">Home</a>
+              </li>
+              <li class="menu__item">
+                <a href="#services">Services</a>
+              </li>
+              <li class="menu__item">
+                <a href="#schedule">Schedule</a>
+              </li>
+              <li class="menu__item">
+                <a href="#contact">Contact us</a>
+              </li>
+            </ul>
+          </nav>
 
-        <button
-          type="button"
-          class="btn btn--ghost btn--header"
-          aria-label="Check vaccination status"
-        >
-          Check Status
-        </button>
+          <button
+            type="button"
+            class="btn btn--ghost btn--header"
+            aria-label="Check vaccination status"
+          >
+            Check Status
+          </button>
 
-        <button type="button" class="btn btn--list">
-          <img src="./assets/images/icon-menu.svg" alt="" class="btn--icon" />
-        </button>
-      </div>
-    </header>
+          <button type="button" class="btn btn--list">
+            <img src="./assets/images/icon-menu.svg" alt="" class="btn--icon" />
+          </button>
+        </div>
+      </header>
+
+      <!-- ===================== HERO ===================== -->
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="container hero__inner">
+          <!-- LEFT -->
+          <div class="hero__content">
+            <p class="hero__subtitle">
+              Get Vaccinated. Boost your Immune System
+            </p>
+
+            <h1 class="hero__title" id="hero-title">
+              COVID-19 Vaccination <br />
+              Got Easier With, <br />
+              <span>Vaccination.ng</span>
+            </h1>
+
+            <p class="hero__desc">
+              Vaccination.ng will help you find the nearest centre for
+              vaccination, in all 36 states in Nigeria.
+            </p>
+
+            <div class="hero__actions">
+              <button type="button" class="btn btn--primary">
+                Get Vaccine
+              </button>
+              <button type="button" class="btn btn--outline">
+                Help Centre
+              </button>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="hero__visual">
+            <img
+              class="hero__img"
+              src="./assets/images/vaccine1.png"
+              alt="Person receiving COVID-19 vaccine"
+            />
+
+            <div class="hero__badge hero__badge--doctor" aria-hidden="true">
+              <img src="./assets/images/doctor.png" alt="" />
+            </div>
+
+            <div class="hero__badge hero__badge--virus" aria-hidden="true">
+              <img src="./assets/images/virus-pink.png" alt="" />
+            </div>
+
+            <div class="hero__doctors">
+              <div
+                class="doctors__avatars"
+                role="img"
+                aria-label="Team of 20+ medical specialists"
+              >
+                <img
+                  src="./assets/images/avatar-doctor1.png"
+                  aria-hidden="true"
+                />
+                <img
+                  src="./assets/images/avatar-doctor2.png"
+                  aria-hidden="true"
+                />
+                <img
+                  src="./assets/images/avatar-doctor3.png"
+                  aria-hidden="true"
+                />
+              </div>
+              <div class="doctors__meta">
+                <span class="doctors__count">20+</span>
+                <span class="doctors__label">Specialists</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
