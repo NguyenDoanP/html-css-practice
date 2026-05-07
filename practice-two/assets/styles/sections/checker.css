@@ -34,7 +34,6 @@
 
 /* INPUT */
 .checker__form input {
-  width: auto;
   font-size: var(--font-size-xs);
   line-height: var(--line-height-3xs);
   padding: 17px 0 16px 17px;
@@ -74,7 +73,7 @@
 }
 
 /* TABLET */
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .checker {
     padding: 50px 0;
   }
@@ -115,7 +114,7 @@
 }
 
 /* DESKTOP */
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .checker {
     padding: 62px 0;
   }
