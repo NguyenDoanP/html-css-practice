@@ -139,7 +139,7 @@
 
   .card--primary .card__link {
     font-size: var(--font-size-md);
-    line-height: var(--font-size-xs);
+    line-height: var(--line-height-xs);
     margin-top: 44px;
   }
 

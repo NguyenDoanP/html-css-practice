@@ -39,13 +39,6 @@
   gap: 30px;
 }
 
-/* BASE CARD */
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 /* PRIMARY CARD */
 .reasons__primary-card {
   width: 100%;
