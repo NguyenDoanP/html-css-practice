@@ -34,13 +34,13 @@
 }
 
 @media (min-width: 768px) {
+  .brands .container {
+    max-width: fit-content;
+  }
+
   .brands {
     padding-top: 11px;
     padding-bottom: 8px;
-  }
-
-  .brands .container {
-    max-width: 668px;
   }
 
   .brands__logos {
@@ -56,10 +56,6 @@
   .brands {
     padding-top: 20px;
     padding-bottom: 10px;
-  }
-
-  .brands .container {
-    max-width: 1299px;
   }
 
   .brands__logos {
