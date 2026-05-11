@@ -1,0 +1,122 @@
+/* SECTION */
+.reasons {
+  padding: 42px 0 42px;
+  background-image: url('../../images/banner-dark.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: var(--color-white);
+  line-height: var(--line-height-md);
+}
+
+/* HEADER */
+.reasons__header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.reasons__title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-md);
+  max-width: 260px;
+}
+
+.reasons__desc {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-white-50);
+  line-height: var(--line-height-xxs);
+}
+
+/* GRID */
+.reasons__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* PRIMARY CARD */
+.reasons__primary-card {
+  width: 100%;
+}
+
+/* SECONDARY CARDS */
+.reasons__secondary-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* SMALL CARD */
+.reasons__secondary-cards .card {
+  width: 100%;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .reasons {
+    padding: 58px 0 45px;
+  }
+
+  .reasons__title {
+    font-size: var(--font-size-4xl);
+    max-width: 504px;
+    line-height: var(--line-height-2md);
+  }
+
+  .reasons__desc {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-sm);
+  }
+
+  .reasons__grid {
+    gap: 40px;
+  }
+
+  .reasons__secondary-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 37px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .reasons {
+    padding: 58px 0 80px;
+  }
+
+  .reasons__header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+
+  .reasons__title {
+    font-size: var(--font-size-5xl);
+    line-height: var(--line-height-lg);
+  }
+
+  .reasons__desc {
+    font-size: var(--font-size-lg);
+    max-width: fit-content;
+    line-height: var(--line-height-sm);
+  }
+
+  .reasons__grid {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 75px;
+  }
+
+  .reasons__secondary-cards {
+    flex-direction: row;
+    gap: 74px;
+    align-items: flex-end;
+  }
+}
