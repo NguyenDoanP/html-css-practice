@@ -18,11 +18,12 @@
 
 /* BACKGROUND */
 .testimonials__bg {
+  display: flex;
   flex-direction: column;
   position: absolute;
   inset: 0;
   z-index: 1;
-  display: flex;
+
   justify-content: center;
   pointer-events: none;
   gap: 15px;
@@ -151,7 +152,6 @@
   }
 
   .testimonials__list {
-    display: flex;
     align-items: center;
     gap: 30px;
   }
