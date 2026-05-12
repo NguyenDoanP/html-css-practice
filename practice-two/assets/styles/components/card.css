@@ -220,3 +220,9 @@
   color: var(--color-white);
   box-shadow: 0 5px 10px var(--color-black-25);
 }
+
+.testimonial:hover .testimonial__location,
+.testimonial:hover .testimonial__quote,
+.testimonial:hover .testimonial__highlight {
+  color: var(--color-white);
+}
