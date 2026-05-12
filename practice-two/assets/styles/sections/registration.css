@@ -1,382 +1,382 @@
 /* SECTION */
 .registration {
-    padding: 32px 0 40px;
-    background-image: url('../../images/banner-blur.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    line-height: var(--line-height-md);
+  padding: 32px 0 40px;
+  background-image: url('../../images/banner-blur.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  line-height: var(--line-height-md);
 }
 
 /* LAYOUT */
 .registration__inner {
-    display: flex;
-    flex-direction: column;
-    gap: 39px;
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
 }
 
 .registration__form-wrap {
-    max-width: 100%;
-    order: 2;
+  max-width: 100%;
+  order: 2;
 }
 
 .registration__card-wrap {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    order: 1;
-    margin-left: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  order: 1;
+  margin-left: 15px;
 }
 
 /* TITLE */
 .registration__title {
-    font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-md);
-    margin-bottom: 20px;
-    padding: 0 38px;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-md);
+  margin-bottom: 20px;
+  padding: 0 38px;
 }
 
 .registration__title-desktop {
-    display: none;
+  display: none;
 }
 
 /* LABEL */
 .registration__label {
-    display: block;
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-bold);
-    margin-bottom: 20px;
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 20px;
 }
 
 /* INPUT */
 .registration__input {
-    width: 100%;
-    display: block;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
+  width: 100%;
+  display: block;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
 
-    padding: 16px 20px;
-    margin-bottom: 20px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
 
-    border-radius: var(--radius-xs);
-    background: var(--color-dark-glass);
+  border-radius: var(--radius-xs);
+  background: var(--color-dark-glass);
 
-    font-size: var(--font-size-sm);
+  font-size: var(--font-size-sm);
 }
 
 /* HINT */
 .registration__hint {
-    font-size: var(--font-size-sm);
-    color: var(--color-black-50);
-    line-height: var(--line-height-xxs);
-    margin: 0 -17px 20px 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-black-50);
+  line-height: var(--line-height-xxs);
+  margin: 0 -17px 20px 0;
 }
 
 /* PHONE FIELD */
 .phone-field {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .phone-field__input-wrap {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    border-radius: var(--radius-xs);
-    background: var(--color-dark-glass);
-    padding: 5px 16px;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  border-radius: var(--radius-xs);
+  background: var(--color-dark-glass);
+  padding: 5px 16px;
+  margin-bottom: 20px;
 }
 
 .phone-field__flag {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    margin-right: 8px;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 8px;
 }
 
 .phone-field__chevron {
-    width: 24px;
-    height: 24px;
-    margin-right: 5px;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
 }
 
 .phone-field__divider {
-    width: 3px;
-    height: 40px;
-    background: var(--color-black-10);
-    margin-right: 20px;
+  width: 3px;
+  height: 40px;
+  background: var(--color-black-10);
+  margin-right: 20px;
 }
 
 .phone-field__input-wrap .registration__input {
-    margin: 0;
-    padding: 0;
-    background: transparent;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  height: 100%;
 }
 
 /* VERIFY BUTTON */
 .phone-field .btn {
-    width: fit-content;
-    padding: 16px 54px;
-    box-shadow: none;
-    margin-bottom: 60px;
+  width: fit-content;
+  padding: 16px 54px;
+  box-shadow: none;
+  margin-bottom: 60px;
 }
 
 /* SUBMIT */
 .registration__submit {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .registration__submit .btn {
-    width: 100%;
-    box-shadow: none;
+  width: 100%;
+  box-shadow: none;
 }
 
 /* LOGIN HINT */
 .registration__login-hint {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-black-50);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-black-50);
 }
 
 .registration__login-hint a {
-    color: var(--color-accent);
-    font-weight: var(--font-weight-bold);
-    text-decoration: none;
+  color: var(--color-accent);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
 }
 
 /* VIRUS ICON */
 .registration__virus {
-    position: absolute;
-    top: -18px;
-    left: -12px;
-    width: 72px;
-    height: auto;
-    z-index: 2;
+  position: absolute;
+  top: -18px;
+  left: -12px;
+  width: 72px;
+  height: auto;
+  z-index: 2;
 }
 
 /* VACCINE CARD */
 .vaccine-card {
-    position: relative;
-    width: 100%;
-    max-width: 289px;
-    height: 419px;
-    border-radius: var(--radius-sm);
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 289px;
+  height: 419px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
 
-    background: var(--color-primary);
-    color: var(--color-white);
+  background: var(--color-primary);
+  color: var(--color-white);
 }
 
 /* CARD TITLE */
 .vaccine-card__title {
-    position: absolute;
-    top: 22px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
 
-    text-align: center;
-    font-size: var(--font-size-sm);
-    line-height: var(--line-height-xxs);
-    margin-top: 10px;
-    font-weight: var(--font-weight-bold);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-xxs);
+  margin-top: 10px;
+  font-weight: var(--font-weight-bold);
 }
 
 /* IMAGE */
 .vaccine-card__img {
-    transform: translateY(15%);
-    width: 100%;
-    display: block;
+  transform: translateY(15%);
+  width: 100%;
+  display: block;
 
-    object-position: bottom;
+  object-position: bottom;
 }
 
 /* OVERLAY BUTTON */
 .vaccine-card__btn {
-    position: absolute;
-    bottom: 49px;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  bottom: 49px;
+  left: 50%;
+  transform: translateX(-50%);
 
-    padding: 16px 53px;
-    border-radius: var(--radius-xs);
+  padding: 16px 53px;
+  border-radius: var(--radius-xs);
 
-    background: var(--color-glass-20);
-    color: var(--color-white);
+  background: var(--color-glass-20);
+  color: var(--color-white);
 
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-bold);
-    white-space: nowrap;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  white-space: nowrap;
 }
 
 /* TABLET */
 @media (min-width: 768px) {
-    .registration__title {
-        font-size: var(--font-size-4xl);
-        line-height: var(--line-height-2md);
-        max-width: 586px;
-        padding: 0;
-    }
+  .registration__title {
+    font-size: var(--font-size-4xl);
+    line-height: var(--line-height-2md);
+    max-width: 586px;
+    padding: 0;
+  }
 
-    .registration__label,
-    .registration__input,
-    .registration__hint,
-    .registration__login-hint,
-    .vaccine-card__title {
-        font-size: var(--font-size-lg);
-        line-height: var(--line-height-sm);
-    }
+  .registration__label,
+  .registration__input,
+  .registration__hint,
+  .registration__login-hint,
+  .vaccine-card__title {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-sm);
+  }
 
-    .registration__label {
-        margin-bottom: 25px;
-    }
+  .registration__label {
+    margin-bottom: 25px;
+  }
 
-    .registration__input {
-        padding: 23px 30px;
-        border-radius: var(--radius-sm);
-        margin-bottom: 40px;
-    }
+  .registration__input {
+    padding: 23px 30px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 40px;
+  }
 
-    .registration__hint {
-        margin-bottom: 20px;
-    }
+  .registration__hint {
+    margin-bottom: 20px;
+  }
 
-    .phone-field {
-        flex-direction: row;
-        align-items: center;
-        gap: 50px;
-    }
+  .phone-field {
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
 
-    .phone-field__input-wrap {
-        border-radius: var(--radius-sm);
-        padding: 15px 30px;
-        margin-bottom: 40px;
-    }
+  .phone-field__input-wrap {
+    border-radius: var(--radius-sm);
+    padding: 15px 30px;
+    margin-bottom: 40px;
+  }
 
-    .phone-field .btn {
-        border-radius: var(--radius-sm);
-        padding: 23px 70px;
-        margin-bottom: 40px;
-    }
+  .phone-field .btn {
+    border-radius: var(--radius-sm);
+    padding: 23px 70px;
+    margin-bottom: 40px;
+  }
 
-    .registration__submit .btn {
-        border-radius: var(--radius-sm);
-        padding: 20px 0;
-        margin-bottom: 40px;
-    }
+  .registration__submit .btn {
+    border-radius: var(--radius-sm);
+    padding: 20px 0;
+    margin-bottom: 40px;
+  }
 
-    .registration__login-hint {
-        gap: 46px;
-    }
+  .registration__login-hint {
+    gap: 46px;
+  }
 
-    .registration__card-wrap {
-        justify-content: flex-start;
-    }
+  .registration__card-wrap {
+    justify-content: flex-start;
+  }
 
-    /* VIRUS ICON */
-    .registration__virus {
-        width: 99px;
+  /* VIRUS ICON */
+  .registration__virus {
+    width: 99px;
 
-        top: -25px;
-        left: -20px;
-    }
+    top: -25px;
+    left: -20px;
+  }
 
-    /* VACCINE CARD */
-    .vaccine-card {
-        max-width: 380px;
-        height: 550px;
-        border-radius: var(--radius-sm);
-    }
+  /* VACCINE CARD */
+  .vaccine-card {
+    max-width: 380px;
+    height: 550px;
+    border-radius: var(--radius-sm);
+  }
 
-    /* CARD TITLE */
-    .vaccine-card__title {
-        margin-top: 25px;
-    }
+  /* CARD TITLE */
+  .vaccine-card__title {
+    margin-top: 25px;
+  }
 
-    .vaccine-card__btn {
-        padding: 13px 33px;
-        font-size: var(--font-size-lg);
-    }
+  .vaccine-card__btn {
+    padding: 13px 33px;
+    font-size: var(--font-size-lg);
+  }
 }
 
 /* DESKTOP */
 @media (min-width: 1024px) {
-    .registration {
-        padding: 40px 0 33px;
-    }
+  .registration {
+    padding: 40px 0 33px;
+  }
 
-    .registration__inner {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 241px;
-    }
+  .registration__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 241px;
+  }
 
-    .registration__title {
-        display: none;
-    }
+  .registration__title {
+    display: none;
+  }
 
-    .registration__title-desktop {
-        font-size: var(--font-size-5xl);
-        font-weight: var(--font-weight-bold);
-        line-height: var(--line-height-lg);
-        margin-bottom: 40px;
-        display: flex;
-    }
+  .registration__title-desktop {
+    font-size: var(--font-size-5xl);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-lg);
+    margin-bottom: 40px;
+    display: flex;
+  }
 
-    .registration__form-wrap {
-        max-width: 650px;
-        order: 1;
-    }
+  .registration__form-wrap {
+    max-width: 650px;
+    order: 1;
+  }
 
-    .registration__card-wrap {
-        order: 2;
-    }
+  .registration__card-wrap {
+    order: 2;
+  }
 
-    .registration__label,
-    .registration__input {
-        font-size: var(--font-size-xl);
-        line-height: var(--line-height-md);
-    }
+  .registration__label,
+  .registration__input {
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-md);
+  }
 
-    .registration__label {
-        margin-bottom: 20px;
-    }
+  .registration__label {
+    margin-bottom: 20px;
+  }
 
-    .registration__hint {
-        font-size: var(--font-size-lg);
-        line-height: var(--line-height-sm);
-        margin-right: 0;
-    }
+  .registration__hint {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-sm);
+    margin-right: 0;
+  }
 
-    .phone-field .btn {
-        padding: 20px 70px;
-    }
+  .phone-field .btn {
+    padding: 20px 70px;
+  }
 
-    .registration__card-wrap {
-        justify-content: flex-end;
-        transform: translateY(10%);
-    }
+  .registration__card-wrap {
+    justify-content: flex-end;
+    transform: translateY(10%);
+  }
 
-    .registration__virus {
-        top: -30px;
-        left: -20px;
-    }
+  .registration__virus {
+    top: -30px;
+    left: -20px;
+  }
 
-    .vaccine-card__title {
-        font-size: var(--font-size-xl);
-        line-height: var(--line-height-md);
-    }
+  .vaccine-card__title {
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-md);
+  }
 
-    .vaccine-card .btn {
-        margin-bottom: 10px;
-    }
+  .vaccine-card .btn {
+    margin-bottom: 10px;
+  }
 }
