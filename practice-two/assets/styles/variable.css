@@ -54,29 +54,49 @@
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
   --font-weight-extra-bold: 800;
-  --font-size-3xs: 9px;
-  --font-size-2xs: 10px;
-  --font-size-xs: 12px;
-  --font-size-sm: 14px;
-  --font-size-base: 16px;
-  --font-size-md: 18px;
-  --font-size-lg: 20px;
-  --font-size-xl: 24px;
-  --font-size-2xl: 26px;
-  --font-size-3xl: 32px;
-  --font-size-4xl: 36px;
-  --font-size-5xl: 48px;
+  /* Font size */
+  --font-size-3xs: 0.5625rem;
+  /* 9px */
+  --font-size-2xs: 0.625rem;
+  /* 10px */
+  --font-size-xs: 0.75rem;
+  /* 12px */
+  --font-size-sm: 0.875rem;
+  /* 14px */
+  --font-size-base: 1rem;
+  /* 16px */
+  --font-size-md: 1.125rem;
+  /* 18px */
+  --font-size-lg: 1.25rem;
+  /* 20px */
+  --font-size-xl: 1.5rem;
+  /* 24px */
+  --font-size-2xl: 1.625rem;
+  /* 26px */
+  --font-size-3xl: 2rem;
+  /* 32px */
+  --font-size-4xl: 2.25rem;
+  /* 36px */
+  --font-size-5xl: 3rem;
+  /* 48px */
 
-  /* line-height */
-  --line-height-4xs: 12px;
-  --line-height-3xs: 15px;
-  --line-height-xxs: 17px;
-  --line-height-xs: 22px;
-  --line-height-sm: 24px;
-  --line-height-md: 29px;
-  --line-height-2md: 44px;
-  --line-height-lg: 59px;
-
+  /* Line height */
+  --line-height-4xs: 1.33;
+  /* 12 */
+  --line-height-3xs: 1.5;
+  /* 15 */
+  --line-height-xxs: 1.42;
+  /* 17 */
+  --line-height-xs: 1.57;
+  /* 22 */
+  --line-height-sm: 1.5;
+  /* 24 */
+  --line-height-md: 1.61;
+  /* 29 */
+  --line-height-2md: 1.83;
+  /* 44 */
+  --line-height-lg: 1.23;
+  /* 59 */
   /* Border */
   --border-xs: 3px;
 

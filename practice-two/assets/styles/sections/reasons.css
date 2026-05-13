@@ -1,6 +1,6 @@
 /* SECTION */
 .reasons {
-  padding: 42px 0 42px;
+  padding: 2.625rem 0;
   background-image: url('../../images/banner-dark.jpg');
   background-size: cover;
   background-position: center;
@@ -14,21 +14,23 @@
 .reasons__header {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-bottom: 32px;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .reasons__title {
+  max-width: 16.25rem;
+
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-md);
-  max-width: 260px;
 }
 
 .reasons__desc {
+  color: var(--color-white-50);
+
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-regular);
-  color: var(--color-white-50);
   line-height: var(--line-height-xxs);
 }
 
@@ -36,7 +38,7 @@
 .reasons__grid {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 /* PRIMARY CARD */
@@ -48,7 +50,7 @@
 .reasons__secondary-cards {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 /* SMALL CARD */
@@ -57,14 +59,15 @@
 }
 
 /* TABLET */
-@media screen and (min-width: 768px) {
+@media (min-width: 48rem) {
   .reasons {
-    padding: 58px 0 45px;
+    padding: 3.625rem 0 2.8125rem;
   }
 
   .reasons__title {
+    max-width: 31.5rem;
+
     font-size: var(--font-size-4xl);
-    max-width: 504px;
     line-height: var(--line-height-2md);
   }
 
@@ -74,27 +77,26 @@
   }
 
   .reasons__grid {
-    gap: 40px;
+    gap: 2.5rem;
   }
 
   .reasons__secondary-cards {
-    display: flex;
     flex-direction: row;
-    gap: 37px;
+    gap: 2.3125rem;
   }
 }
 
 /* DESKTOP */
-@media screen and (min-width: 1024px) {
+@media (min-width: 64rem) {
   .reasons {
-    padding: 58px 0 80px;
+    padding: 3.625rem 0 5rem;
   }
 
   .reasons__header {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 
   .reasons__title {
@@ -103,20 +105,21 @@
   }
 
   .reasons__desc {
-    font-size: var(--font-size-lg);
     max-width: fit-content;
+
+    font-size: var(--font-size-lg);
     line-height: var(--line-height-sm);
   }
 
   .reasons__grid {
     flex-direction: row;
     align-items: flex-end;
-    gap: 75px;
+    gap: 4.6875rem;
   }
 
   .reasons__secondary-cards {
     flex-direction: row;
-    gap: 74px;
     align-items: flex-end;
+    gap: 4.625rem;
   }
 }

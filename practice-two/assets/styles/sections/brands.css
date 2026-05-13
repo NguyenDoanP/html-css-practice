@@ -1,14 +1,20 @@
 /* BRAND */
+
 .brands {
-  display: flex;
   position: relative;
-  padding-top: 6px;
-  padding-bottom: 4px;
+  display: flex;
+
+  padding-top: 0.375rem;
+  /* 6px */
+  padding-bottom: 0.25rem;
+  /* 4px */
+
   background: var(--color-white);
 }
 
 .brands .container {
-  max-width: 326px;
+  max-width: 20.375rem;
+  /* 326px */
   padding: 0;
 }
 
@@ -16,53 +22,73 @@
   content: '';
   position: absolute;
   inset: 0;
+
   background: var(--color-white-50);
   z-index: 1;
 }
 
 .brands__logos {
-  display: flex;
   position: relative;
+
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 0.75rem;
+  /* 12px */
 }
 
 .brands__logos img {
-  width: 72px;
+  width: 4.5rem;
+  /* 72px */
   object-fit: contain;
 }
 
-@media (min-width: 768px) {
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 48rem) {
+  .brands {
+    padding-top: 0.6875rem;
+    /* 11px */
+    padding-bottom: 0.5rem;
+    /* 8px */
+  }
+
   .brands .container {
     max-width: fit-content;
   }
 
-  .brands {
-    padding-top: 11px;
-    padding-bottom: 8px;
-  }
-
   .brands__logos {
-    gap: 25px;
+    gap: 1.5625rem;
+    /* 25px */
   }
 
   .brands__logos img {
-    width: 149px;
+    width: 9.3125rem;
+    /* 149px */
   }
 }
 
-@media (min-width: 1024px) {
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 64rem) {
   .brands {
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 1.25rem;
+    /* 20px */
+    padding-bottom: 0.625rem;
+    /* 10px */
   }
 
   .brands__logos {
-    gap: 48px;
+    gap: 3rem;
+    /* 48px */
   }
 
   .brands__logos img {
-    width: 289px;
+    width: 18.0625rem;
+    /* 289px */
   }
 }
