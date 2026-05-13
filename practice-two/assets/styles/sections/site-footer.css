@@ -54,6 +54,11 @@
   display: flex;
   align-items: center;
   gap: 4px;
+  list-style: none;
+}
+
+.site-footer__social-item {
+  display: flex;
 }
 
 .site-footer__social a {
@@ -68,7 +73,7 @@
   opacity: 0.5;
 }
 
-.site-footer__social a:last-child {
+.site-footer__social li:last-child {
   margin-left: -5px;
 }
 
@@ -101,6 +106,10 @@
   .site-footer__social img {
     width: 32px;
     height: 32px;
+  }
+
+  .site-footer__social {
+    gap: 7px;
   }
 }
 
@@ -139,7 +148,7 @@
     height: 50px;
   }
 
-  .site-footer__social a:last-child {
+  .site-footer__social li:last-child {
     margin-left: -10px;
   }
 }
