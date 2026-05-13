@@ -41,8 +41,7 @@
   /* 7px */
 }
 
-@media (max-width: 63.9375rem) {
-  /* 1023px */
+@media (max-width: 64rem) {
   .btn--header {
     display: none;
   }
