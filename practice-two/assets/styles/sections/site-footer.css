@@ -1,0 +1,145 @@
+/* SECTION */
+.site-footer {
+  position: relative;
+  z-index: 1;
+
+  margin-top: -60px;
+  padding: 140px 0 45px;
+
+  background-image: url('../../images/banner-dark.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* INNER */
+.site-footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.site-footer .logo {
+  padding-bottom: 10px;
+}
+
+.site-footer .menu {
+  display: flex;
+}
+
+/* MENU */
+.menu--footer {
+  margin-bottom: 20px;
+}
+
+.menu--footer .menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.menu--footer .menu__item a {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-xxs);
+}
+
+/* remove underline active */
+.menu--footer .menu__item--active a::after {
+  display: none;
+}
+
+/* SOCIAL */
+.site-footer__social {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.site-footer__social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: opacity 150ms ease;
+}
+
+.site-footer__social a:hover {
+  opacity: 0.5;
+}
+
+.site-footer__social a:last-child {
+  margin-left: -5px;
+}
+
+.site-footer__social img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .site-footer {
+    padding: 280px 0 51px;
+  }
+
+  .menu--footer {
+    margin-bottom: 40px;
+  }
+
+  .menu--footer .menu__list {
+    flex-direction: row;
+    gap: 25px;
+    margin-top: 40px;
+  }
+
+  .menu--footer .menu__item a {
+    font-size: var(--font-size-lg);
+  }
+
+  .site-footer__social img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .site-footer {
+    margin-top: -240px;
+    padding: 328px 0 123px;
+  }
+
+  .site-footer__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu--footer {
+    margin: 0;
+    justify-content: center;
+  }
+
+  .menu--footer .menu__list {
+    margin: 0;
+  }
+
+  .menu--footer .menu__item a {
+    font-size: var(--font-size-xl);
+  }
+
+  .site-footer__social {
+    gap: 10px;
+  }
+
+  .site-footer__social img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .site-footer__social a:last-child {
+    margin-left: -10px;
+  }
+}
