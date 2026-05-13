@@ -2,7 +2,7 @@
 .testimonials {
   position: relative;
 
-  padding: 30px 0 44px;
+  padding: 30px 0 197px;
   text-align: center;
 
   background: url('../../images/banner-blur.jpg');
@@ -137,7 +137,7 @@
 /* TABLET */
 @media (min-width: 768px) {
   .testimonials {
-    padding: 50px 0 80px;
+    padding: 50px 0 160px;
   }
 
   .testimonials__bg {
