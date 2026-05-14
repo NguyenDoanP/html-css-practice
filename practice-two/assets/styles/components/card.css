@@ -17,7 +17,8 @@
 /* DESCRIPTION */
 .card__desc {
   max-width: 14.6875rem;
-  /* 235px */
+
+
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-medium);
   color: var(--color-white);
@@ -46,15 +47,18 @@
 
 .card--primary {
   width: fit-content;
-  padding: 1.25rem 1.3125rem 1.875rem 1.25rem;
+  padding: var(--spacing-md) var(--spacing-md) var(--spacing-2xl) var(--spacing-md);
+
   background: var(--color-glass-20);
-  border-radius: 1.25rem 5rem 1.25rem 1.25rem;
+
+  border-radius: var(--radius-xs) var(--radius-xl) var(--radius-xs) var(--radius-xs);
 }
 
 .card--primary .card__icon {
   width: 3.125rem;
   height: 3.125rem;
-  margin-bottom: 1.25rem;
+
+  margin-bottom: var(--spacing-md);
 
   border-radius: var(--radius-xs);
   box-shadow: var(--shadow-sm);
@@ -66,14 +70,15 @@
 }
 
 .card--primary .card__title {
-  margin-bottom: 1.25rem;
+  margin-bottom: var(--spacing-md);
   color: var(--color-accent);
 }
 
 .card--primary .card__link {
-  font-size: var(--font-size-xs);
-  margin-top: 1.625rem;
+  margin-top: var(--spacing-xl);
+
   color: var(--color-accent);
+  font-size: var(--font-size-xs);
 }
 
 .card--primary .card__link:hover {
@@ -86,17 +91,19 @@
 
 .card--secondary {
   max-width: fit-content;
-  padding: 1.25rem 0 1.5rem 1.25rem;
+
+  padding: var(--spacing-md) 0 var(--spacing-xl) var(--spacing-md);
 
   border: 0.1875rem solid var(--color-white-50);
-  border-radius: 1.25rem;
+  border-radius: var(--radius-xs);
 }
 
 .card--secondary .card__icon {
   width: 3.125rem;
   height: 3.125rem;
 
-  margin: 0 7.375rem 1.875rem 0;
+  margin: 0 7.5rem var(--spacing-2xl) 0;
+
   border-radius: var(--radius-xs);
 }
 
@@ -111,7 +118,7 @@
 }
 
 .card--secondary .card__link {
-  margin-top: 1.3125rem;
+  margin-top: var(--spacing-xl);
   color: var(--color-white-50);
 }
 
@@ -125,14 +132,16 @@
 
 @media (min-width: 48rem) {
   .card--primary {
-    padding: 2.5rem 3.5rem 4.625rem 2.5625rem;
-    border-radius: 3.125rem 9.375rem 3.125rem 3.125rem;
+    padding: var(--spacing-3xl) 3.4375rem 4.5rem var(--spacing-3xl);
+
+    border-radius: var(--radius-xl) 9.375rem var(--radius-xl) var(--radius-xl);
   }
 
   .card--primary .card__icon {
     width: 6.25rem;
     height: 6.25rem;
-    margin-bottom: 2.5rem;
+
+    margin-bottom: var(--spacing-3xl);
 
     border-radius: var(--radius-md);
   }
@@ -143,14 +152,15 @@
   }
 
   .card--primary .card__title {
-    margin-bottom: 1.875rem;
+    margin-bottom: var(--spacing-2xl);
+
     font-size: var(--font-size-xl);
-    line-height: var(--line-height-md);
+    line-height: var(--line-height-sm);
   }
 
   .card__desc {
     max-width: 22.0625rem;
-    /* 353px */
+
     font-size: var(--font-size-md);
     line-height: var(--line-height-xs);
   }
@@ -161,21 +171,24 @@
   }
 
   .card--primary .card__link {
-    margin-top: 2.75rem;
+    margin-top: var(--spacing-3xl);
+
     font-size: var(--font-size-md);
     line-height: var(--line-height-xs);
   }
 
   .card--secondary {
-    padding: 2.5rem 0 3.125rem 2.5rem;
-    border-radius: 3.125rem;
+    padding: var(--spacing-3xl) 0 var(--spacing-2xl) var(--spacing-3xl);
+
+    border-radius: var(--radius-xl);
   }
 
   .card--secondary .card__icon {
     width: 4.375rem;
     height: 4.375rem;
 
-    margin: 0 11.5625rem 2.5rem 0;
+    margin: 0 11.5rem var(--spacing-4xl) 0;
+
     border-radius: var(--radius-sm);
   }
 
@@ -186,15 +199,17 @@
 
   .card--secondary .card__title {
     max-width: 14.125rem;
-    font-size: var(--font-size-lg);
-    line-height: var(--line-height-sm);
 
     display: flex;
     align-items: center;
+
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-sm);
   }
 
   .card--secondary .card__link {
-    margin-top: 1.5625rem;
+    margin-top: var(--spacing-xl);
+
     font-size: var(--font-size-md);
     line-height: var(--line-height-xs);
   }
@@ -206,27 +221,32 @@
 
 @media (min-width: 64rem) {
   .card--primary {
-    padding: 2.5rem 0 4.625rem 2.5625rem;
+    padding: var(--spacing-3xl) 0 4.5rem var(--spacing-3xl);
   }
 
   .card--primary .card__icon {
     margin-right: 19.375rem;
-    /* 310px */
+  }
+
+  .card--primary .card__title {
+    max-width: fit-content;
   }
 
   .card--secondary .card__icon {
-    margin: 0 15rem 2.5rem 0;
+    margin: 0 15rem var(--spacing-3xl) 0;
   }
 
   .card--secondary .card__title {
     max-width: 16rem;
+
+    align-items: flex-start;
+
     font-size: var(--font-size-xl);
     line-height: var(--line-height-md);
-    align-items: flex-start;
   }
 
   .card--secondary .card__link {
-    margin-top: 3.3125rem;
+    margin-top: 5.3rem;
   }
 }
 
@@ -239,8 +259,9 @@
   z-index: 2;
   flex: 1;
 
-  padding: 1.4375rem 1.4375rem 2.125rem;
-  border-radius: 0.875rem;
+  padding: var(--spacing-xl) var(--spacing-xl) var(--spacing-2xl);
+
+  border-radius: var(--radius-xs);
   background: var(--color-glass-50);
 
   transition:
@@ -252,7 +273,7 @@
 .testimonial:hover {
   background: var(--color-accent);
   color: var(--color-white);
-  box-shadow: 0 0.3125rem 0.625rem var(--color-black-25);
+  box-shadow: var(--shadow-sm);
 }
 
 .testimonial:hover .testimonial__location,

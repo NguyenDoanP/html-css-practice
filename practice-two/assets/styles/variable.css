@@ -129,6 +129,8 @@
   /* 4px */
   --spacing-xs: 0.5rem;
   /* 8px */
+  --spacing-xs-sm: 0.625rem;
+  /* 10px */
   --spacing-sm: 0.75rem;
   /* 12px */
   --spacing-md: 1rem;

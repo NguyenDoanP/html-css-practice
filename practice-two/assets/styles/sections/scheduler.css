@@ -2,7 +2,6 @@
 
 .scheduler {
   padding-top: 4.5625rem;
-  /* 73px */
 }
 
 /* HEADER */
@@ -10,10 +9,8 @@
 .scheduler__header {
   display: flex;
   align-items: center;
-  gap: 0.625rem;
-  /* 10px */
-  margin-bottom: 1.25rem;
-  /* 20px */
+  gap: var(--spacing-xs-sm);
+  margin-bottom: var(--spacing-lg);
 }
 
 .scheduler__title {
@@ -30,10 +27,9 @@
 
   display: flex;
   flex-direction: column;
-  gap: 0.875rem;
-  /* 14px */
+  gap: var(--spacing-sm);
 
-  padding: 1.25rem 0 0.625rem 0.625rem;
+  padding: var(--spacing-lg) 0 var(--spacing-xs-sm) var(--spacing-xs-sm);
   border-top-left-radius: var(--radius-sm);
   border-top-right-radius: var(--radius-sm);
   background: var(--color-glass);
@@ -46,7 +42,6 @@
   position: absolute;
   inset: 0;
   top: -0.625rem;
-  /* -10px */
 
   border-top-left-radius: var(--radius-sm);
   border-top-right-radius: var(--radius-sm);
@@ -59,7 +54,7 @@
 .scheduler__field {
   display: flex;
   align-items: center;
-  gap: 0.625rem;
+  gap: var(--spacing-xs-sm);
 }
 
 /* ICON */
@@ -70,7 +65,6 @@
   justify-content: center;
 
   width: 1.875rem;
-  /* 30px */
   height: 1.875rem;
   border-radius: var(--radius-xs);
   background: var(--color-glass);
@@ -78,7 +72,6 @@
 
 .scheduler__field-icon img {
   width: 1.25rem;
-  /* 20px */
   height: 1.25rem;
 }
 
@@ -109,8 +102,7 @@
 
 .scheduler__bar .btn {
   width: fit-content;
-  padding: 1.0625rem 3rem;
-  /* 17px 48px */
+  padding: var(--spacing-md) var(--spacing-4xl);
 }
 
 /* =========================
@@ -119,8 +111,7 @@
 
 @media (min-width: 48rem) {
   .scheduler {
-    margin-top: 2.5rem;
-    /* 40px */
+    margin-top: var(--spacing-3xl);
   }
 
   .scheduler__title {
@@ -130,27 +121,23 @@
   .scheduler__bar {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2.5625rem 3.125rem;
-    /* 41px 50px */
+    gap: var(--spacing-3xl) 3.125rem;
 
-    margin-top: 2rem;
-    /* 32px */
-    padding: 2.5625rem 0 2.8125rem 0.75rem;
+    margin-top: var(--spacing-2xl);
+    padding: 2.5625rem 0 2.8125rem var(--spacing-sm);
   }
 
   .scheduler__field {
-    gap: 1.25rem;
+    gap: var(--spacing-lg);
   }
 
   .scheduler__field-icon {
     width: 3.125rem;
-    /* 50px */
     height: 3.125rem;
   }
 
   .scheduler__field-icon img {
     width: 1.875rem;
-    /* 30px */
     height: 1.875rem;
   }
 
@@ -161,8 +148,7 @@
   }
 
   .scheduler__bar .btn {
-    padding: 1.25rem 5.5625rem;
-    /* 20px 89px */
+    padding: var(--spacing-lg) 5.5625rem;
     border-radius: var(--radius-sm);
   }
 }
@@ -182,8 +168,7 @@
     align-items: center;
     justify-content: space-between;
 
-    padding: 3.125rem 2.5rem 2.5rem;
-    /* 50px 40px 40px */
+    padding: 3.125rem var(--spacing-3xl) var(--spacing-3xl);
   }
 
   .scheduler__field-label,
@@ -197,9 +182,7 @@
 
   .scheduler__bar .btn {
     width: fit-content;
-    padding: 1.25rem 1.5625rem;
-    /* 20px 25px */
+    padding: var(--spacing-lg) var(--spacing-xl);
     margin-left: 5.625rem;
-    /* 90px */
   }
 }

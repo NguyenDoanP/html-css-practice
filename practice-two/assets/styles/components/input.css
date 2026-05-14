@@ -1,11 +1,14 @@
 /* INPUT */
 .input {
   flex: 1;
-  padding: 16px 0px 16px 23px;
-  border-radius: 10px;
+
+  padding: var(--spacing-md) 0 var(--spacing-md) var(--spacing-xl);
+
+  border-radius: var(--radius-xs);
 
   background: transparent;
-  border: 3px solid var(--color-glass-10);
+  border: 0.1875rem solid var(--color-glass-10);
+
   font-size: var(--font-size-xl);
 }
 

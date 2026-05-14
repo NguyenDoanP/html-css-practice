@@ -6,7 +6,7 @@
   height: 2.8125rem;
   /* 45px */
   display: flex;
-  padding-top: 2.5625rem;
+  padding-top: var(--spacing-3xl);
   /* 41px */
   align-items: center;
   justify-content: space-between;
@@ -25,7 +25,7 @@
   background-repeat: no-repeat;
   background-position: left bottom;
 
-  padding-bottom: 0.3125rem;
+  padding-bottom: var(--spacing-2xs);
   /* 5px */
 }
 
@@ -37,7 +37,7 @@
 
 .btn--list {
   background-color: var(--color-glass-20);
-  padding: 0.4375rem;
+  padding: var(--spacing-xs);
   /* 7px */
 }
 
@@ -48,6 +48,7 @@
 }
 
 @media (min-width: 48rem) {
+
   /* 768px */
   .btn--icon {
     width: 2.8125rem;
@@ -91,7 +92,7 @@
   }
 
   .menu__list {
-    gap: 1.5625rem;
+    gap: var(--spacing-xl);
     /* 25px */
     flex-direction: row;
   }

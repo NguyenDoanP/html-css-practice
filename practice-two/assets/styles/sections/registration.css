@@ -1,6 +1,6 @@
 /* SECTION */
 .registration {
-  padding: 2rem 0 2.5rem;
+  padding: var(--spacing-2xl) 0 var(--spacing-3xl);
   background-image: url('../../images/banner-blur.jpg');
   background-size: cover;
   background-position: center;
@@ -25,13 +25,13 @@
   display: flex;
   justify-content: center;
   order: 1;
-  margin-left: 0.9375rem;
+  margin-left: var(--spacing-md);
 }
 
 /* TITLE */
 .registration__title {
   padding: 0 2.375rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: var(--spacing-lg);
 
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
@@ -45,7 +45,7 @@
 /* LABEL */
 .registration__label {
   display: block;
-  margin-bottom: 1.25rem;
+  margin-bottom: var(--spacing-lg);
 
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-bold);
@@ -57,8 +57,8 @@
   display: block;
   box-sizing: border-box;
 
-  margin-bottom: 1.25rem;
-  padding: 1rem 1.25rem;
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-md) var(--spacing-lg);
 
   border: none;
   outline: none;
@@ -70,7 +70,7 @@
 
 /* HINT */
 .registration__hint {
-  margin: 0 -1.0625rem 1.25rem 0;
+  margin: 0 -1.0625rem var(--spacing-lg) 0;
 
   color: var(--color-black-50);
   font-size: var(--font-size-sm);
@@ -88,8 +88,8 @@
   align-items: center;
   flex: 1;
 
-  margin-bottom: 1.25rem;
-  padding: 0.3125rem 1rem;
+  margin-bottom: var(--spacing-lg);
+  padding: 0.3125rem var(--spacing-md);
 
   border-radius: var(--radius-xs);
   background: var(--color-dark-glass);
@@ -99,7 +99,7 @@
   width: 2.5rem;
   height: 2.5rem;
   object-fit: cover;
-  margin-right: 0.5rem;
+  margin-right: var(--spacing-xs);
 }
 
 .phone-field__chevron {
@@ -111,7 +111,7 @@
 .phone-field__divider {
   width: 0.1875rem;
   height: 2.5rem;
-  margin-right: 1.25rem;
+  margin-right: var(--spacing-lg);
 
   background: var(--color-black-10);
 }
@@ -126,14 +126,14 @@
 /* VERIFY BUTTON */
 .phone-field .btn {
   width: fit-content;
-  padding: 1rem 3.375rem;
+  padding: var(--spacing-md) 3.375rem;
   margin-bottom: 3.75rem;
   box-shadow: none;
 }
 
 /* SUBMIT */
 .registration__submit {
-  margin-bottom: 1.25rem;
+  margin-bottom: var(--spacing-lg);
 }
 
 .registration__submit .btn {
@@ -146,7 +146,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1.25rem;
+  gap: var(--spacing-lg);
 
   color: var(--color-black-50);
   font-size: var(--font-size-sm);
@@ -191,7 +191,7 @@
   left: 50%;
   z-index: 2;
 
-  margin-top: 0.625rem;
+  margin-top: var(--spacing-xs-sm);
   transform: translateX(-50%);
 
   text-align: center;
@@ -214,7 +214,7 @@
   bottom: 3.0625rem;
   left: 50%;
 
-  padding: 1rem 3.3125rem;
+  padding: var(--spacing-md) 3.3125rem;
   transform: translateX(-50%);
 
   border-radius: var(--radius-xs);
@@ -246,11 +246,11 @@
   }
 
   .registration__label {
-    margin-bottom: 1.5625rem;
+    margin-bottom: var(--spacing-xl);
   }
 
   .registration__input {
-    margin-bottom: 2.5rem;
+    margin-bottom: var(--spacing-3xl);
     padding: 1.4375rem 1.875rem;
     border-radius: var(--radius-sm);
   }
@@ -262,20 +262,20 @@
   }
 
   .phone-field__input-wrap {
-    margin-bottom: 2.5rem;
-    padding: 0.9375rem 1.875rem;
+    margin-bottom: var(--spacing-3xl);
+    padding: var(--spacing-md) 1.875rem;
     border-radius: var(--radius-sm);
   }
 
   .phone-field .btn {
     padding: 1.4375rem 4.375rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: var(--spacing-3xl);
     border-radius: var(--radius-sm);
   }
 
   .registration__submit .btn {
-    margin-bottom: 2.5rem;
-    padding: 1.25rem 0;
+    margin-bottom: var(--spacing-3xl);
+    padding: var(--spacing-lg) 0;
     border-radius: var(--radius-sm);
   }
 
@@ -299,11 +299,11 @@
   }
 
   .vaccine-card__title {
-    margin-top: 1.5625rem;
+    margin-top: var(--spacing-xl);
   }
 
   .vaccine-card__btn {
-    padding: 0.8125rem 2.0625rem;
+    padding: var(--spacing-sm) 2.0625rem;
     font-size: var(--font-size-lg);
   }
 }
@@ -311,7 +311,7 @@
 /* DESKTOP */
 @media (min-width: 64rem) {
   .registration {
-    padding: 2.5rem 0 2.0625rem;
+    padding: var(--spacing-3xl) 0 2.0625rem;
   }
 
   .registration__inner {
@@ -327,7 +327,7 @@
 
   .registration__title-desktop {
     display: flex;
-    margin-bottom: 2.5rem;
+    margin-bottom: var(--spacing-3xl);
 
     font-size: var(--font-size-5xl);
     font-weight: var(--font-weight-bold);
@@ -358,7 +358,7 @@
   }
 
   .phone-field .btn {
-    padding: 1.25rem 4.375rem;
+    padding: var(--spacing-lg) 4.375rem;
   }
 
   .registration__virus {
@@ -372,6 +372,6 @@
   }
 
   .vaccine-card .btn {
-    margin-bottom: 0.625rem;
+    margin-bottom: var(--spacing-xs-sm);
   }
 }

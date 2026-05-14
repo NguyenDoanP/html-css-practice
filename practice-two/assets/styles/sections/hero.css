@@ -9,21 +9,20 @@
 /* HERO */
 
 .hero {
-  font-weight: var(--font-weight-bold);
   display: flex;
+  font-weight: var(--font-weight-bold);
 }
 
 .hero__inner {
   display: flex;
   flex-direction: column;
-  gap: 3.75rem;
-  padding-top: 2rem;
+  gap: var(--spacing-4xl);
+  padding-top: var(--spacing-md);
 }
 
 @media (min-width: 64rem) {
   .hero {
     padding: 6.25rem 0 0;
-    /* 100px */
   }
 
   .hero__inner {
@@ -36,7 +35,6 @@
 /* CONTENT */
 
 .hero__content {
-  /* width: 100%; */
   max-width: 18.5rem;
 }
 
@@ -55,9 +53,10 @@
 /* SUBTITLE */
 
 .hero__subtitle {
+  margin-bottom: var(--spacing-md);
+
   color: var(--color-accent);
   font-size: var(--font-size-xs);
-  margin-bottom: 1.25rem;
 }
 
 @media (min-width: 48rem) {
@@ -69,19 +68,20 @@
 
 @media (min-width: 64rem) {
   .hero__subtitle {
+    margin-bottom: var(--spacing-2xl);
     font-size: var(--font-size-xl);
-    margin-bottom: 2.5rem;
   }
 }
 
 /* TITLE */
 
 .hero__title {
-  font-size: var(--font-size-xl);
-  line-height: var(--line-height-sm);
-  font-weight: var(--font-weight-extra-bold);
+  margin-bottom: var(--spacing-lg);
+
   color: var(--color-white);
-  margin-bottom: 1.5rem;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-extra-bold);
+  line-height: var(--line-height-sm);
 }
 
 .hero__title span {
@@ -97,8 +97,9 @@
 
 @media (min-width: 64rem) {
   .hero__title {
-    font-size: var(--font-size-5xl);
     margin-bottom: 3.125rem;
+
+    font-size: var(--font-size-5xl);
     line-height: var(--line-height-lg);
   }
 }
@@ -106,16 +107,18 @@
 /* DESC */
 
 .hero__desc {
+  max-width: 17.3125rem;
+  margin-bottom: var(--spacing-2xl);
+
   color: var(--color-white-70);
-  margin-bottom: 2.5rem;
   font-size: var(--font-size-sm);
-  max-width: 277px;
   line-height: var(--line-height-xxs);
 }
 
 @media (min-width: 48rem) {
   .hero__desc {
     max-width: 31.375rem;
+
     font-size: var(--font-size-lg);
     line-height: var(--line-height-sm);
   }
@@ -124,8 +127,9 @@
 @media (min-width: 64rem) {
   .hero__desc {
     max-width: 100%;
-    font-size: var(--font-size-xl);
     margin-bottom: 3.125rem;
+
+    font-size: var(--font-size-xl);
     line-height: var(--line-height-md);
   }
 }
@@ -134,16 +138,17 @@
 
 .hero__actions {
   display: flex;
-  gap: 1.25rem;
   flex-direction: row;
+  gap: var(--spacing-md);
 }
 
 .hero__actions button {
   flex: 1;
-  padding: 1rem 1.5625rem;
+  padding: var(--spacing-md) 1.5625rem;
+  border-radius: var(--radius-sm);
+
   font-size: var(--font-size-sm);
   white-space: nowrap;
-  border-radius: var(--radius-sm);
 }
 
 .hero__actions .btn--outline {
@@ -170,8 +175,11 @@
   }
 }
 
+/* VISUAL */
+
 .hero__visual {
   position: relative;
+
   width: fit-content;
   margin: 0 auto;
 }
@@ -186,10 +194,10 @@
 /* IMAGE */
 
 .hero__img {
+  display: block;
   width: 100%;
   max-width: 16rem;
   border-radius: 1.5rem;
-  display: block;
 }
 
 @media (min-width: 48rem) {
@@ -200,10 +208,12 @@
 
 @media (min-width: 64rem) {
   .hero__img {
+    display: block;
+
     max-width: 32.5rem;
     border-radius: var(--radius-sm);
+
     object-fit: cover;
-    display: block;
   }
 }
 
@@ -211,16 +221,18 @@
 
 .hero__badge {
   position: absolute;
-  background: var(--color-white);
-  border-radius: 0.75rem;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  border-radius: 0.75rem;
+  background: var(--color-white);
 }
 
 .hero__badge img {
-  width: 2.5rem;
   display: block;
+  width: 2.5rem;
 }
 
 @media (min-width: 48rem) {
@@ -237,30 +249,32 @@
 /* LEFT BADGE */
 
 .hero__badge--doctor {
-  left: -1.25rem;
   top: 50%;
+  left: -1.25rem;
+
+  padding: 0.625rem 0.3125rem;
   transform: translateY(-50%);
-  padding: 9px 5px;
 }
 
 /* RIGHT BADGE */
 
 .hero__badge--virus {
-  right: -1.25rem;
   top: 50%;
+  right: -1.25rem;
+
+  padding: 0.5rem 0.3125rem;
   transform: translateY(-50%);
-  padding: 7px 5px;
 }
 
 @media (min-width: 48rem) {
   .hero__badge--doctor {
-    padding: 17px 10px;
     left: -3.125rem;
+    padding: var(--spacing-md) 0.625rem;
   }
 
   .hero__badge--virus {
-    padding: 14px 10px;
     right: -2.5rem;
+    padding: 0.875rem 0.625rem;
   }
 }
 
@@ -270,13 +284,13 @@
   }
 
   .hero__badge--doctor {
-    left: -50px;
-    padding: 17px 10px;
+    left: -3.125rem;
+    padding: var(--spacing-md) 0.625rem;
   }
 
   .hero__badge--virus {
-    right: -40px;
-    padding: 13px 10px;
+    right: -2.5rem;
+    padding: 0.8125rem 0.625rem;
   }
 }
 
@@ -286,35 +300,39 @@
   position: absolute;
   left: 37%;
   bottom: -2.1875rem;
-  transform: translateX(-50%);
+
   display: flex;
   align-items: center;
-  gap: 0.625rem;
+  gap: var(--spacing-sm);
   padding: 0.9375rem 1.25rem;
-  background: var(--color-glass-20);
+  transform: translateX(-50%);
+
   border-radius: var(--radius-sm);
+  background: var(--color-glass-20);
   box-shadow: var(--shadow-sm);
 }
 
 @media (min-width: 48rem) {
   .hero__doctors {
     left: -3.125rem;
-    transform: none;
     bottom: -2.875rem;
-    gap: 1.25rem;
-    padding: 20px 20px;
+
+    gap: var(--spacing-md);
+    padding: 1.25rem;
+    transform: none;
   }
 }
 
 @media (min-width: 64rem) {
   .hero__doctors {
-    bottom: -2.875rem;
     left: -3.125rem;
-    gap: 1.25rem;
+    bottom: -2.875rem;
+
+    width: 100%;
     max-width: 22.125rem;
     min-height: 5rem;
-    width: 100%;
-    padding: 10px 0 10px 20px;
+    gap: var(--spacing-md);
+    padding: 0.625rem 0 0.625rem 1.25rem;
   }
 }
 
@@ -326,15 +344,15 @@
 }
 
 .doctors__avatars img {
+  display: block;
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 0.75rem;
   object-fit: cover;
-  display: block;
 }
 
-.doctors__avatars img + img {
-  margin-left: -3px;
+.doctors__avatars img+img {
+  margin-left: -0.1875rem;
 }
 
 @media (min-width: 48rem) {
@@ -343,8 +361,8 @@
     height: 3.75rem;
   }
 
-  .doctors__avatars img + img {
-    margin-left: -5px;
+  .doctors__avatars img+img {
+    margin-left: -0.3125rem;
   }
 }
 
@@ -365,8 +383,8 @@
 
 .doctors__count,
 .doctors__label {
-  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
   line-height: var(--line-height-xxs);
 }
 
@@ -379,6 +397,7 @@
 }
 
 @media (min-width: 48rem) {
+
   .doctors__count,
   .doctors__label {
     font-size: var(--font-size-xl);
@@ -387,6 +406,7 @@
 }
 
 @media (min-width: 64rem) {
+
   .doctors__count,
   .doctors__label {
     font-size: var(--font-size-xl);
@@ -394,6 +414,6 @@
   }
 
   .doctors__label {
-    margin-top: -5px;
+    margin-top: -0.3125rem;
   }
 }

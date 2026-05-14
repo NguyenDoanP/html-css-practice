@@ -2,7 +2,6 @@
 .newsletter {
   position: relative;
   margin-top: -9.5rem;
-  /* -152px */
   z-index: 2;
   line-height: var(--line-height-md);
 }
@@ -13,10 +12,8 @@
   z-index: 1;
 
   width: 17.5rem;
-  /* 280px */
   margin: 0 auto;
-  padding: 1rem 0 1.75rem;
-  /* 16px 0 28px */
+  padding: var(--spacing-md) 0 1.75rem;
 
   background: var(--color-accent);
   border-radius: var(--radius-xs);
@@ -36,9 +33,7 @@
   z-index: 0;
 
   width: 19.0625rem;
-  /* 305px */
   height: 12.875rem;
-  /* 206px */
 
   background: var(--color-glass-10);
   border-radius: var(--radius-sm);
@@ -46,8 +41,7 @@
 
 /* TITLE */
 .newsletter__title {
-  margin-bottom: 0.3125rem;
-  /* 5px */
+  margin-bottom: var(--spacing-xs);
 
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-bold);
@@ -57,8 +51,7 @@
 
 /* DESC */
 .newsletter__desc {
-  margin-bottom: 1.5rem;
-  /* 24px */
+  margin-bottom: var(--spacing-xl);
 
   font-size: var(--font-size-2xs);
   font-weight: var(--font-weight-medium);
@@ -72,7 +65,6 @@
   justify-content: center;
 
   height: 2.5rem;
-  /* 40px */
   max-width: fit-content;
   margin: 0 auto;
 
@@ -88,7 +80,6 @@
   outline: none;
 
   padding: 0.875rem 1.6875rem 0.875rem 0.8125rem;
-  /* 14px 27px 14px 13px */
 
   font-size: var(--font-size-2xs);
 }
@@ -101,11 +92,8 @@
   cursor: pointer;
 
   width: 3.625rem;
-  /* 58px */
   height: 2.5rem;
-  /* 40px */
-  padding: 0.625rem 1.4375rem 0.625rem 0.75rem;
-  /* 10px 23px 10px 12px */
+  padding: var(--spacing-xs-sm) 1.4375rem var(--spacing-xs-sm) var(--spacing-sm);
 
   border: none;
   background: var(--color-primary);
@@ -119,7 +107,6 @@
 
 .newsletter__submit img {
   width: 1.4375rem;
-  /* 23px */
 }
 
 /* =========================
@@ -128,23 +115,18 @@
 @media (min-width: 48rem) {
   .newsletter {
     top: 8.125rem;
-    /* 130px */
   }
 
   .newsletter__card {
     width: 41.1875rem;
-    /* 659px */
-    padding: 1rem 0 3.5rem;
-    /* 16px 0 56px */
+    padding: var(--spacing-md) 0 3.5rem;
 
     border-radius: var(--radius-xl);
   }
 
   .newsletter__wrapper::before {
     width: 44.3125rem;
-    /* 709px */
     height: 20rem;
-    /* 320px */
 
     left: 50%;
     transform: translateX(-50%);
@@ -152,8 +134,7 @@
   }
 
   .newsletter__title {
-    margin-bottom: 1.25rem;
-    /* 20px */
+    margin-bottom: var(--spacing-lg);
 
     font-size: var(--font-size-4xl);
     line-height: var(--line-height-2md);
@@ -161,34 +142,27 @@
 
   .newsletter__desc {
     margin-bottom: 1.75rem;
-    /* 28px */
     font-size: var(--font-size-lg);
   }
 
   .newsletter__form {
     height: 4.6875rem;
-    /* 75px */
   }
 
   .newsletter__input {
-    padding: 1.8125rem 12.0625rem 1.8125rem 2.5rem;
-    /* 29px 193px 29px 40px */
+    padding: 1.8125rem 12.0625rem 1.8125rem var(--spacing-3xl);
 
     font-size: var(--font-size-lg);
   }
 
   .newsletter__submit {
     width: 6.25rem;
-    /* 100px */
     height: 4.6875rem;
-    /* 75px */
     padding: 1.0625rem 1.875rem 1.125rem;
-    /* 17px 30px 18px */
   }
 
   .newsletter__submit img {
     width: 2.5rem;
-    /* 40px */
   }
 }
 
@@ -198,21 +172,16 @@
 @media (min-width: 64rem) {
   .newsletter {
     top: -1.875rem;
-    /* -30px */
   }
 
   .newsletter__card {
     width: 64.4375rem;
-    /* 1031px */
     padding: 4.375rem 0 6.6875rem;
-    /* 70px 0 107px */
   }
 
   .newsletter__wrapper::before {
     width: 66.6875rem;
-    /* 1067px */
     height: 27.1875rem;
-    /* 435px */
   }
 
   .newsletter__title {
@@ -221,8 +190,7 @@
   }
 
   .newsletter__desc {
-    margin-bottom: 2.5rem;
-    /* 40px */
+    margin-bottom: var(--spacing-3xl);
     font-size: var(--font-size-xl);
   }
 
