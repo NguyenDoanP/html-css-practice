@@ -18,7 +18,6 @@
 .card__desc {
   max-width: 14.6875rem;
 
-
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-medium);
   color: var(--color-white);
@@ -47,11 +46,12 @@
 
 .card--primary {
   width: fit-content;
-  padding: var(--spacing-md) var(--spacing-md) var(--spacing-2xl) var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-md) var(--spacing-2xl)
+    var(--spacing-md);
 
   background: var(--color-glass-20);
 
-  border-radius: var(--radius-xs) var(--radius-xl) var(--radius-xs) var(--radius-xs);
+  border-radius: var(--radius-sm) 5rem var(--radius-sm) var(--radius-sm);
 }
 
 .card--primary .card__icon {
@@ -95,7 +95,7 @@
   padding: var(--spacing-md) 0 var(--spacing-xl) var(--spacing-md);
 
   border: 0.1875rem solid var(--color-white-50);
-  border-radius: var(--radius-xs);
+  border-radius: var(--radius-sm);
 }
 
 .card--secondary .card__icon {

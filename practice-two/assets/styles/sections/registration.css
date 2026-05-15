@@ -268,7 +268,7 @@
   }
 
   .phone-field .btn {
-    padding: 1.4375rem 4.375rem;
+    padding: var(--spacing-xl) 4.375rem;
     margin-bottom: var(--spacing-3xl);
     border-radius: var(--radius-sm);
   }
@@ -351,10 +351,18 @@
     line-height: var(--line-height-md);
   }
 
+  .registration__input {
+    padding: var(--spacing-md) 1.875rem;
+  }
+
   .registration__hint {
     margin-right: 0;
     font-size: var(--font-size-lg);
     line-height: var(--line-height-sm);
+  }
+
+  .phone-field__input-wrap {
+    padding: 0.875rem 1.875rem;
   }
 
   .phone-field .btn {

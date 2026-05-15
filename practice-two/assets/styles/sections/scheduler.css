@@ -177,7 +177,15 @@
     white-space: nowrap;
 
     font-size: var(--font-size-xl);
-    line-height: var(--line-height-md);
+    line-height: var(--line-height-sm);
+  }
+
+  .scheduler__field-label {
+    transform: translateY(0.25rem);
+  }
+
+  .scheduler__field-value {
+    transform: translateY(-0.25rem);
   }
 
   .scheduler__bar .btn {

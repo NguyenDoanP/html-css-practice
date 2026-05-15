@@ -25,7 +25,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: var(--spacing-lg);
+  gap: var(--spacing-xl);
 
   transform: translateX(35%);
   pointer-events: none;
@@ -219,7 +219,7 @@
   }
 
   .testimonials__bg {
-    top: 12.8125rem;
+    top: 13.5rem;
 
     flex-direction: row;
     gap: 9.3125rem;
@@ -255,7 +255,7 @@
     color: var(--color-black-50);
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-medium);
-    line-height: var(--line-height-md);
+    line-height: 1.2;
   }
 
   .testimonials__desc-long span {
