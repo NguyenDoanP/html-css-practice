@@ -1,14 +1,17 @@
 /* BRAND */
+
 .brands {
-  display: flex;
   position: relative;
-  padding-top: 6px;
-  padding-bottom: 4px;
+  display: flex;
+
+  padding-top: 0.375rem;
+  padding-bottom: var(--spacing-2xs);
+
   background: var(--color-white);
 }
 
 .brands .container {
-  max-width: 326px;
+  max-width: 20.375rem;
   padding: 0;
 }
 
@@ -16,53 +19,63 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: var(--color-white-50);
   z-index: 1;
+
+  background: var(--color-white-50);
 }
 
 .brands__logos {
-  display: flex;
   position: relative;
+
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: var(--spacing-sm);
 }
 
 .brands__logos img {
-  width: 72px;
+  width: 4.5rem;
   object-fit: contain;
 }
 
-@media (min-width: 768px) {
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 48rem) {
+  .brands {
+    padding-top: var(--spacing-sm);
+    padding-bottom: var(--spacing-2xs);
+  }
+
   .brands .container {
     max-width: fit-content;
   }
 
-  .brands {
-    padding-top: 11px;
-    padding-bottom: 8px;
-  }
-
   .brands__logos {
-    gap: 25px;
+    gap: 1.5625rem;
   }
 
   .brands__logos img {
-    width: 149px;
+    width: 9.3125rem;
   }
 }
 
-@media (min-width: 1024px) {
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 64rem) {
   .brands {
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: var(--spacing-md);
+    padding-bottom: var(--spacing-xs-sm);
   }
 
   .brands__logos {
-    gap: 48px;
+    gap: var(--spacing-3xl);
   }
 
   .brands__logos img {
-    width: 289px;
+    width: 18.0625rem;
   }
 }

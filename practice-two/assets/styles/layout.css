@@ -11,21 +11,27 @@ select {
 
 .container {
   width: 100%;
-  max-width: 305px;
+  max-width: 19.0625rem;
+  /* 305px */
   margin: 0 auto;
-  padding: 0 35px;
+  padding-inline: 2.1875rem;
+  /* 35px */
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .container {
-    max-width: 667px;
-    padding: 0 49px;
+    max-width: 41.6875rem;
+    /* 667px */
+    padding-inline: 3.0625rem;
+    /* 49px */
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .container {
-    max-width: 1299px;
-    padding: 0 70px;
+    max-width: 81.1875rem;
+    /* 1299px */
+    padding-inline: 4.375rem;
+    /* 70px */
   }
 }

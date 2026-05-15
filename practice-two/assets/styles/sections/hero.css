@@ -1,3 +1,7 @@
+/* ==========================================================================
+   SITE HERO — Background
+   ========================================================================== */
+
 .site-hero {
   background-image: url('../../images/banner-dark.jpg');
   background-size: cover;
@@ -6,25 +10,29 @@
   line-height: var(--line-height-md);
 }
 
-/* HERO */
+/* ==========================================================================
+   HERO — Layout
+   ========================================================================== */
 
 .hero {
-  font-weight: var(--font-weight-bold);
   display: flex;
+  font-weight: var(--font-weight-bold);
+}
+
+@media (min-width: 64rem) {
+  .hero {
+    padding: 6.25rem 0 0;
+  }
 }
 
 .hero__inner {
   display: flex;
   flex-direction: column;
-  gap: 60px;
-  padding-top: 32px;
+  gap: var(--spacing-4xl);
+  padding-top: var(--spacing-md);
 }
 
-@media (min-width: 1024px) {
-  .hero {
-    padding: 100px 0 0;
-  }
-
+@media (min-width: 64rem) {
   .hero__inner {
     flex-direction: row;
     justify-content: space-between;
@@ -32,142 +40,156 @@
   }
 }
 
-/* CONTENT */
+/* ==========================================================================
+   HERO — Content
+   ========================================================================== */
 
 .hero__content {
-  /* width: 100%; */
-  max-width: 296px;
+  max-width: 18.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .hero__content {
-    max-width: 502px;
+    max-width: 31.375rem;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .hero__content {
-    max-width: 603px;
+    max-width: 37.6875rem;
   }
 }
 
-/* SUBTITLE */
+/* --------------------------------------------------------------------------
+   Subtitle
+   -------------------------------------------------------------------------- */
 
 .hero__subtitle {
+  margin-bottom: var(--spacing-md);
   color: var(--color-accent);
   font-size: var(--font-size-xs);
-  margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .hero__subtitle {
     font-size: var(--font-size-md);
     line-height: var(--line-height-xs);
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .hero__subtitle {
+    margin-bottom: var(--spacing-2xl);
     font-size: var(--font-size-xl);
-    margin-bottom: 40px;
   }
 }
 
-/* TITLE */
+/* --------------------------------------------------------------------------
+   Title
+   -------------------------------------------------------------------------- */
 
 .hero__title {
-  font-size: var(--font-size-xl);
-  line-height: var(--line-height-sm);
-  font-weight: var(--font-weight-extra-bold);
+  margin-bottom: var(--spacing-lg);
   color: var(--color-white);
-  margin-bottom: 24px;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-extra-bold);
+  line-height: var(--line-height-sm);
 }
 
 .hero__title span {
   color: var(--color-accent);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .hero__title {
     font-size: var(--font-size-4xl);
-    line-height: 44px;
+    line-height: var(--line-height-2md);
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .hero__title {
+    margin-bottom: 3.125rem;
     font-size: var(--font-size-5xl);
-    margin-bottom: 50px;
     line-height: var(--line-height-lg);
   }
 }
 
-/* DESC */
+/* --------------------------------------------------------------------------
+   Description
+   -------------------------------------------------------------------------- */
 
 .hero__desc {
+  max-width: 17.3125rem;
+  margin-bottom: var(--spacing-2xl);
   color: var(--color-white-70);
-  margin-bottom: 40px;
   font-size: var(--font-size-sm);
-  max-width: 277px;
   line-height: var(--line-height-xxs);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .hero__desc {
-    max-width: 502px;
+    max-width: 31.375rem;
     font-size: var(--font-size-lg);
     line-height: var(--line-height-sm);
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .hero__desc {
     max-width: 100%;
+    margin-bottom: 3.125rem;
     font-size: var(--font-size-xl);
-    margin-bottom: 50px;
     line-height: var(--line-height-md);
   }
 }
 
-/* ACTIONS */
+/* --------------------------------------------------------------------------
+   Actions
+   -------------------------------------------------------------------------- */
 
 .hero__actions {
   display: flex;
-  gap: 20px;
   flex-direction: row;
+  gap: var(--spacing-md);
 }
 
 .hero__actions button {
   flex: 1;
-  padding: 16px 25px;
+  padding: var(--spacing-md) 1.5625rem;
+  border-radius: var(--radius-sm);
   font-size: var(--font-size-sm);
   white-space: nowrap;
-  border-radius: 20px;
 }
 
 .hero__actions .btn--outline {
   color: var(--color-white);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .hero__actions {
-    max-width: 370px;
+    max-width: 23.125rem;
   }
 
   .hero__actions button {
+    padding: var(--spacing-lg) 1.5625rem;
     font-size: var(--font-size-lg);
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .hero__actions {
-    max-width: 420px;
+    max-width: 26.25rem;
   }
 
   .hero__actions button {
     font-size: var(--font-size-xl);
   }
 }
+
+/* ==========================================================================
+   HERO — Visual (Image + Badges)
+   ========================================================================== */
 
 .hero__visual {
   position: relative;
@@ -175,151 +197,167 @@
   margin: 0 auto;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .hero__visual {
     display: flex;
     justify-content: center;
   }
 }
 
-/* IMAGE */
+/* --------------------------------------------------------------------------
+   Image
+   -------------------------------------------------------------------------- */
 
 .hero__img {
-  width: 256px;
-  border-radius: 24px;
   display: block;
+  width: 100%;
+  max-width: 16rem;
+  border-radius: 1.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .hero__img {
-    width: 532px;
+    max-width: 33.25rem;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .hero__img {
-    max-width: 520px;
+    display: block;
+    max-width: 32.5rem;
     border-radius: var(--radius-sm);
     object-fit: cover;
-    display: block;
   }
 }
 
-/* BADGES */
+/* --------------------------------------------------------------------------
+   Badges (shared)
+   -------------------------------------------------------------------------- */
 
 .hero__badge {
   position: absolute;
-  background: var(--color-white);
-  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 0.75rem;
+  background: var(--color-white);
 }
 
 .hero__badge img {
-  width: 40px;
   display: block;
+  width: 2.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .hero__badge {
-    border-radius: 20px;
+    border-radius: var(--radius-sm);
   }
 
   .hero__badge img {
-    width: 80px;
+    width: 5rem;
     object-fit: cover;
   }
 }
 
-/* LEFT BADGE */
+@media (min-width: 64rem) {
+  .hero__badge img {
+    width: 4.375rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Badge — Doctor (left)
+   -------------------------------------------------------------------------- */
 
 .hero__badge--doctor {
-  left: -20px;
   top: 50%;
+  left: -1.25rem;
+  padding: 0.625rem 0.3125rem;
   transform: translateY(-50%);
-  padding: 9px 5px;
 }
 
-/* RIGHT BADGE */
+@media (min-width: 48rem) {
+  .hero__badge--doctor {
+    left: -3.125rem;
+    padding: var(--spacing-md) 0.625rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .hero__badge--doctor {
+    left: -3.125rem;
+    padding: var(--spacing-md) 0.625rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Badge — Virus (right)
+   -------------------------------------------------------------------------- */
 
 .hero__badge--virus {
-  right: -20px;
   top: 50%;
+  right: -1.25rem;
+  padding: 0.5rem 0.3125rem;
   transform: translateY(-50%);
-  padding: 7px 5px;
 }
 
-@media (min-width: 768px) {
-  .hero__badge--doctor {
-    padding: 17px 10px;
-    left: -50px;
-  }
-
+@media (min-width: 48rem) {
   .hero__badge--virus {
-    padding: 14px 10px;
-    right: -40px;
+    right: -2.5rem;
+    padding: 0.875rem 0.625rem;
   }
 }
 
-@media (min-width: 1024px) {
-  .hero__badge img {
-    width: 70px;
-  }
-
-  .hero__badge--doctor {
-    left: -50px;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 17px 10px;
-  }
-
+@media (min-width: 64rem) {
   .hero__badge--virus {
-    right: -40px;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 13px 10px;
+    right: -2.5rem;
+    padding: 0.8125rem 0.625rem;
   }
 }
 
-/* DOCTORS CARD */
+/* ==========================================================================
+   HERO — Doctors card
+   ========================================================================== */
 
 .hero__doctors {
   position: absolute;
   left: 37%;
-  bottom: -35px;
-  transform: translateX(-50%);
+  bottom: -2.1875rem;
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 15px 20px;
+  gap: var(--spacing-sm);
+  padding: 0.9375rem 1.25rem;
+  transform: translateX(-50%);
+  border-radius: var(--radius-sm);
   background: var(--color-glass-20);
-  border-radius: 20px;
   box-shadow: var(--shadow-sm);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .hero__doctors {
-    left: -50px;
+    left: -3.125rem;
+    bottom: -2.875rem;
+    gap: var(--spacing-md);
+    padding: 1.25rem;
     transform: none;
-    bottom: -45px;
-    gap: 20px;
-    padding: 20px 20px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .hero__doctors {
-    bottom: -45px;
-    left: -50px;
-    gap: 20px;
-    width: 354px;
-    height: 80px;
-    padding: 10px 0 10px 20px;
+    left: -3.125rem;
+    bottom: -2.875rem;
+    width: 100%;
+    max-width: 22.125rem;
+    min-height: 5rem;
+    gap: var(--spacing-md);
+    padding: 0.625rem 0 0.625rem 1.25rem;
   }
 }
 
-/* AVATARS */
+/* --------------------------------------------------------------------------
+   Avatars
+   -------------------------------------------------------------------------- */
 
 .doctors__avatars {
   display: flex;
@@ -327,37 +365,39 @@
 }
 
 .doctors__avatars img {
-  width: 40px;
-  height: 40px;
-  border-radius: 12px;
-  object-fit: cover;
   display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
+  object-fit: cover;
 }
 
 .doctors__avatars img + img {
-  margin-left: -3px;
+  margin-left: -0.1875rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .doctors__avatars img {
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
   }
 
   .doctors__avatars img + img {
-    margin-left: -5px;
+    margin-left: -0.3125rem;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .doctors__avatars img {
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     border-radius: var(--radius-xs);
   }
 }
 
-/* META */
+/* --------------------------------------------------------------------------
+   Meta (count + label)
+   -------------------------------------------------------------------------- */
 
 .doctors__meta {
   display: flex;
@@ -366,35 +406,44 @@
 
 .doctors__count,
 .doctors__label {
-  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
   line-height: var(--line-height-xxs);
 }
 
 .doctors__count {
   color: var(--color-white);
+  transform: translateY(0.125rem);
 }
 
 .doctors__label {
   color: var(--color-accent);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .doctors__count,
   .doctors__label {
     font-size: var(--font-size-xl);
     line-height: var(--line-height-md);
   }
+
+  .doctors__count {
+    transform: translateY(0.875rem);
+  }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .doctors__count,
   .doctors__label {
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-bold);
   }
 
+  .doctors__count {
+    transform: translateY(0.5rem);
+  }
+
   .doctors__label {
-    margin-top: -5px;
+    transform: translateY(-0.375rem);
   }
 }

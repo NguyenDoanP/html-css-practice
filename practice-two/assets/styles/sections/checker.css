@@ -1,6 +1,6 @@
 /* SECTION */
 .checker {
-  padding: 40px 0;
+  padding: var(--spacing-2xl) 0;
   background-image: url('../../images/banner-dark.jpg');
   background-size: cover;
   background-position: center;
@@ -9,59 +9,68 @@
 
 /* CARD */
 .checker__card {
+  overflow: hidden;
   border-radius: var(--radius-sm);
   background: var(--color-glass);
-  overflow: hidden;
 }
 
 /* TITLE */
 .checker__title {
-  padding: 14px 31px;
+  padding: 0.875rem 1.9375rem;
+
   background: var(--color-glass);
+  color: var(--color-white);
+
   font-size: var(--font-size-2xs);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-4xs);
-  color: var(--color-white);
 }
 
 /* FORM */
 .checker__form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 21px 13px 48px;
+  gap: var(--spacing-md);
+
+  padding: 1.3125rem 0.8125rem 3rem;
 }
 
 /* INPUT */
 .checker__form input {
+  padding: 1.0625rem 0 var(--spacing-md) 1.0625rem;
+
   font-size: var(--font-size-xs);
   line-height: var(--line-height-3xs);
-  padding: 17px 0 16px 17px;
 }
 
 /* BUTTON */
 .checker__form .btn {
   width: fit-content;
-  padding: 16px 51px;
+  padding: var(--spacing-md) 3.1875rem;
+
   font-size: var(--font-size-sm);
 }
 
 /* INFO BAR */
 .checker__hint {
-  margin: 0 13px 32px;
+  margin: 0 0.8125rem var(--spacing-xl);
+  padding: 0.8125rem 0.75rem;
+
   border-radius: var(--radius-xs);
   background: var(--color-glass-30);
+
   text-align: center;
-  padding: 13px 12px;
 }
 
 .checker__hint p,
 .checker__hint a {
+  display: inline;
+
+  color: var(--color-accent);
+
   font-size: var(--font-size-2xs);
   font-weight: var(--font-weight-bold);
-  color: var(--color-accent);
   line-height: var(--line-height-4xs);
-  display: inline;
 }
 
 .checker__hint a {
@@ -73,36 +82,39 @@
 }
 
 /* TABLET */
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .checker {
-    padding: 50px 0;
+    padding: 3.125rem 0;
   }
 
   .checker__title {
-    padding: 18px 98px 13px;
+    padding: 1.125rem 6.125rem 0.8125rem;
+
     font-size: var(--font-size-lg);
     line-height: var(--line-height-sm);
   }
 
   .checker__form {
-    padding: 40px 110px 45px;
+    padding: var(--spacing-2xl) 6.875rem 2.8125rem;
   }
 
   .checker__form input {
+    padding: 1.5625rem 0 1.5625rem 1.5625rem;
+    border-radius: var(--radius-sm);
+
     font-size: var(--font-size-lg);
     line-height: var(--line-height-sm);
-    padding: 25px 0 25px 25px;
-    border-radius: var(--radius-sm);
   }
 
   .checker__form .btn {
-    padding: 20px 53px;
-    font-size: var(--font-size-lg);
+    padding: var(--spacing-lg) 3.3125rem;
     border-radius: var(--radius-sm);
+
+    font-size: var(--font-size-lg);
   }
 
   .checker__hint {
-    margin: 0 61px 45px;
+    margin: 0 3.8125rem 2.8125rem;
     border-radius: var(--radius-sm);
   }
 
@@ -114,43 +126,49 @@
 }
 
 /* DESKTOP */
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .checker {
-    padding: 62px 0;
+    padding: 3.875rem 0;
   }
 
   .checker__card {
-    padding-bottom: 31px;
+    padding-bottom: 1.9375rem;
   }
 
   .checker__title {
+    padding: 2.25rem 5.8125rem;
     font-size: var(--font-size-xl);
-    padding: 36px 93px;
   }
 
   .checker__form {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
-    padding: 35px 93px;
+    gap: var(--spacing-md);
+
+    padding: 2.1875rem 5.8125rem;
   }
 
   .checker__form input {
+    padding: var(--spacing-lg) 0 var(--spacing-lg) 1.625rem;
+
     font-size: var(--font-size-xl);
     line-height: var(--line-height-md);
-    padding: 20px 0 20px 26px;
   }
 
   .checker__form .btn {
-    padding: 20px 46px;
+    padding: var(--spacing-lg) 2.875rem;
+
     font-size: var(--font-size-xl);
     line-height: var(--line-height-md);
   }
 
   .checker__hint {
-    margin: 0 93px;
-    padding: 20px;
+    margin: 0 5.8125rem;
+    padding: var(--spacing-lg);
+
+    font-size: var(--font-size-xl);
   }
 
   .checker__hint p,
@@ -160,6 +178,6 @@
   }
 
   .checker__hint a {
-    margin-left: 4px;
+    margin-left: var(--spacing-2xs);
   }
 }

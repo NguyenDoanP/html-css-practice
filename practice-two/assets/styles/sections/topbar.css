@@ -3,59 +3,69 @@
 }
 
 .topbar__inner {
-  height: 45px;
+  height: 2.8125rem;
+  /* 45px */
   display: flex;
-  padding-top: 41px;
+  padding-top: var(--spacing-3xl);
+  /* 41px */
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
-  font-size: var(--font-size-md);
   text-decoration: none;
   color: var(--color-white);
   font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-md);
   display: inline-block;
-  background-image: linear-gradient(#17c2ec, #17c2ec);
-  background-size: 100px 3px;
-  /* width + height line */
+
+  background-image: linear-gradient(var(--color-accent), var(--color-accent));
+  background-size: 6.25rem 0.1875rem;
+  /* 100px 3px */
   background-repeat: no-repeat;
   background-position: left bottom;
-  padding-bottom: 5px;
+
+  padding-bottom: var(--spacing-2xs);
+  /* 5px */
 }
 
 .btn--icon {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  /* 30px */
+  height: 1.875rem;
 }
 
 .btn--list {
   background-color: var(--color-glass-20);
-  padding: 7px;
+  padding: var(--spacing-xs);
+  /* 7px */
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 64rem) {
   .btn--header {
     display: none;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
+  /* 768px */
+  .btn--icon {
+    width: 2.8125rem;
+    /* 45px */
+    height: 2.8125rem;
+  }
+
   .logo {
     font-size: var(--font-size-2xl);
   }
-
-  .btn--icon {
-    width: 45px;
-    height: 45px;
-  }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .logo {
     font-size: var(--font-size-3xl);
   }
 
+  /* 1024px */
   .btn--list {
     display: none;
   }
@@ -63,22 +73,26 @@
   .menu__item--active a::after {
     content: '';
     position: absolute;
-    bottom: -15px;
+    bottom: -0.9375rem;
+    /* -15px */
     left: 50%;
     transform: translateX(-50%);
-    width: 10px;
-    height: 10px;
+
+    width: 0.625rem;
+    /* 10px */
+    height: 0.625rem;
+
     background-color: var(--color-accent);
     border-radius: 50%;
   }
 
   .menu__item a {
-    font-size: var(--font-size-xl);
     position: relative;
   }
 
   .menu__list {
-    gap: 25px;
+    gap: var(--spacing-xl);
+    /* 25px */
     flex-direction: row;
   }
 }

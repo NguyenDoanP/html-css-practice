@@ -1,6 +1,6 @@
 /* SECTION */
 .registration {
-  padding: 32px 0 40px;
+  padding: var(--spacing-2xl) 0 var(--spacing-3xl);
   background-image: url('../../images/banner-blur.jpg');
   background-size: cover;
   background-position: center;
@@ -12,7 +12,7 @@
 .registration__inner {
   display: flex;
   flex-direction: column;
-  gap: 39px;
+  gap: 2.4375rem;
 }
 
 .registration__form-wrap {
@@ -25,16 +25,17 @@
   display: flex;
   justify-content: center;
   order: 1;
-  margin-left: 15px;
+  margin-left: var(--spacing-md);
 }
 
 /* TITLE */
 .registration__title {
+  padding: 0 2.375rem;
+  margin-bottom: var(--spacing-lg);
+
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-md);
-  margin-bottom: 20px;
-  padding: 0 38px;
 }
 
 .registration__title-desktop {
@@ -44,22 +45,23 @@
 /* LABEL */
 .registration__label {
   display: block;
+  margin-bottom: var(--spacing-lg);
+
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-bold);
-  margin-bottom: 20px;
 }
 
 /* INPUT */
 .registration__input {
   width: 100%;
   display: block;
-  border: none;
-  outline: none;
   box-sizing: border-box;
 
-  padding: 16px 20px;
-  margin-bottom: 20px;
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-md) var(--spacing-lg);
 
+  border: none;
+  outline: none;
   border-radius: var(--radius-xs);
   background: var(--color-dark-glass);
 
@@ -68,10 +70,11 @@
 
 /* HINT */
 .registration__hint {
-  font-size: var(--font-size-sm);
+  margin: 0 -1.0625rem var(--spacing-lg) 0;
+
   color: var(--color-black-50);
+  font-size: var(--font-size-sm);
   line-height: var(--line-height-xxs);
-  margin: 0 -17px 20px 0;
 }
 
 /* PHONE FIELD */
@@ -84,50 +87,53 @@
   display: flex;
   align-items: center;
   flex: 1;
+
+  margin-bottom: var(--spacing-lg);
+  padding: 0.3125rem var(--spacing-md);
+
   border-radius: var(--radius-xs);
   background: var(--color-dark-glass);
-  padding: 5px 16px;
-  margin-bottom: 20px;
 }
 
 .phone-field__flag {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   object-fit: cover;
-  margin-right: 8px;
+  margin-right: var(--spacing-xs);
 }
 
 .phone-field__chevron {
-  width: 24px;
-  height: 24px;
-  margin-right: 5px;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.3125rem;
 }
 
 .phone-field__divider {
-  width: 3px;
-  height: 40px;
+  width: 0.1875rem;
+  height: 2.5rem;
+  margin-right: var(--spacing-lg);
+
   background: var(--color-black-10);
-  margin-right: 20px;
 }
 
 .phone-field__input-wrap .registration__input {
   margin: 0;
   padding: 0;
-  background: transparent;
   height: 100%;
+  background: transparent;
 }
 
 /* VERIFY BUTTON */
 .phone-field .btn {
   width: fit-content;
-  padding: 16px 54px;
+  padding: var(--spacing-md) 3.375rem;
+  margin-bottom: 3.75rem;
   box-shadow: none;
-  margin-bottom: 60px;
 }
 
 /* SUBMIT */
 .registration__submit {
-  margin-bottom: 20px;
+  margin-bottom: var(--spacing-lg);
 }
 
 .registration__submit .btn {
@@ -139,11 +145,12 @@
 .registration__login-hint {
   display: flex;
   justify-content: center;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: var(--spacing-lg);
+
+  color: var(--color-black-50);
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-semibold);
-  color: var(--color-black-50);
 }
 
 .registration__login-hint a {
@@ -155,21 +162,23 @@
 /* VIRUS ICON */
 .registration__virus {
   position: absolute;
-  top: -18px;
-  left: -12px;
-  width: 72px;
-  height: auto;
+  top: -1.125rem;
+  left: -0.75rem;
   z-index: 2;
+
+  width: 4.5rem;
+  height: auto;
 }
 
 /* VACCINE CARD */
 .vaccine-card {
   position: relative;
   width: 100%;
-  max-width: 289px;
-  height: 419px;
-  border-radius: var(--radius-sm);
+  max-width: 18.0625rem;
+  min-height: 26.1875rem;
+
   overflow: hidden;
+  border-radius: var(--radius-sm);
 
   background: var(--color-primary);
   color: var(--color-white);
@@ -178,37 +187,37 @@
 /* CARD TITLE */
 .vaccine-card__title {
   position: absolute;
-  top: 22px;
+  top: 1.375rem;
   left: 50%;
-  transform: translateX(-50%);
   z-index: 2;
+
+  margin-top: var(--spacing-xs-sm);
+  transform: translateX(-50%);
 
   text-align: center;
   font-size: var(--font-size-sm);
-  line-height: var(--line-height-xxs);
-  margin-top: 10px;
   font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-xxs);
 }
 
 /* IMAGE */
 .vaccine-card__img {
-  transform: translateY(15%);
   width: 100%;
   display: block;
-
   object-position: bottom;
+  transform: translateY(15%);
 }
 
 /* OVERLAY BUTTON */
 .vaccine-card__btn {
   position: absolute;
-  bottom: 49px;
+  bottom: 3.0625rem;
   left: 50%;
+
+  padding: var(--spacing-md) 3.3125rem;
   transform: translateX(-50%);
 
-  padding: 16px 53px;
   border-radius: var(--radius-xs);
-
   background: var(--color-glass-20);
   color: var(--color-white);
 
@@ -218,12 +227,13 @@
 }
 
 /* TABLET */
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .registration__title {
+    max-width: 36.625rem;
+    padding: 0;
+
     font-size: var(--font-size-4xl);
     line-height: var(--line-height-2md);
-    max-width: 586px;
-    padding: 0;
   }
 
   .registration__label,
@@ -236,88 +246,79 @@
   }
 
   .registration__label {
-    margin-bottom: 25px;
+    margin-bottom: var(--spacing-xl);
   }
 
   .registration__input {
-    padding: 23px 30px;
+    margin-bottom: var(--spacing-3xl);
+    padding: 1.4375rem 1.875rem;
     border-radius: var(--radius-sm);
-    margin-bottom: 40px;
-  }
-
-  .registration__hint {
-    margin-bottom: 20px;
   }
 
   .phone-field {
     flex-direction: row;
     align-items: center;
-    gap: 50px;
+    gap: 3.125rem;
   }
 
   .phone-field__input-wrap {
+    margin-bottom: var(--spacing-3xl);
+    padding: var(--spacing-md) 1.875rem;
     border-radius: var(--radius-sm);
-    padding: 15px 30px;
-    margin-bottom: 40px;
   }
 
   .phone-field .btn {
+    padding: var(--spacing-xl) 4.375rem;
+    margin-bottom: var(--spacing-3xl);
     border-radius: var(--radius-sm);
-    padding: 23px 70px;
-    margin-bottom: 40px;
   }
 
   .registration__submit .btn {
+    margin-bottom: var(--spacing-3xl);
+    padding: var(--spacing-lg) 0;
     border-radius: var(--radius-sm);
-    padding: 20px 0;
-    margin-bottom: 40px;
   }
 
   .registration__login-hint {
-    gap: 46px;
+    gap: 2.875rem;
   }
 
   .registration__card-wrap {
     justify-content: flex-start;
   }
 
-  /* VIRUS ICON */
   .registration__virus {
-    width: 99px;
-
-    top: -25px;
-    left: -20px;
+    width: 6.1875rem;
+    top: -1.5625rem;
+    left: -1.25rem;
   }
 
-  /* VACCINE CARD */
   .vaccine-card {
-    max-width: 380px;
-    height: 550px;
-    border-radius: var(--radius-sm);
+    max-width: 23.75rem;
+    min-height: 34.375rem;
   }
 
-  /* CARD TITLE */
   .vaccine-card__title {
-    margin-top: 25px;
+    margin-top: var(--spacing-xl);
   }
 
   .vaccine-card__btn {
-    padding: 13px 33px;
+    padding: var(--spacing-sm) 2.0625rem;
     font-size: var(--font-size-lg);
   }
 }
 
 /* DESKTOP */
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .registration {
-    padding: 40px 0 33px;
+    padding: var(--spacing-3xl) 0 2.0625rem;
   }
 
   .registration__inner {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 241px;
+    gap: 15.0625rem;
   }
 
   .registration__title {
@@ -325,20 +326,23 @@
   }
 
   .registration__title-desktop {
+    display: flex;
+    margin-bottom: var(--spacing-3xl);
+
     font-size: var(--font-size-5xl);
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-lg);
-    margin-bottom: 40px;
-    display: flex;
   }
 
   .registration__form-wrap {
-    max-width: 650px;
+    max-width: 40.625rem;
     order: 1;
   }
 
   .registration__card-wrap {
     order: 2;
+    justify-content: flex-end;
+    transform: translateY(10%);
   }
 
   .registration__label,
@@ -347,28 +351,27 @@
     line-height: var(--line-height-md);
   }
 
-  .registration__label {
-    margin-bottom: 20px;
+  .registration__input {
+    padding: var(--spacing-md) 1.875rem;
   }
 
   .registration__hint {
+    margin-right: 0;
     font-size: var(--font-size-lg);
     line-height: var(--line-height-sm);
-    margin-right: 0;
+  }
+
+  .phone-field__input-wrap {
+    padding: 0.875rem 1.875rem;
   }
 
   .phone-field .btn {
-    padding: 20px 70px;
-  }
-
-  .registration__card-wrap {
-    justify-content: flex-end;
-    transform: translateY(10%);
+    padding: var(--spacing-lg) 4.375rem;
   }
 
   .registration__virus {
-    top: -30px;
-    left: -20px;
+    top: -1.875rem;
+    left: -1.25rem;
   }
 
   .vaccine-card__title {
@@ -377,6 +380,6 @@
   }
 
   .vaccine-card .btn {
-    margin-bottom: 10px;
+    margin-bottom: var(--spacing-xs-sm);
   }
 }
