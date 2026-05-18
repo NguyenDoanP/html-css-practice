@@ -166,6 +166,14 @@
   color: var(--color-white);
 }
 
+.hero__actions .btn:hover {
+  opacity: 1;
+}
+
+.hero__actions .btn--outline:hover {
+  background-color: var(--color-accent);
+}
+
 @media (min-width: 48rem) {
   .hero__actions {
     max-width: 23.125rem;

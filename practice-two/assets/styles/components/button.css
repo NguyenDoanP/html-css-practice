@@ -9,7 +9,7 @@
 
   box-shadow: var(--shadow-md);
   cursor: pointer;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
 
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-bold);
