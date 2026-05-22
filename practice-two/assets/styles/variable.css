@@ -119,6 +119,8 @@
   /* 30px */
   --radius-xl: 3.125rem;
   /* 50px */
+  --radius-xxl: 9.375rem;
+  /* 150px */
 
   /* Shadows */
   --shadow-sm: 0 4px 4px rgba(0, 0, 0, 0.1);
