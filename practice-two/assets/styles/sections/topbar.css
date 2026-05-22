@@ -3,11 +3,8 @@
 }
 
 .topbar__inner {
-  height: 2.8125rem;
-  /* 45px */
   display: flex;
-  padding-top: var(--spacing-3xl);
-  /* 41px */
+  padding-top: var(--spacing-27);
   align-items: center;
   justify-content: space-between;
 }
@@ -20,49 +17,56 @@
   display: inline-block;
 
   background-image: linear-gradient(var(--color-accent), var(--color-accent));
-  background-size: 6.25rem 0.1875rem;
-  /* 100px 3px */
+  background-size: 5rem 3px;
+  /* 80px 3px */
   background-repeat: no-repeat;
   background-position: left bottom;
 
-  padding-bottom: var(--spacing-2xs);
+  padding-bottom: var(--spacing-1);
   /* 5px */
 }
 
 .btn--icon {
-  width: 1.875rem;
+  width: var(--icon-size-md);
   /* 30px */
-  height: 1.875rem;
+  height: var(--icon-size-md);
 }
 
 .btn--list {
   background-color: var(--color-glass-20);
-  padding: var(--spacing-xs);
+  padding: var(--spacing-3);
   /* 7px */
 }
 
-@media (max-width: 64rem) {
+@media (max-width: 64em) {
   .btn--header {
     display: none;
   }
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
   /* 768px */
   .btn--icon {
-    width: 2.8125rem;
-    /* 45px */
-    height: 2.8125rem;
+    width: var(--icon-size-2md);
+    height: var(--icon-size-2md);
+  }
+
+  .btn--list {
+    padding: var(--spacing-2);
   }
 
   .logo {
     font-size: var(--font-size-2xl);
+
+    padding-bottom: 0;
   }
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 64em) {
   .logo {
     font-size: var(--font-size-3xl);
+    background-size: 6.25rem 3px;
+    /* 100px 3px */
   }
 
   /* 1024px */
@@ -73,14 +77,13 @@
   .menu__item--active a::after {
     content: '';
     position: absolute;
-    bottom: -0.9375rem;
-    /* -15px */
+    bottom: calc(var(--spacing-6) * -1);
     left: 50%;
     transform: translateX(-50%);
 
-    width: 0.625rem;
+    width: var(--icon-size-xs);
     /* 10px */
-    height: 0.625rem;
+    height: var(--icon-size-xs);
 
     background-color: var(--color-accent);
     border-radius: 50%;
@@ -91,7 +94,7 @@
   }
 
   .menu__list {
-    gap: var(--spacing-xl);
+    gap: var(--spacing-11);
     /* 25px */
     flex-direction: row;
   }

@@ -11,27 +11,27 @@ select {
 
 .container {
   width: 100%;
-  max-width: 19.0625rem;
-  /* 305px */
+  max-width: 19rem;
+  /* 304px */
   margin: 0 auto;
-  padding-inline: 2.1875rem;
-  /* 35px */
+  padding-inline: 2.25rem;
+  /* 36px */
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
   .container {
-    max-width: 41.6875rem;
-    /* 667px */
-    padding-inline: 3.0625rem;
-    /* 49px */
+    max-width: 41.75rem;
+    /* 668px */
+    padding-inline: 3rem;
+    /* 48px */
   }
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 64em) {
   .container {
-    max-width: 81.1875rem;
-    /* 1299px */
-    padding-inline: 4.375rem;
+    max-width: 81.25rem;
+    /* 1300px */
+    padding-inline: 4.3rem;
     /* 70px */
   }
 }

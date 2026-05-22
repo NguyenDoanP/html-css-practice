@@ -206,8 +206,10 @@
   /* 120px */
 
   /* Icon size */
+  --icon-size-xs: 10px;
   --icon-size-sm: 20px;
   --icon-size-md: 30px;
+  --icon-size-2md: 35px;
   --icon-size-lg: 40px;
   --icon-size-xl: 50px;
   --icon-size-2xl: 70px;
