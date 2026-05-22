@@ -19,7 +19,7 @@
   font-weight: var(--font-weight-bold);
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 64em) {
   .menu {
     display: block;
   }
