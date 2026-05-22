@@ -204,4 +204,11 @@
   /* 112px */
   --spacing-38: 7.5rem;
   /* 120px */
+
+  /* Icon size */
+  --icon-size-sm: 20px;
+  --icon-size-md: 30px;
+  --icon-size-lg: 40px;
+  --icon-size-xl: 50px;
+  --icon-size-2xl: 70px;
 }
