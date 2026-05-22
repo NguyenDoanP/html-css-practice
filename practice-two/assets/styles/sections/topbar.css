@@ -45,7 +45,6 @@
 }
 
 @media (min-width: 48em) {
-
   /* 768px */
   .btn--icon {
     width: var(--icon-size-2md);
