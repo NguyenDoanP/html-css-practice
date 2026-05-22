@@ -12,26 +12,23 @@ select {
 .container {
   width: 100%;
   max-width: 19rem;
-  /* 304px */
   margin: 0 auto;
-  padding-inline: 2.25rem;
-  /* 36px */
+  padding-inline: var(--spacing-17);
+
 }
 
 @media (min-width: 48em) {
   .container {
     max-width: 41.75rem;
-    /* 668px */
-    padding-inline: 3rem;
-    /* 48px */
+    padding-inline: var(--spacing-23);
+
   }
 }
 
 @media (min-width: 64em) {
   .container {
     max-width: 81.25rem;
-    /* 1300px */
-    padding-inline: 4.3rem;
-    /* 70px */
+    padding-inline: calc((var(--spacing-31) + var(--spacing-32)) / 2);
+
   }
 }
