@@ -45,6 +45,7 @@
 }
 
 @media (min-width: 48em) {
+
   /* 768px */
   .btn--icon {
     width: var(--icon-size-2md);
@@ -77,7 +78,7 @@
   .menu__item--active a::after {
     content: '';
     position: absolute;
-    bottom: calc(var(--spacing-6) * -1);
+    top: calc(100% + var(--spacing-1));
     left: 50%;
     transform: translateX(-50%);
 
