@@ -3,14 +3,12 @@
   align-items: center;
   justify-content: center;
 
-  padding: var(--spacing-md) var(--spacing-xl);
+  padding: var(--spacing-7) var(--spacing-12);
   border: none;
   border-radius: var(--radius-xs);
 
   box-shadow: var(--shadow-md);
   cursor: pointer;
-  /* transition: all 0.3s ease; */
-
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-bold);
 }
@@ -27,11 +25,11 @@
 }
 
 .btn--outline {
-  border: 0.125rem solid var(--color-accent);
+  border: var(--border-xs) solid var(--color-accent);
 }
 
 .btn--accent {
-  border: 0.125rem solid var(--color-accent);
+  border: var(--border-xs) solid var(--color-accent);
 
   background: var(--color-glass);
   color: var(--color-accent);
@@ -42,18 +40,17 @@
 }
 
 /* TABLET */
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
   .btn {
-    padding: var(--spacing-lg) var(--spacing-xl);
+    padding: var(--spacing-9) var(--spacing-12);
 
     font-size: var(--font-size-lg);
   }
 }
 
 /* DESKTOP */
-@media (min-width: 64rem) {
+@media (min-width: 64em) {
   .btn {
-    padding: var(--spacing-lg) 1.625rem;
     border-radius: var(--radius-sm);
 
     font-size: var(--font-size-xl);

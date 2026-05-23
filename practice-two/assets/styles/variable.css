@@ -206,9 +206,18 @@
   /* 120px */
 
   /* Icon size */
-  --icon-size-sm: 20px;
-  --icon-size-md: 30px;
-  --icon-size-lg: 40px;
-  --icon-size-xl: 50px;
-  --icon-size-2xl: 70px;
+  --icon-size-xs: 0.625rem;
+  /* 10px */
+  --icon-size-sm: 1.25rem;
+  /* 20px */
+  --icon-size-md: 1.875rem;
+  /* 30px */
+  --icon-size-2md: 2.1875rem;
+  /* 35px */
+  --icon-size-lg: 2.5rem;
+  /* 40px */
+  --icon-size-xl: 3.125rem;
+  /* 50px */
+  --icon-size-2xl: 4.375rem;
+  /* 70px */
 }
