@@ -13,14 +13,14 @@ select {
   width: 100%;
   max-width: 19rem;
   margin: 0 auto;
-  padding-inline: var(--spacing-17);
+  padding-inline: var(--spacing-16);
 
 }
 
 @media (min-width: 48em) {
   .container {
     max-width: 41.75rem;
-    padding-inline: var(--spacing-23);
+    padding-inline: var(--spacing-24);
 
   }
 }
@@ -28,7 +28,6 @@ select {
 @media (min-width: 64em) {
   .container {
     max-width: 81.25rem;
-    padding-inline: calc((var(--spacing-31) + var(--spacing-32)) / 2);
-
+    padding-inline: calc((var(--spacing-29) + var(--spacing-33)) /2);
   }
 }
