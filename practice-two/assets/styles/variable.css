@@ -81,22 +81,20 @@
   /* 48px */
 
   /* Line height */
-  --line-height-4xs: 1.33;
-  /* 12 */
-  --line-height-3xs: 1.5;
-  /* 15 */
-  --line-height-xxs: 1.42;
-  /* 17 */
-  --line-height-xs: 1.57;
-  /* 22 */
-  --line-height-sm: 1.5;
-  /* 24 */
-  --line-height-md: 1.61;
-  /* 29 */
-  --line-height-2md: 1.83;
-  /* 44 */
-  --line-height-lg: 1.23;
-  /* 59 */
+  --line-height-xs: 1.23;
+  /* 59px */
+  --line-height-sm: 1.33;
+  /* 12px */
+  --line-height-md: 1.42;
+  /* 17px */
+  --line-height-lg: 1.5;
+  /* 15px, 24px */
+  --line-height-xl: 1.57;
+  /* 22px */
+  --line-height-2xl: 1.61;
+  /* 29px */
+  --line-height-3xl: 1.83;
+  /* 44px */
   /* Border */
   --border-xs: 3px;
 
