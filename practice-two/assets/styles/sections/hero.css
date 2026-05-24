@@ -26,39 +26,12 @@
   padding-top: var(--spacing-15);
 }
 
-@media (min-width: 48em) {
-  .hero__inner {
-    gap: var(--spacing-27);
-  }
-}
-
-@media (min-width: 64em) {
-  .hero__inner {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-top: var(--spacing-35);
-  }
-}
-
 /* ==========================================================================
    HERO — Content
    ========================================================================== */
 
 .hero__content {
-  /* max-width: 18.5rem; */
-}
-
-@media (min-width: 48em) {
-  .hero__content {
-    max-width: 31.375rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .hero__content {
-    max-width: 37.6875rem;
-  }
+  flex: 1;
 }
 
 /* --------------------------------------------------------------------------
@@ -69,20 +42,6 @@
   margin-bottom: var(--spacing-9);
   color: var(--color-accent);
   font-size: var(--font-size-xs);
-}
-
-@media (min-width: 48em) {
-  .hero__subtitle {
-    margin-bottom: var(--spacing-19);
-    font-size: var(--font-size-md);
-    line-height: var(--line-height-xs);
-  }
-}
-
-@media (min-width: 64em) {
-  .hero__subtitle {
-    font-size: var(--font-size-xl);
-  }
 }
 
 /* --------------------------------------------------------------------------
@@ -101,21 +60,6 @@
   color: var(--color-accent);
 }
 
-@media (min-width: 48em) {
-  .hero__title {
-    margin-bottom: var(--spacing-19);
-    font-size: var(--font-size-4xl);
-    line-height: var(--line-height-xs);
-  }
-}
-
-@media (min-width: 64em) {
-  .hero__title {
-    margin-bottom: var(--spacing-24);
-    font-size: var(--font-size-5xl);
-  }
-}
-
 /* --------------------------------------------------------------------------
    Description
    -------------------------------------------------------------------------- */
@@ -126,21 +70,6 @@
   color: var(--color-white-70);
   font-size: var(--font-size-sm);
   line-height: var(--line-height-xs);
-}
-
-@media (min-width: 48em) {
-  .hero__desc {
-    max-width: 31.4rem;
-    font-size: var(--font-size-lg);
-  }
-}
-
-@media (min-width: 64em) {
-  .hero__desc {
-    max-width: 100%;
-    margin-bottom: var(--spacing-24);
-    font-size: var(--font-size-xl);
-  }
 }
 
 /* --------------------------------------------------------------------------
@@ -173,38 +102,14 @@
   background-color: var(--color-accent);
 }
 
-@media (min-width: 48em) {
-  .hero__actions {
-    max-width: fit-content;
-  }
-
-  .hero__actions button {
-    padding: var(--spacing-9) var(--spacing-11);
-    font-size: var(--font-size-lg);
-  }
-}
-
-@media (min-width: 64em) {
-  .hero__actions button {
-    font-size: var(--font-size-xl);
-  }
-}
-
 /* ==========================================================================
-   HERO — Visual (Image + Badges)
+   HERO — Visual
    ========================================================================== */
 
 .hero__visual {
   position: relative;
   width: fit-content;
   margin: 0 auto;
-}
-
-@media (min-width: 64em) {
-  .hero__visual {
-    display: flex;
-    justify-content: center;
-  }
 }
 
 /* --------------------------------------------------------------------------
@@ -214,22 +119,8 @@
 .hero__img {
   display: block;
   width: 100%;
-  max-width: 16rem;
+  height: 17rem;
   border-radius: var(--radius-md-sm);
-}
-
-@media (min-width: 48em) {
-  .hero__img {
-    max-width: 33.25rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .hero__img {
-    display: block;
-    border-radius: var(--radius-xl);
-    object-fit: cover;
-  }
 }
 
 /* --------------------------------------------------------------------------
@@ -250,17 +141,6 @@
   width: 2.5rem;
 }
 
-@media (min-width: 48em) {
-  .hero__badge {
-    border-radius: var(--radius-sm);
-  }
-
-  .hero__badge img {
-    width: 5rem;
-    object-fit: cover;
-  }
-}
-
 /* --------------------------------------------------------------------------
    Badge — Doctor (left)
    -------------------------------------------------------------------------- */
@@ -270,13 +150,6 @@
   right: calc(100% - var(--spacing-12));
   padding: var(--spacing-4) var(--spacing-2);
   transform: translateY(50%);
-}
-
-@media (min-width: 48em) {
-  .hero__badge--doctor {
-    right: calc(100% - var(--spacing-24));
-    padding: var(--spacing-7) var(--spacing-4);
-  }
 }
 
 /* --------------------------------------------------------------------------
@@ -290,13 +163,6 @@
   transform: translateY(50%);
 }
 
-@media (min-width: 48em) {
-  .hero__badge--virus {
-    left: calc(100% - var(--spacing-24));
-    padding: var(--spacing-5) var(--spacing-4);
-  }
-}
-
 /* ==========================================================================
    HERO — Doctors card
    ========================================================================== */
@@ -307,26 +173,11 @@
   top: calc(100% - var(--spacing-17));
   display: flex;
   align-items: center;
-  gap: var(--spacing-4);
+  gap: var(--spacing-7);
   padding: var(--spacing-7) var(--spacing-9);
   border-radius: var(--radius-sm);
   background: var(--color-glass-20);
   box-shadow: var(--shadow-sm);
-}
-
-@media (min-width: 48em) {
-  .hero__doctors {
-    right: calc(50% - var(--spacing-24));
-    top: calc(100% - var(--spacing-24));
-    gap: var(--spacing-9);
-    padding: var(--spacing-9);
-  }
-}
-
-@media (min-width: 64em) {
-  .hero__doctors {
-    gap: var(--spacing-9);
-  }
 }
 
 /* --------------------------------------------------------------------------
@@ -334,7 +185,9 @@
    -------------------------------------------------------------------------- */
 
 .doctors__avatars {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: var(--spacing-16);
   align-items: center;
 }
 
@@ -344,29 +197,6 @@
   height: 2.5rem;
   border-radius: var(--radius-xs);
   object-fit: cover;
-}
-
-.doctors__avatars img+img {
-  margin-left: -3px;
-}
-
-@media (min-width: 48em) {
-  .doctors__avatars img {
-    width: 3.75rem;
-    height: 3.75rem;
-  }
-
-  .doctors__avatars img+img {
-    margin-left: -0.3125rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .doctors__avatars img {
-    width: 3.75rem;
-    height: 3.75rem;
-    border-radius: var(--radius-xs);
-  }
 }
 
 /* --------------------------------------------------------------------------
@@ -394,11 +224,155 @@
   color: var(--color-accent);
 }
 
+/* ==========================================================================
+   RESPONSIVE — 48em (tablet)
+   ========================================================================== */
+
 @media (min-width: 48em) {
 
+  /* Hero layout */
+  .hero__inner {
+    gap: var(--spacing-27);
+  }
+
+  /* Subtitle */
+  .hero__subtitle {
+    margin-bottom: var(--spacing-19);
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-xs);
+  }
+
+  /* Title */
+  .hero__title {
+    margin-bottom: var(--spacing-19);
+    font-size: var(--font-size-4xl);
+    line-height: var(--line-height-xs);
+  }
+
+  /* Description */
+  .hero__desc {
+    max-width: 31.4rem;
+    font-size: var(--font-size-lg);
+  }
+
+  /* Actions */
+  .hero__actions {
+    max-width: fit-content;
+  }
+
+  .hero__actions button {
+    padding: var(--spacing-9) var(--spacing-11);
+    font-size: var(--font-size-lg);
+  }
+
+  /* Image */
+  .hero__img {
+    height: 35.7rem;
+  }
+
+  /* Badges */
+  .hero__badge {
+    border-radius: var(--radius-sm);
+  }
+
+  .hero__badge img {
+    width: 5rem;
+    object-fit: cover;
+  }
+
+  .hero__badge--doctor {
+    right: calc(100% - var(--spacing-24));
+    padding: var(--spacing-7) var(--spacing-4);
+  }
+
+  .hero__badge--virus {
+    left: calc(100% - var(--spacing-24));
+    padding: var(--spacing-5) var(--spacing-4);
+  }
+
+  /* Doctors card */
+  .hero__doctors {
+    right: calc(50% - var(--spacing-24));
+    top: calc(100% - var(--spacing-24));
+    gap: var(--spacing-13);
+    padding: var(--spacing-9) var(--spacing-16) var(--spacing-9) var(--spacing-9);
+  }
+
+  /* Avatars */
+  .doctors__avatars {
+    grid-auto-columns: var(--spacing-25);
+  }
+
+  .doctors__avatars img {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+
+  /* Meta */
   .doctors__count,
   .doctors__label {
     font-size: var(--font-size-xl);
     line-height: 1;
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE — 64em (desktop)
+   ========================================================================== */
+
+@media (min-width: 64em) {
+
+  /* Hero layout */
+  .hero__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: var(--spacing-35);
+  }
+
+  /* Subtitle */
+  .hero__subtitle {
+    font-size: var(--font-size-xl);
+  }
+
+  /* Title */
+  .hero__title {
+    margin-bottom: var(--spacing-24);
+    font-size: var(--font-size-5xl);
+  }
+
+  /* Description */
+  .hero__desc {
+    max-width: 100%;
+    margin-bottom: var(--spacing-24);
+    font-size: var(--font-size-xl);
+  }
+
+  /* Actions */
+  .hero__actions button {
+    font-size: var(--font-size-xl);
+  }
+
+  /* Visual */
+  .hero__visual {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+
+  /* Image */
+  .hero__img {
+    border-radius: var(--radius-xl);
+    object-fit: cover;
+    width: auto;
+  }
+
+  /* Badges */
+  .hero__badge--doctor {
+    right: calc(100% - var(--spacing-35));
+  }
+
+  .hero__badge--virus {
+    left: calc(100% - var(--spacing-35));
   }
 }
