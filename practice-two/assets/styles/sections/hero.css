@@ -19,25 +19,11 @@
   font-weight: var(--font-weight-bold);
 }
 
-@media (min-width: 64rem) {
-  .hero {
-    padding: 6.25rem 0 0;
-  }
-}
-
 .hero__inner {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-4xl);
-  padding-top: var(--spacing-md);
-}
-
-@media (min-width: 64rem) {
-  .hero__inner {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
+  gap: var(--spacing-24);
+  padding-top: var(--spacing-15);
 }
 
 /* ==========================================================================
@@ -45,19 +31,7 @@
    ========================================================================== */
 
 .hero__content {
-  max-width: 18.5rem;
-}
-
-@media (min-width: 48rem) {
-  .hero__content {
-    max-width: 31.375rem;
-  }
-}
-
-@media (min-width: 64rem) {
-  .hero__content {
-    max-width: 37.6875rem;
-  }
+  flex: 1;
 }
 
 /* --------------------------------------------------------------------------
@@ -65,23 +39,9 @@
    -------------------------------------------------------------------------- */
 
 .hero__subtitle {
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-9);
   color: var(--color-accent);
   font-size: var(--font-size-xs);
-}
-
-@media (min-width: 48rem) {
-  .hero__subtitle {
-    font-size: var(--font-size-md);
-    line-height: var(--line-height-xs);
-  }
-}
-
-@media (min-width: 64rem) {
-  .hero__subtitle {
-    margin-bottom: var(--spacing-2xl);
-    font-size: var(--font-size-xl);
-  }
 }
 
 /* --------------------------------------------------------------------------
@@ -89,7 +49,7 @@
    -------------------------------------------------------------------------- */
 
 .hero__title {
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-9);
   color: var(--color-white);
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-extra-bold);
@@ -100,48 +60,16 @@
   color: var(--color-accent);
 }
 
-@media (min-width: 48rem) {
-  .hero__title {
-    font-size: var(--font-size-4xl);
-    line-height: var(--line-height-2md);
-  }
-}
-
-@media (min-width: 64rem) {
-  .hero__title {
-    margin-bottom: 3.125rem;
-    font-size: var(--font-size-5xl);
-    line-height: var(--line-height-lg);
-  }
-}
-
 /* --------------------------------------------------------------------------
    Description
    -------------------------------------------------------------------------- */
 
 .hero__desc {
-  max-width: 17.3125rem;
-  margin-bottom: var(--spacing-2xl);
+  max-width: 17.3rem;
+  margin-bottom: var(--spacing-19);
   color: var(--color-white-70);
   font-size: var(--font-size-sm);
-  line-height: var(--line-height-xxs);
-}
-
-@media (min-width: 48rem) {
-  .hero__desc {
-    max-width: 31.375rem;
-    font-size: var(--font-size-lg);
-    line-height: var(--line-height-sm);
-  }
-}
-
-@media (min-width: 64rem) {
-  .hero__desc {
-    max-width: 100%;
-    margin-bottom: 3.125rem;
-    font-size: var(--font-size-xl);
-    line-height: var(--line-height-md);
-  }
+  line-height: var(--line-height-xs);
 }
 
 /* --------------------------------------------------------------------------
@@ -151,12 +79,12 @@
 .hero__actions {
   display: flex;
   flex-direction: row;
-  gap: var(--spacing-md);
+  gap: var(--spacing-9);
 }
 
 .hero__actions button {
   flex: 1;
-  padding: var(--spacing-md) 1.5625rem;
+  padding: var(--spacing-7) var(--spacing-11);
   border-radius: var(--radius-sm);
   font-size: var(--font-size-sm);
   white-space: nowrap;
@@ -174,42 +102,14 @@
   background-color: var(--color-accent);
 }
 
-@media (min-width: 48rem) {
-  .hero__actions {
-    max-width: 23.125rem;
-  }
-
-  .hero__actions button {
-    padding: var(--spacing-lg) 1.5625rem;
-    font-size: var(--font-size-lg);
-  }
-}
-
-@media (min-width: 64rem) {
-  .hero__actions {
-    max-width: 26.25rem;
-  }
-
-  .hero__actions button {
-    font-size: var(--font-size-xl);
-  }
-}
-
 /* ==========================================================================
-   HERO — Visual (Image + Badges)
+   HERO — Visual
    ========================================================================== */
 
 .hero__visual {
   position: relative;
   width: fit-content;
   margin: 0 auto;
-}
-
-@media (min-width: 64rem) {
-  .hero__visual {
-    display: flex;
-    justify-content: center;
-  }
 }
 
 /* --------------------------------------------------------------------------
@@ -219,23 +119,8 @@
 .hero__img {
   display: block;
   width: 100%;
-  max-width: 16rem;
-  border-radius: 1.5rem;
-}
-
-@media (min-width: 48rem) {
-  .hero__img {
-    max-width: 33.25rem;
-  }
-}
-
-@media (min-width: 64rem) {
-  .hero__img {
-    display: block;
-    max-width: 32.5rem;
-    border-radius: var(--radius-sm);
-    object-fit: cover;
-  }
+  height: 17rem;
+  border-radius: var(--radius-md-sm);
 }
 
 /* --------------------------------------------------------------------------
@@ -247,7 +132,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0.75rem;
+  border-radius: var(--radius-xs);
   background: var(--color-white);
 }
 
@@ -256,46 +141,15 @@
   width: 2.5rem;
 }
 
-@media (min-width: 48rem) {
-  .hero__badge {
-    border-radius: var(--radius-sm);
-  }
-
-  .hero__badge img {
-    width: 5rem;
-    object-fit: cover;
-  }
-}
-
-@media (min-width: 64rem) {
-  .hero__badge img {
-    width: 4.375rem;
-  }
-}
-
 /* --------------------------------------------------------------------------
    Badge — Doctor (left)
    -------------------------------------------------------------------------- */
 
 .hero__badge--doctor {
-  top: 50%;
-  left: -1.25rem;
-  padding: 0.625rem 0.3125rem;
-  transform: translateY(-50%);
-}
-
-@media (min-width: 48rem) {
-  .hero__badge--doctor {
-    left: -3.125rem;
-    padding: var(--spacing-md) 0.625rem;
-  }
-}
-
-@media (min-width: 64rem) {
-  .hero__badge--doctor {
-    left: -3.125rem;
-    padding: var(--spacing-md) 0.625rem;
-  }
+  bottom: 50%;
+  right: calc(100% - var(--spacing-12));
+  padding: var(--spacing-4) var(--spacing-2);
+  transform: translateY(50%);
 }
 
 /* --------------------------------------------------------------------------
@@ -303,24 +157,10 @@
    -------------------------------------------------------------------------- */
 
 .hero__badge--virus {
-  top: 50%;
-  right: -1.25rem;
-  padding: 0.5rem 0.3125rem;
-  transform: translateY(-50%);
-}
-
-@media (min-width: 48rem) {
-  .hero__badge--virus {
-    right: -2.5rem;
-    padding: 0.875rem 0.625rem;
-  }
-}
-
-@media (min-width: 64rem) {
-  .hero__badge--virus {
-    right: -2.5rem;
-    padding: 0.8125rem 0.625rem;
-  }
+  bottom: 50%;
+  left: calc(100% - var(--spacing-12));
+  padding: var(--spacing-3) var(--spacing-2);
+  transform: translateY(50%);
 }
 
 /* ==========================================================================
@@ -329,38 +169,15 @@
 
 .hero__doctors {
   position: absolute;
-  left: 37%;
-  bottom: -2.1875rem;
+  right: var(--spacing-21);
+  top: calc(100% - var(--spacing-17));
   display: flex;
   align-items: center;
-  gap: var(--spacing-sm);
-  padding: 0.9375rem 1.25rem;
-  transform: translateX(-50%);
+  gap: var(--spacing-7);
+  padding: var(--spacing-7) var(--spacing-9);
   border-radius: var(--radius-sm);
   background: var(--color-glass-20);
   box-shadow: var(--shadow-sm);
-}
-
-@media (min-width: 48rem) {
-  .hero__doctors {
-    left: -3.125rem;
-    bottom: -2.875rem;
-    gap: var(--spacing-md);
-    padding: 1.25rem;
-    transform: none;
-  }
-}
-
-@media (min-width: 64rem) {
-  .hero__doctors {
-    left: -3.125rem;
-    bottom: -2.875rem;
-    width: 100%;
-    max-width: 22.125rem;
-    min-height: 5rem;
-    gap: var(--spacing-md);
-    padding: 0.625rem 0 0.625rem 1.25rem;
-  }
 }
 
 /* --------------------------------------------------------------------------
@@ -368,7 +185,9 @@
    -------------------------------------------------------------------------- */
 
 .doctors__avatars {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: var(--spacing-16);
   align-items: center;
 }
 
@@ -376,31 +195,8 @@
   display: block;
   width: 2.5rem;
   height: 2.5rem;
-  border-radius: 0.75rem;
+  border-radius: var(--radius-xs);
   object-fit: cover;
-}
-
-.doctors__avatars img + img {
-  margin-left: -0.1875rem;
-}
-
-@media (min-width: 48rem) {
-  .doctors__avatars img {
-    width: 3.75rem;
-    height: 3.75rem;
-  }
-
-  .doctors__avatars img + img {
-    margin-left: -0.3125rem;
-  }
-}
-
-@media (min-width: 64rem) {
-  .doctors__avatars img {
-    width: 3.75rem;
-    height: 3.75rem;
-    border-radius: var(--radius-xs);
-  }
 }
 
 /* --------------------------------------------------------------------------
@@ -416,42 +212,167 @@
 .doctors__label {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-xxs);
+  line-height: var(--line-height-md);
 }
 
 .doctors__count {
   color: var(--color-white);
-  transform: translateY(0.125rem);
+  transform: translateY(2px);
 }
 
 .doctors__label {
   color: var(--color-accent);
 }
 
-@media (min-width: 48rem) {
+/* ==========================================================================
+   RESPONSIVE — 48em (tablet)
+   ========================================================================== */
+
+@media (min-width: 48em) {
+
+  /* Hero layout */
+  .hero__inner {
+    gap: var(--spacing-27);
+  }
+
+  /* Subtitle */
+  .hero__subtitle {
+    margin-bottom: var(--spacing-19);
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-xs);
+  }
+
+  /* Title */
+  .hero__title {
+    margin-bottom: var(--spacing-19);
+    font-size: var(--font-size-4xl);
+    line-height: var(--line-height-xs);
+  }
+
+  /* Description */
+  .hero__desc {
+    max-width: 31.4rem;
+    font-size: var(--font-size-lg);
+  }
+
+  /* Actions */
+  .hero__actions {
+    max-width: fit-content;
+  }
+
+  .hero__actions button {
+    padding: var(--spacing-9) var(--spacing-11);
+    font-size: var(--font-size-lg);
+  }
+
+  /* Image */
+  .hero__img {
+    height: 35.7rem;
+  }
+
+  /* Badges */
+  .hero__badge {
+    border-radius: var(--radius-sm);
+  }
+
+  .hero__badge img {
+    width: 5rem;
+    object-fit: cover;
+  }
+
+  .hero__badge--doctor {
+    right: calc(100% - var(--spacing-24));
+    padding: var(--spacing-7) var(--spacing-4);
+  }
+
+  .hero__badge--virus {
+    left: calc(100% - var(--spacing-24));
+    padding: var(--spacing-5) var(--spacing-4);
+  }
+
+  /* Doctors card */
+  .hero__doctors {
+    right: calc(50% - var(--spacing-24));
+    top: calc(100% - var(--spacing-24));
+    gap: var(--spacing-13);
+    padding: var(--spacing-9) var(--spacing-16) var(--spacing-9) var(--spacing-9);
+  }
+
+  /* Avatars */
+  .doctors__avatars {
+    grid-auto-columns: var(--spacing-25);
+  }
+
+  .doctors__avatars img {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+
+  /* Meta */
   .doctors__count,
   .doctors__label {
     font-size: var(--font-size-xl);
-    line-height: var(--line-height-md);
-  }
-
-  .doctors__count {
-    transform: translateY(0.875rem);
+    line-height: 1;
   }
 }
 
-@media (min-width: 64rem) {
-  .doctors__count,
-  .doctors__label {
+/* ==========================================================================
+   RESPONSIVE — 64em (desktop)
+   ========================================================================== */
+
+@media (min-width: 64em) {
+
+  /* Hero layout */
+  .hero__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: var(--spacing-35);
+  }
+
+  /* Subtitle */
+  .hero__subtitle {
     font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-bold);
   }
 
-  .doctors__count {
-    transform: translateY(0.5rem);
+  /* Title */
+  .hero__title {
+    margin-bottom: var(--spacing-24);
+    font-size: var(--font-size-5xl);
   }
 
-  .doctors__label {
-    transform: translateY(-0.375rem);
+  /* Description */
+  .hero__desc {
+    max-width: 100%;
+    margin-bottom: var(--spacing-24);
+    font-size: var(--font-size-xl);
+  }
+
+  /* Actions */
+  .hero__actions button {
+    font-size: var(--font-size-xl);
+  }
+
+  /* Visual */
+  .hero__visual {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+
+  /* Image */
+  .hero__img {
+    border-radius: var(--radius-xl);
+    object-fit: cover;
+    width: auto;
+  }
+
+  /* Badges */
+  .hero__badge--doctor {
+    right: calc(100% - var(--spacing-35));
+  }
+
+  .hero__badge--virus {
+    left: calc(100% - var(--spacing-35));
   }
 }
