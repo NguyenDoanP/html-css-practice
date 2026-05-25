@@ -21,8 +21,7 @@
   color: var(--color-white);
   text-decoration: none;
 
-  background-image: linear-gradient(var(--color-accent),
-      var(--color-accent));
+  background-image: linear-gradient(var(--color-accent), var(--color-accent));
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: 5rem 3px;

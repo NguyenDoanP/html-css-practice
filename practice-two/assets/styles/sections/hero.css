@@ -229,7 +229,6 @@
    ========================================================================== */
 
 @media (min-width: 48em) {
-
   /* Hero layout */
   .hero__inner {
     gap: var(--spacing-27);
@@ -295,7 +294,8 @@
     right: calc(50% - var(--spacing-24));
     top: calc(100% - var(--spacing-24));
     gap: var(--spacing-13);
-    padding: var(--spacing-9) var(--spacing-16) var(--spacing-9) var(--spacing-9);
+    padding: var(--spacing-9) var(--spacing-16) var(--spacing-9)
+      var(--spacing-9);
   }
 
   /* Avatars */
@@ -321,7 +321,6 @@
    ========================================================================== */
 
 @media (min-width: 64em) {
-
   /* Hero layout */
   .hero__inner {
     flex-direction: row;
