@@ -1,6 +1,6 @@
 /* SECTION */
 .checker {
-  padding: var(--spacing-2xl) 0;
+  padding: var(--spacing-33) 0;
   background-image: url('../../images/banner-dark.jpg');
   background-size: cover;
   background-position: center;
@@ -16,45 +16,44 @@
 
 /* TITLE */
 .checker__title {
-  padding: 0.875rem 1.9375rem;
+  padding: var(--spacing-6) var(--spacing-14);
 
   background: var(--color-glass);
   color: var(--color-white);
 
   font-size: var(--font-size-2xs);
   font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-4xs);
+  line-height: var(--line-height-xs);
 }
 
 /* FORM */
 .checker__form {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
+  gap: var(--spacing-9);
 
-  padding: 1.3125rem 0.8125rem 3rem;
+  padding: var(--spacing-10) var(--spacing-6) var(--spacing-23);
 }
 
 /* INPUT */
 .checker__form input {
-  padding: 1.0625rem 0 var(--spacing-md) 1.0625rem;
+  padding: var(--spacing-7) 0 var(--spacing-7) var(--spacing-8);
 
   font-size: var(--font-size-xs);
-  line-height: var(--line-height-3xs);
+  line-height: var(--line-height-xs);
 }
 
 /* BUTTON */
 .checker__form .btn {
   width: fit-content;
-  padding: var(--spacing-md) 3.1875rem;
-
+  padding: var(--spacing-7) var(--spacing-24);
   font-size: var(--font-size-sm);
 }
 
 /* INFO BAR */
 .checker__hint {
-  margin: 0 0.8125rem var(--spacing-xl);
-  padding: 0.8125rem 0.75rem;
+  margin: 0 var(--spacing-6) var(--spacing-15);
+  padding: var(--spacing-6) var(--spacing-4);
 
   border-radius: var(--radius-xs);
   background: var(--color-glass-30);
@@ -70,7 +69,7 @@
 
   font-size: var(--font-size-2xs);
   font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-4xs);
+  line-height: var(--line-height-xs);
 }
 
 .checker__hint a {
@@ -84,59 +83,57 @@
 /* TABLET */
 @media (min-width: 48rem) {
   .checker {
-    padding: 3.125rem 0;
+    padding: var(--spacing-24) 0;
   }
 
   .checker__title {
-    padding: 1.125rem 6.125rem 0.8125rem;
-
+    padding: var(--spacing-8) var(--spacing-35) var(--spacing-6);
     font-size: var(--font-size-lg);
-    line-height: var(--line-height-sm);
   }
 
   .checker__form {
-    padding: var(--spacing-2xl) 6.875rem 2.8125rem;
+    padding: var(--spacing-19) var(--spacing-37) var(--spacing-22);
   }
 
   .checker__form input {
-    padding: 1.5625rem 0 1.5625rem 1.5625rem;
+    padding: var(--spacing-9) 0 var(--spacing-9) var(--spacing-12);
     border-radius: var(--radius-sm);
 
     font-size: var(--font-size-lg);
-    line-height: var(--line-height-sm);
+    line-height: var(--line-height-xs);
   }
 
   .checker__form .btn {
-    padding: var(--spacing-lg) 3.3125rem;
+    padding: var(--spacing-9) var(--spacing-25);
     border-radius: var(--radius-sm);
 
     font-size: var(--font-size-lg);
   }
 
   .checker__hint {
-    margin: 0 3.8125rem 2.8125rem;
+    margin: 0 var(--spacing-29) var(--spacing-22);
     border-radius: var(--radius-sm);
   }
 
   .checker__hint p,
   .checker__hint a {
     font-size: var(--font-size-sm);
-    line-height: var(--line-height-xxs);
+    line-height: var(--line-height-xs);
   }
 }
 
 /* DESKTOP */
 @media (min-width: 64rem) {
   .checker {
-    padding: 3.875rem 0;
+    padding: var(--spacing-30) 0;
   }
 
   .checker__card {
-    padding-bottom: 1.9375rem;
+    padding-bottom: var(--spacing-14);
   }
 
   .checker__title {
-    padding: 2.25rem 5.8125rem;
+    padding: var(--spacing-17) var(--spacing-35);
     font-size: var(--font-size-xl);
   }
 
@@ -145,28 +142,28 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: var(--spacing-md);
+    gap: var(--spacing-9);
 
-    padding: 2.1875rem 5.8125rem;
+    padding: var(--spacing-22) var(--spacing-35);
   }
 
   .checker__form input {
-    padding: var(--spacing-lg) 0 var(--spacing-lg) 1.625rem;
+    padding: var(--spacing-9) 0 var(--spacing-9) var(--spacing-12);
 
     font-size: var(--font-size-xl);
-    line-height: var(--line-height-md);
+    line-height: var(--line-height-xs);
   }
 
   .checker__form .btn {
-    padding: var(--spacing-lg) 2.875rem;
+    padding: var(--spacing-9) var(--spacing-22);
 
     font-size: var(--font-size-xl);
-    line-height: var(--line-height-md);
+    line-height: var(--line-height-xs);
   }
 
   .checker__hint {
-    margin: 0 5.8125rem;
-    padding: var(--spacing-lg);
+    margin: 0 var(--spacing-35);
+    padding: var(--spacing-9);
 
     font-size: var(--font-size-xl);
   }
@@ -174,10 +171,10 @@
   .checker__hint p,
   .checker__hint a {
     font-size: var(--font-size-xl);
-    line-height: var(--line-height-md);
+    line-height: var(--line-height-xs);
   }
 
   .checker__hint a {
-    margin-left: var(--spacing-2xs);
+    margin-left: var(--spacing-1);
   }
 }
