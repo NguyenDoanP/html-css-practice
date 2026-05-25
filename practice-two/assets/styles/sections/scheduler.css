@@ -41,7 +41,8 @@
   content: '';
   position: absolute;
   inset: 0;
-  top: calc(0% - var(--spacing-4));
+  top: auto;
+  height: calc(100% + var(--spacing-4));
 
   border-top-left-radius: var(--radius-sm);
   border-top-right-radius: var(--radius-sm);
