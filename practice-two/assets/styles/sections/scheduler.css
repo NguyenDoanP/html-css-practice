@@ -169,8 +169,7 @@
   }
 
   .scheduler__bar {
-    display: flex;
-    flex-direction: row;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     padding: var(--spacing-22) var(--spacing-19);
     gap: var(--spacing-24);
@@ -178,9 +177,7 @@
 
   .scheduler__field-label,
   .scheduler__field-value {
-    display: flex;
     white-space: nowrap;
-
     font-size: var(--font-size-xl);
     line-height: var(--line-height-xs);
   }
