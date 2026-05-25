@@ -1,7 +1,7 @@
 /* SECTION */
 
 .scheduler {
-  padding-top: 4.5625rem;
+  padding-top: var(--spacing-33);
 }
 
 /* HEADER */
@@ -9,8 +9,8 @@
 .scheduler__header {
   display: flex;
   align-items: center;
-  gap: var(--spacing-xs-sm);
-  margin-bottom: var(--spacing-lg);
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-13);
 }
 
 .scheduler__title {
@@ -27,9 +27,9 @@
 
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-6);
 
-  padding: var(--spacing-lg) 0 var(--spacing-xs-sm) var(--spacing-xs-sm);
+  padding: var(--spacing-9) 0 var(--spacing-4) var(--spacing-4);
   border-top-left-radius: var(--radius-sm);
   border-top-right-radius: var(--radius-sm);
   background: var(--color-glass);
@@ -41,7 +41,8 @@
   content: '';
   position: absolute;
   inset: 0;
-  top: -0.625rem;
+  top: auto;
+  height: calc(100% + var(--spacing-4));
 
   border-top-left-radius: var(--radius-sm);
   border-top-right-radius: var(--radius-sm);
@@ -54,7 +55,7 @@
 .scheduler__field {
   display: flex;
   align-items: center;
-  gap: var(--spacing-xs-sm);
+  gap: var(--spacing-4);
 }
 
 /* ICON */
@@ -64,15 +65,15 @@
   align-items: center;
   justify-content: center;
 
-  width: 1.875rem;
-  height: 1.875rem;
+  width: var(--icon-size-md);
+  height: var(--icon-size-md);
   border-radius: var(--radius-xs);
   background: var(--color-glass);
 }
 
 .scheduler__field-icon img {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: var(--icon-size-sm);
+  height: var(--icon-size-sm);
 }
 
 /* TEXT */
@@ -85,7 +86,7 @@
 .scheduler__field-label,
 .scheduler__field-value {
   font-size: var(--font-size-sm);
-  line-height: var(--line-height-xxs);
+  line-height: var(--line-height-xs);
 }
 
 .scheduler__field-label {
@@ -102,7 +103,7 @@
 
 .scheduler__bar .btn {
   width: fit-content;
-  padding: var(--spacing-md) var(--spacing-4xl);
+  padding: var(--spacing-7) var(--spacing-23);
 }
 
 /* =========================
@@ -111,7 +112,11 @@
 
 @media (min-width: 48rem) {
   .scheduler {
-    margin-top: var(--spacing-3xl);
+    padding-top: var(--spacing-34);
+  }
+
+  .scheduler__header {
+    margin-bottom: var(--spacing-21);
   }
 
   .scheduler__title {
@@ -121,24 +126,22 @@
   .scheduler__bar {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-3xl) 3.125rem;
-
-    margin-top: var(--spacing-2xl);
-    padding: 2.5625rem 0 2.8125rem var(--spacing-sm);
+    gap: var(--spacing-19) var(--spacing-24);
+    padding: var(--spacing-18) 0 var(--spacing-22) var(--spacing-5);
   }
 
   .scheduler__field {
-    gap: var(--spacing-lg);
+    gap: var(--spacing-9);
   }
 
   .scheduler__field-icon {
-    width: 3.125rem;
-    height: 3.125rem;
+    width: var(--icon-size-xl);
+    height: var(--icon-size-xl);
   }
 
   .scheduler__field-icon img {
-    width: 1.875rem;
-    height: 1.875rem;
+    width: var(--icon-size-md);
+    height: var(--icon-size-md);
   }
 
   .scheduler__field-label,
@@ -148,7 +151,7 @@
   }
 
   .scheduler__bar .btn {
-    padding: var(--spacing-lg) 5.5625rem;
+    padding: var(--spacing-9) var(--spacing-34);
     border-radius: var(--radius-sm);
   }
 }
@@ -159,38 +162,30 @@
 
 @media (min-width: 64rem) {
   .scheduler {
-    padding-top: 0;
+    padding-top: var(--spacing-11);
+  }
+
+  .scheduler__header {
+    margin-bottom: var(--spacing-9);
   }
 
   .scheduler__bar {
-    display: flex;
-    flex-direction: row;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    justify-content: space-between;
-
-    padding: 3.125rem var(--spacing-3xl) var(--spacing-3xl);
+    padding: var(--spacing-22) var(--spacing-19);
+    gap: var(--spacing-24);
   }
 
   .scheduler__field-label,
   .scheduler__field-value {
-    display: flex;
     white-space: nowrap;
-
     font-size: var(--font-size-xl);
-    line-height: var(--line-height-sm);
-  }
-
-  .scheduler__field-label {
-    transform: translateY(0.25rem);
-  }
-
-  .scheduler__field-value {
-    transform: translateY(-0.25rem);
+    line-height: var(--line-height-xs);
   }
 
   .scheduler__bar .btn {
     width: fit-content;
-    padding: var(--spacing-lg) var(--spacing-xl);
-    margin-left: 5.625rem;
+    padding: var(--spacing-9) var(--spacing-11);
+    margin-left: auto;
   }
 }
