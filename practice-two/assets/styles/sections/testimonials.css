@@ -93,8 +93,8 @@
 }
 
 .testimonial__user img {
-  width: 3.37rem;
-  height: 3.37rem;
+  width: calc((var(--icon-size-xxl) + var(--icon-size-xl)) / 2);
+  height: calc((var(--icon-size-xxl) + var(--icon-size-xl)) / 2);
 
   border-radius: var(--radius-sm-xs);
   object-fit: cover;
