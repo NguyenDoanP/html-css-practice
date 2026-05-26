@@ -148,7 +148,6 @@
   background: url('../../images/virus-pink.png') no-repeat center / cover;
 }
 
-
 /* ==========================================================================
    tablet
    ========================================================================== */
@@ -201,7 +200,8 @@
   .symptoms__item {
     border-radius: var(--radius-xs);
     font-size: var(--font-size-md);
-    padding: var(--spacing-5) var(--spacing-7) var(--spacing-5) var(--spacing-16);
+    padding: var(--spacing-5) var(--spacing-7) var(--spacing-5)
+      var(--spacing-16);
   }
 
   .symptoms__item::before {
@@ -209,7 +209,6 @@
     width: calc(var(--icon-size-2md) + var(--icon-size-md));
     height: calc(var(--icon-size-2md) + var(--icon-size-md));
   }
-
 }
 
 /* ==========================================================================
@@ -226,7 +225,7 @@
   }
 
   .symptoms__header {
-    max-width: 41.75rem;
+    max-width: 59.5rem;
   }
 
   .symptoms__subtitle {
@@ -262,7 +261,6 @@
   }
 
   .symptoms__item:nth-child(2) {
-
     padding-inline: var(--spacing-33) var(--spacing-15);
   }
 
@@ -271,7 +269,6 @@
     grid-row: 3;
     justify-self: start;
     padding-inline: var(--spacing-33) var(--spacing-30);
-
   }
 
   .symptoms__item:nth-child(4) {
@@ -291,7 +288,8 @@
 
   .symptoms__item {
     font-size: var(--font-size-lg);
-    padding: var(--spacing-11) var(--spacing-8) var(--spacing-11) var(--spacing-24);
+    padding: var(--spacing-11) var(--spacing-8) var(--spacing-11)
+      var(--spacing-24);
   }
 
   .symptoms__item::before {
