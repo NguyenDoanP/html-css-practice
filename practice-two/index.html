@@ -307,13 +307,6 @@
             Get your vaccine registration today
           </h2>
           <div class="registration__form-wrap">
-            <h2
-              id="registration-title-desktop"
-              class="registration__title-desktop"
-            >
-              Get your vaccine registration today
-            </h2>
-
             <form class="registration__form" aria-label="Vaccine registration">
               <label class="registration__label" for="full-name"
                 >Patient's Full Name</label
@@ -336,18 +329,27 @@
 
               <div class="phone-field">
                 <div class="phone-field__input-wrap">
-                  <img
-                    src="./assets/images/icon-flag-nigeria.svg"
-                    class="phone-field__flag"
-                    alt="Nigeria flag"
-                  />
-                  <img
-                    src="./assets/images/icon-chevron-down.svg"
-                    class="phone-field__chevron"
-                    alt=""
-                    aria-hidden="true"
-                  />
+                  <button
+                    type="button"
+                    class="phone-field__select-trigger"
+                    aria-label="Select country code"
+                  >
+                    <img
+                      src="./assets/images/icon-flag-nigeria.svg"
+                      class="phone-field__flag"
+                      alt="Nigeria flag"
+                    />
+
+                    <img
+                      src="./assets/images/icon-chevron-down.svg"
+                      class="phone-field__chevron"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </button>
+
                   <span class="phone-field__divider"></span>
+
                   <input
                     id="phone"
                     type="tel"
@@ -356,6 +358,7 @@
                     required
                   />
                 </div>
+
                 <button type="button" class="btn btn--primary">Verify</button>
               </div>
 
@@ -365,7 +368,8 @@
             </form>
 
             <p class="registration__login-hint">
-              Already registered? <a href="#">Check your status</a>
+              <a href="#">Already registered?</a>
+              <a href="#">Check your status</a>
             </p>
           </div>
 
