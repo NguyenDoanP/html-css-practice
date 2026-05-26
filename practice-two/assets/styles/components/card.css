@@ -75,13 +75,37 @@
 
 .card--primary .card__link {
   margin-top: var(--spacing-12);
-
-  color: var(--color-accent);
+  max-width: fit-content;
+  color: var(--color-white-50);
   font-size: var(--font-size-xs);
 }
 
 .card--primary .card__link:hover {
-  color: var(--color-white);
+  color: var(--color-accent);
+}
+
+.card__arrow {
+  width: var(--icon-size-sm);
+  height: var(--icon-size-sm);
+}
+
+.card__arrow path {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.card__arrow path:first-child {
+  stroke-width: 2;
+}
+
+.card__arrow path:last-child {
+  stroke-width: 3;
+}
+
+.card__link:hover .card__arrow {
+  color: var(--color-accent);
 }
 
 /* =========================
@@ -119,6 +143,7 @@
 .card--secondary .card__link {
   margin-top: var(--spacing-9);
   color: var(--color-white-50);
+  max-width: fit-content;
 }
 
 .card--secondary .card__link:hover {
@@ -129,7 +154,7 @@
    TABLET
 ========================= */
 
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
   .card--primary {
     padding: var(--spacing-19) var(--spacing-27) var(--spacing-32)
       var(--spacing-19);
@@ -165,7 +190,7 @@
     line-height: var(--line-height-xs);
   }
 
-  .card__link img {
+  .card__arrow {
     width: var(--icon-size-md);
     height: var(--icon-size-md);
   }
@@ -219,7 +244,7 @@
    DESKTOP
 ========================= */
 
-@media (min-width: 64rem) {
+@media (min-width: 64em) {
   .card--primary {
     padding: var(--spacing-19) 0 var(--spacing-32) var(--spacing-19);
   }
