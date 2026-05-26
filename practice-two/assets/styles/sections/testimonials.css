@@ -3,7 +3,7 @@
   position: relative;
 
   overflow: hidden;
-  padding: var(--spacing-14) 0 13.5rem;
+  padding: var(--spacing-14) 0 10rem;
   text-align: center;
 
   background: url('../../images/banner-blur.jpg');
@@ -19,7 +19,6 @@
 .testimonials__bg {
   position: absolute;
   inset: 0;
-  bottom: var(--spacing-25);
   z-index: 1;
 
   display: grid;
@@ -134,11 +133,11 @@
 /* TABLET */
 @media (min-width: 48em) {
   .testimonials {
-    padding: var(--spacing-22) 0 var(--spacing-38);
+    padding: var(--spacing-22) 0 10.25rem;
   }
 
   .testimonials__bg {
-    top: 12.5rem;
+    top: 7rem;
     gap: 0;
   }
 

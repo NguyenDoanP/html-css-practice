@@ -2,9 +2,7 @@
 .site-footer {
   position: relative;
   z-index: 1;
-
-  margin-top: -3.75rem;
-  padding: 8.75rem 0 var(--spacing-14);
+  padding: 0 0 var(--spacing-14);
 
   background-image: url('../../images/banner-dark.jpg');
   background-size: cover;
@@ -85,9 +83,9 @@
 /* =========================
    TABLET
 ========================= */
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
   .site-footer {
-    padding: 17.5rem 0 var(--spacing-24);
+    padding: 0 0 var(--spacing-24);
   }
 
   .menu--footer {
@@ -109,18 +107,17 @@
   }
 
   .site-footer__social img {
-    width: 2rem;
-    height: 2rem;
+    width: var(--icon-size-md);
+    height: var(--icon-size-md);
   }
 }
 
 /* =========================
    DESKTOP
 ========================= */
-@media (min-width: 64rem) {
+@media (min-width: 64em) {
   .site-footer {
-    margin-top: -15rem;
-    padding: 20.5rem 0 var(--spacing-38);
+    padding: 0 0 var(--spacing-38);
   }
 
   .site-footer__inner {
