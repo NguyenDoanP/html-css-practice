@@ -220,4 +220,10 @@
   /* 60px */
   --icon-size-2xl: 4.375rem;
   /* 70px */
+  --icon-size-3xl: 5rem;
+  /* 80px */
+  --icon-size-4xl: 5.625rem;
+  /* 90px */
+  --icon-size-5xl: 6.25rem;
+  /* 100px */
 }
