@@ -244,11 +244,10 @@
               </p>
               <a href="#" class="card__link">
                 <span>Read more</span>
-                <img
-                  src="./assets/images/icon-arrow-right-accent.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
+                <svg class="card__arrow" viewBox="0 0 30 30" aria-hidden="true">
+                  <path d="M6.237 14.9688H23.7006" />
+                  <path d="M14.9688 6.23706L23.7006 14.9689L14.9688 23.7007" />
+                </svg>
               </a>
             </div>
 
@@ -264,11 +263,16 @@
                 <h3 class="card__title">Minimize the spread of the Virus</h3>
                 <a href="#" class="card__link">
                   <span>Read more</span>
-                  <img
-                    src="./assets/images/icon-arrow-right.svg"
-                    alt=""
+                  <svg
+                    class="card__arrow"
+                    viewBox="0 0 30 30"
                     aria-hidden="true"
-                  />
+                  >
+                    <path d="M6.237 14.9688H23.7006" />
+                    <path
+                      d="M14.9688 6.23706L23.7006 14.9689L14.9688 23.7007"
+                    />
+                  </svg>
                 </a>
               </div>
 
@@ -282,11 +286,16 @@
                 <h3 class="card__title">Protect yourself</h3>
                 <a href="#" class="card__link">
                   <span>Read more</span>
-                  <img
-                    src="./assets/images/icon-arrow-right.svg"
-                    alt=""
+                  <svg
+                    class="card__arrow"
+                    viewBox="0 0 30 30"
                     aria-hidden="true"
-                  />
+                  >
+                    <path d="M6.237 14.9688H23.7006" />
+                    <path
+                      d="M14.9688 6.23706L23.7006 14.9689L14.9688 23.7007"
+                    />
+                  </svg>
                 </a>
               </div>
             </div>
@@ -307,13 +316,6 @@
             Get your vaccine registration today
           </h2>
           <div class="registration__form-wrap">
-            <h2
-              id="registration-title-desktop"
-              class="registration__title-desktop"
-            >
-              Get your vaccine registration today
-            </h2>
-
             <form class="registration__form" aria-label="Vaccine registration">
               <label class="registration__label" for="full-name"
                 >Patient's Full Name</label
@@ -336,18 +338,27 @@
 
               <div class="phone-field">
                 <div class="phone-field__input-wrap">
-                  <img
-                    src="./assets/images/icon-flag-nigeria.svg"
-                    class="phone-field__flag"
-                    alt="Nigeria flag"
-                  />
-                  <img
-                    src="./assets/images/icon-chevron-down.svg"
-                    class="phone-field__chevron"
-                    alt=""
-                    aria-hidden="true"
-                  />
+                  <button
+                    type="button"
+                    class="phone-field__select-trigger"
+                    aria-label="Select country code"
+                  >
+                    <img
+                      src="./assets/images/icon-flag-nigeria.svg"
+                      class="phone-field__flag"
+                      alt="Nigeria flag"
+                    />
+
+                    <img
+                      src="./assets/images/icon-chevron-down.svg"
+                      class="phone-field__chevron"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </button>
+
                   <span class="phone-field__divider"></span>
+
                   <input
                     id="phone"
                     type="tel"
@@ -356,6 +367,7 @@
                     required
                   />
                 </div>
+
                 <button type="button" class="btn btn--primary">Verify</button>
               </div>
 
@@ -365,7 +377,8 @@
             </form>
 
             <p class="registration__login-hint">
-              Already registered? <a href="#">Check your status</a>
+              <a href="#">Already registered?</a>
+              <a href="#">Check your status</a>
             </p>
           </div>
 
@@ -404,30 +417,26 @@
             <p class="symptoms__desc">
               <span>Adipiscing nec etiam tortor elit quisque.</span>
               <span>Arcu aliquet convallis aenean eu velit.</span>
-              <span>
-                Mi vestibulum, ullamcorper venenatis imperdiet augue arcu donec
-                neque.
-              </span>
+              <span
+                >Mi vestibulum, ullamcorper venenatis imperdiet augue arcu donec
+                neque.</span
+              >
             </p>
           </div>
 
           <div class="symptoms__content">
-            <ul class="symptoms__list symptoms__list--primary">
+            <img
+              class="symptoms__visual"
+              src="./assets/images/headache-man.png"
+              alt="Man wearing mask holding head due to COVID-19 symptoms"
+            />
+
+            <ul class="symptoms__grid">
               <li class="symptoms__item">High Fever</li>
-              <li class="symptoms__item">Dry cough</li>
-              <li class="symptoms__item">Loss sense of smell</li>
-            </ul>
-
-            <div class="symptoms__visual">
-              <img
-                src="./assets/images/headache-man.png"
-                alt="Man wearing mask holding head due to COVID-19 symptoms"
-              />
-            </div>
-
-            <ul class="symptoms__list symptoms__list--secondary">
               <li class="symptoms__item">Loss of sense of taste</li>
+              <li class="symptoms__item">Dry Cough</li>
               <li class="symptoms__item">Difficulty Breathing</li>
+              <li class="symptoms__item">Loss sense of smell</li>
               <li class="symptoms__item">Sore Throat</li>
             </ul>
           </div>
