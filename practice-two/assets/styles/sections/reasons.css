@@ -57,7 +57,7 @@
 }
 
 /* TABLET */
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
   .reasons {
     padding: var(--spacing-26) 0 var(--spacing-22);
   }
@@ -85,7 +85,7 @@
 }
 
 /* DESKTOP */
-@media (min-width: 64rem) {
+@media (min-width: 64em) {
   .reasons {
     padding: var(--spacing-28) 0 var(--spacing-33);
   }
