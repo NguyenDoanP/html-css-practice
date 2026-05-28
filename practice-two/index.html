@@ -1,591 +1,20 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vaccination.ng</title>
-    <link rel="stylesheet" href="./assets/styles/main.css" />
-  </head>
 
-  <body>
-    <div class="site-hero">
-      <header class="topbar">
-        <div class="container topbar__inner">
-          <a href="#" class="logo">Vaccination.ng</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaccination.ng</title>
+  <link rel="stylesheet" href="./assets/styles/main.css" />
+</head>
 
-          <nav class="menu menu--topbar" aria-label="Main navigation">
-            <ul class="menu__list">
-              <li class="menu__item menu__item--active">
-                <a href="#home">Home</a>
-              </li>
-              <li class="menu__item">
-                <a href="#services">Services</a>
-              </li>
-              <li class="menu__item">
-                <a href="#schedule">Schedule</a>
-              </li>
-              <li class="menu__item">
-                <a href="#contact">Contact us</a>
-              </li>
-            </ul>
-          </nav>
-
-          <button
-            type="button"
-            class="btn btn--ghost btn--header"
-            aria-label="Check vaccination status"
-          >
-            Check Status
-          </button>
-
-          <button type="button" class="btn btn--list">
-            <img src="./assets/images/icon-menu.svg" alt="" class="btn--icon" />
-          </button>
-        </div>
-      </header>
-
-      <!-- ===================== HERO ===================== -->
-      <section class="hero" id="home" aria-labelledby="hero-title">
-        <div class="container hero__inner">
-          <!-- LEFT -->
-          <div class="hero__content">
-            <p class="hero__subtitle">
-              Get Vaccinated. Boost your Immune System
-            </p>
-
-            <h1 class="hero__title" id="hero-title">
-              COVID-19 Vaccination <br />
-              Got Easier With, <br />
-              <span>Vaccination.ng</span>
-            </h1>
-
-            <p class="hero__desc">
-              Vaccination.ng will help you find the nearest centre for
-              vaccination, in all 36 states in Nigeria.
-            </p>
-
-            <div class="hero__actions">
-              <button type="button" class="btn btn--outline">
-                Get Vaccine
-              </button>
-              <button type="button" class="btn btn--outline">
-                Help Centre
-              </button>
-            </div>
-          </div>
-
-          <!-- RIGHT -->
-          <div class="hero__visual">
-            <img
-              class="hero__img"
-              src="./assets/images/vaccine1.png"
-              alt="Person receiving COVID-19 vaccine"
-            />
-
-            <div class="hero__badge hero__badge--doctor" aria-hidden="true">
-              <img src="./assets/images/doctor.png" alt="" />
-            </div>
-
-            <div class="hero__badge hero__badge--virus" aria-hidden="true">
-              <img src="./assets/images/virus-pink.png" alt="" />
-            </div>
-
-            <div class="hero__doctors">
-              <div
-                class="doctors__avatars"
-                role="img"
-                aria-label="Team of 20+ medical specialists"
-              >
-                <img
-                  src="./assets/images/avatar-doctor1.png"
-                  aria-hidden="true"
-                />
-                <img
-                  src="./assets/images/avatar-doctor2.png"
-                  aria-hidden="true"
-                />
-                <img
-                  src="./assets/images/avatar-doctor3.png"
-                  aria-hidden="true"
-                />
-              </div>
-              <div class="doctors__meta">
-                <span class="doctors__count">20+</span>
-                <span class="doctors__label">Specialists</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===================== SCHEDULER BAR ===================== -->
-      <section class="scheduler" id="schedule">
-        <div class="container">
-          <div class="scheduler__header">
-            <div class="scheduler__field-icon">
-              <img src="./assets/images/icon-clock.svg" alt="Clock Icon" />
-            </div>
-            <span class="scheduler__title">Schedule your Vaccination</span>
-          </div>
-
-          <div class="scheduler__bar">
-            <div class="scheduler__field">
-              <div class="scheduler__field-icon">
-                <img
-                  src="./assets/images/icon-map-pin.svg"
-                  alt="Location Icon"
-                />
-              </div>
-              <div class="scheduler__field-text">
-                <span class="scheduler__field-label">Location</span>
-                <span class="scheduler__field-value">Ikeja Lagos, Nigeria</span>
-              </div>
-            </div>
-
-            <div class="scheduler__field">
-              <div class="scheduler__field-icon">
-                <img
-                  src="./assets/images/icon-calendar.svg"
-                  alt="Calendar Icon"
-                />
-              </div>
-              <div class="scheduler__field-text">
-                <span class="scheduler__field-label">Date</span>
-                <span class="scheduler__field-value">29 February, 2022</span>
-              </div>
-            </div>
-
-            <div class="scheduler__field">
-              <div class="scheduler__field-icon">
-                <img src="./assets/images/icon-shield.svg" alt="Shield Icon" />
-              </div>
-              <div class="scheduler__field-text">
-                <span class="scheduler__field-label">Vaccine Type</span>
-                <span class="scheduler__field-value">Moderna</span>
-              </div>
-            </div>
-            <button type="button" class="btn btn--primary">Submit</button>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <main>
-      <!-- ===================== BRANDS ===================== -->
-      <section class="brands" aria-label="Vaccine brands">
-        <div class="container">
-          <div class="brands__logos">
-            <img src="./assets/images/logo-moderna.png" alt="Moderna Logo" />
-            <img src="./assets/images/logo-pfizer.png" alt="Pfizer Logo" />
-            <img
-              src="./assets/images/logo-astrazeneca.png"
-              alt="AstraZeneca Logo"
-            />
-            <img src="./assets/images/logo-sinovac.png" alt="Sinovac Logo" />
-          </div>
-        </div>
-      </section>
-
-      <!-- ===================== CHECKER ===================== -->
-      <section class="checker" aria-label="Check COVID-19 result">
-        <div class="container">
-          <div class="checker__card">
-            <h2 class="checker__title">
-              Check your COVID-19 result on our Database
-            </h2>
-
-            <form class="checker__form" aria-label="Check COVID-19 result">
-              <input type="text" class="input" placeholder="Okeowo" />
-
-              <input type="text" class="input" placeholder="NIK Number" />
-
-              <button type="submit" class="btn btn--accent">Check</button>
-            </form>
-
-            <div class="checker__hint">
-              <p>Need a certificate for your COVID-19 result? Please click</p>
-              <a href="#">here</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===================== WHY VACCINATE ===================== -->
-      <section class="reasons" id="services" aria-labelledby="reasons-title">
-        <div class="container">
-          <div class="reasons__header">
-            <h2 id="reasons-title" class="reasons__title">
-              Why get vaccinated today?
-            </h2>
-            <p class="reasons__desc">
-              Magna adipiscing at elit at ornare lectus nibh lorem. <br />
-              Ac, sed ac lorem pellentesque vestibulum risus mattis. <br />
-              In molestie condimentum malesuada non.
-            </p>
-          </div>
-
-          <div class="reasons__grid">
-            <!-- Primary card -->
-            <div class="card card--primary">
-              <div class="card__icon">
-                <img
-                  src="./assets/images/icon-shield.svg"
-                  alt="Shield icon representing immune protection"
-                />
-              </div>
-              <h3 class="card__title">
-                Protects your immune <br />
-                system against viruses
-              </h3>
-              <p class="card__desc">
-                Velit ut consectetur mauris, orci amet, faucibus. <br />
-                Sit turpis fringilla ipsum pretium, dictum. Dolor eget vel nulla
-                lorem ac.
-              </p>
-              <a href="#" class="card__link">
-                <span>Read more</span>
-                <svg class="card__arrow" viewBox="0 0 30 30" aria-hidden="true">
-                  <path d="M6.237 14.9688H23.7006" />
-                  <path d="M14.9688 6.23706L23.7006 14.9689L14.9688 23.7007" />
-                </svg>
-              </a>
-            </div>
-
-            <!-- Secondary cards -->
-            <div class="reasons__secondary-cards">
-              <div class="card card--secondary">
-                <div class="card__icon">
-                  <img
-                    src="./assets/images/icon-human.svg"
-                    alt="Human figure icon representing virus transmission"
-                  />
-                </div>
-                <h3 class="card__title">Minimize the spread of the Virus</h3>
-                <a href="#" class="card__link">
-                  <span>Read more</span>
-                  <svg
-                    class="card__arrow"
-                    viewBox="0 0 30 30"
-                    aria-hidden="true"
-                  >
-                    <path d="M6.237 14.9688H23.7006" />
-                    <path
-                      d="M14.9688 6.23706L23.7006 14.9689L14.9688 23.7007"
-                    />
-                  </svg>
-                </a>
-              </div>
-
-              <div class="card card--secondary">
-                <div class="card__icon">
-                  <img
-                    src="./assets/images/icon-thermometer.svg"
-                    alt="Thermometer icon representing health monitoring"
-                  />
-                </div>
-                <h3 class="card__title">Protect yourself</h3>
-                <a href="#" class="card__link">
-                  <span>Read more</span>
-                  <svg
-                    class="card__arrow"
-                    viewBox="0 0 30 30"
-                    aria-hidden="true"
-                  >
-                    <path d="M6.237 14.9688H23.7006" />
-                    <path
-                      d="M14.9688 6.23706L23.7006 14.9689L14.9688 23.7007"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===================== REGISTRATION ===================== -->
-      <section
-        class="registration"
-        id="contact"
-        aria-labelledby="registration-title"
-      >
-        <div class="container registration__inner">
-          <!-- LEFT: Form -->
-
-          <h2 id="registration-title" class="registration__title">
-            Get your vaccine registration today
-          </h2>
-          <div class="registration__form-wrap">
-            <form class="registration__form" aria-label="Vaccine registration">
-              <label class="registration__label" for="full-name"
-                >Patient's Full Name</label
-              >
-              <input
-                id="full-name"
-                type="text"
-                class="registration__input"
-                placeholder="Full name"
-                required
-              />
-
-              <label class="registration__label" for="phone"
-                >Mobile Number</label
-              >
-              <p class="registration__hint">
-                Notifications for appointment and reminders will be sent to this
-                provided number
-              </p>
-
-              <div class="phone-field">
-                <div class="phone-field__input-wrap">
-                  <button
-                    type="button"
-                    class="phone-field__select-trigger"
-                    aria-label="Select country code"
-                  >
-                    <img
-                      src="./assets/images/icon-flag-nigeria.svg"
-                      class="phone-field__flag"
-                      alt="Nigeria flag"
-                    />
-
-                    <img
-                      src="./assets/images/icon-chevron-down.svg"
-                      class="phone-field__chevron"
-                      alt=""
-                      aria-hidden="true"
-                    />
-                  </button>
-
-                  <span class="phone-field__divider"></span>
-
-                  <input
-                    id="phone"
-                    type="tel"
-                    class="registration__input"
-                    placeholder="Phone number"
-                    required
-                  />
-                </div>
-
-                <button type="button" class="btn btn--primary">Verify</button>
-              </div>
-
-              <div class="registration__submit">
-                <button type="submit" class="btn btn--primary">Submit</button>
-              </div>
-            </form>
-
-            <p class="registration__login-hint">
-              <a href="#">Already registered?</a>
-              <a href="#">Check your status</a>
-            </p>
-          </div>
-
-          <!-- RIGHT: Card -->
-          <div class="registration__card-wrap">
-            <img
-              src="./assets/images/virus-red.png"
-              alt=""
-              class="registration__virus"
-              aria-hidden="true"
-            />
-
-            <div class="vaccine-card">
-              <h3 class="vaccine-card__title">COVID-19<br />Vaccine</h3>
-              <img
-                src="./assets/images/vaccine2.png"
-                alt="Vaccine illustration"
-                class="vaccine-card__img"
-              />
-              <button type="button" class="btn btn--ghost vaccine-card__btn">
-                Verify Status
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===================== SYMPTOMS ===================== -->
-      <section class="symptoms" aria-labelledby="symptoms-title">
-        <div class="container symptoms__inner">
-          <div class="symptoms__header">
-            <p class="symptoms__subtitle">Covid-19 Prevention</p>
-            <h2 id="symptoms-title" class="symptoms__title">
-              <span>COVID-19</span> Symptoms
-            </h2>
-            <p class="symptoms__desc">
-              <span>Adipiscing nec etiam tortor elit quisque.</span>
-              <span>Arcu aliquet convallis aenean eu velit.</span>
-              <span
-                >Mi vestibulum, ullamcorper venenatis imperdiet augue arcu donec
-                neque.</span
-              >
-            </p>
-          </div>
-
-          <div class="symptoms__content">
-            <img
-              class="symptoms__visual"
-              src="./assets/images/headache-man.png"
-              alt="Man wearing mask holding head due to COVID-19 symptoms"
-            />
-
-            <ul class="symptoms__grid">
-              <li class="symptoms__item">High Fever</li>
-              <li class="symptoms__item">Loss of sense of taste</li>
-              <li class="symptoms__item">Dry Cough</li>
-              <li class="symptoms__item">Difficulty Breathing</li>
-              <li class="symptoms__item">Loss sense of smell</li>
-              <li class="symptoms__item">Sore Throat</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===================== TESTIMONIALS ===================== -->
-      <section class="testimonials" aria-labelledby="testimonials-title">
-        <div class="testimonials__bg" aria-hidden="true">
-          <img
-            src="./assets/images/vaccine3.png"
-            alt=""
-            class="testimonials__bg-img"
-          />
-          <img
-            src="./assets/images/vaccine3.png"
-            alt=""
-            class="testimonials__bg-img"
-          />
-          <img
-            src="./assets/images/vaccine3.png"
-            alt=""
-            class="testimonials__bg-img"
-          />
-        </div>
-
-        <div class="container">
-          <div class="testimonials__header">
-            <p class="testimonials__subtitle">FEEDBACK</p>
-            <h2 id="testimonials-title" class="testimonials__title">
-              What our Patients Think
-            </h2>
-            <p class="testimonials__desc">
-              <span>Adipiscing nec etiam tortor elit quisque.</span>
-              <span>Arcu aliquet convallis aenean eu velit.</span>
-              <span>
-                Mi vestibulum, ullamcorper venenatis imperdiet augue arcu ue.
-              </span>
-            </p>
-            <p class="testimonials__desc-long">
-              <span>Adipiscing nec etiam tortor elit quisque.</span>
-              <span>Arcu aliquet convallis aenean eu velit.</span>
-              <span>
-                Mi vestibulum, ullamcorper venenatis imperdiet augue arcu donec
-                neque.
-              </span>
-            </p>
-          </div>
-
-          <div class="testimonials__list">
-            <article class="testimonial">
-              <div class="testimonial__user">
-                <img
-                  src="./assets/images/avatar-patient1.png"
-                  alt="Photo of Oyindamola Maja"
-                />
-                <div>
-                  <p class="testimonial__name">Oyindamola Maja</p>
-                  <span class="testimonial__location">Badagry, Lagos</span>
-                </div>
-              </div>
-              <p class="testimonial__quote">
-                &ldquo;Been stressing about a close centre to get the
-                <span class="testimonial__highlight">covid-19</span> vaccine,
-                until i tried Vaccination.ng&rdquo;
-              </p>
-            </article>
-
-            <article class="testimonial">
-              <div class="testimonial__user">
-                <img
-                  src="./assets/images/avatar-patient2.png"
-                  alt="Photo of Okeowo Lekan"
-                />
-                <div>
-                  <p class="testimonial__name">Okeowo Lekan</p>
-                  <span class="testimonial__location">Ikeja, Lagos</span>
-                </div>
-              </div>
-              <p class="testimonial__quote">
-                &ldquo;Got my vaccine very close to my house. Was very easy
-                scheduling an appointment.&rdquo;
-              </p>
-            </article>
-
-            <article class="testimonial">
-              <div class="testimonial__user">
-                <img
-                  src="./assets/images/avatar-patient3.png"
-                  alt="Photo of Kafaru Temitope"
-                />
-                <div>
-                  <p class="testimonial__name">Kafaru Temitope</p>
-                  <span class="testimonial__location">Obanikoro, Lagos</span>
-                </div>
-              </div>
-              <p class="testimonial__quote">
-                &ldquo;Been stressing about a close centre to get the
-                <span class="testimonial__highlight">covid-19</span> vaccine,
-                until i tried Vaccination.ng&rdquo;
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- ===================== FOOTER ===================== -->
-    <footer class="site-footer">
-      <!-- ===================== NEWSLETTER ===================== -->
-      <section class="newsletter" aria-labelledby="newsletter-title">
-        <div class="container">
-          <div class="newsletter__wrapper">
-            <div class="newsletter__card">
-              <h2 id="newsletter-title" class="newsletter__title">
-                Get a quote
-              </h2>
-              <p class="newsletter__desc">
-                Please do enter your email address below
-              </p>
-
-              <form class="newsletter__form" aria-label="Get a quote">
-                <input
-                  id="email"
-                  type="email"
-                  placeholder="lenux.ng@gmail.com"
-                  class="newsletter__input"
-                />
-                <button
-                  type="submit"
-                  class="newsletter__submit"
-                  aria-label="Submit email"
-                >
-                  <img
-                    src="./assets/images/icon-send.svg"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="container site-footer__inner">
+<body>
+  <div class="site-hero">
+    <header class="topbar">
+      <div class="container topbar__inner">
         <a href="#" class="logo">Vaccination.ng</a>
 
-        <nav class="menu menu--footer" aria-label="Footer navigation">
+        <nav class="menu menu--topbar" aria-label="Main navigation">
           <ul class="menu__list">
             <li class="menu__item menu__item--active">
               <a href="#home">Home</a>
@@ -602,32 +31,474 @@
           </ul>
         </nav>
 
-        <ul class="site-footer__social" aria-label="Social media links">
-          <li class="site-footer__social-item">
-            <a href="#" aria-label="YouTube">
-              <img src="./assets/images/icon-youtube.svg" alt="" />
-            </a>
-          </li>
+        <button type="button" class="btn btn--ghost btn--header" aria-label="Check vaccination status">
+          Check Status
+        </button>
 
-          <li class="site-footer__social-item">
-            <a href="#" aria-label="Instagram">
-              <img src="./assets/images/icon-instagram.svg" alt="" />
-            </a>
-          </li>
+        <button type="button" class="btn btn--list">
+          <img src="./assets/images/icon-menu.svg" alt="" class="btn--icon" />
+        </button>
+      </div>
+    </header>
 
-          <li class="site-footer__social-item">
-            <a href="#" aria-label="Twitter">
-              <img src="./assets/images/icon-twitter.svg" alt="" />
-            </a>
-          </li>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <!-- LEFT -->
+        <div class="hero__content">
+          <p class="hero__subtitle">
+            Get Vaccinated. Boost your Immune System
+          </p>
 
-          <li class="site-footer__social-item">
-            <a href="#" aria-label="Facebook">
-              <img src="./assets/images/icon-facebook.svg" alt="" />
+          <h1 class="hero__title" id="hero-title">
+            COVID-19 Vaccination <br />
+            Got Easier With, <br />
+            <span>Vaccination.ng</span>
+          </h1>
+
+          <p class="hero__desc">
+            Vaccination.ng will help you find the nearest centre for
+            vaccination, in all 36 states in Nigeria.
+          </p>
+
+          <div class="hero__actions">
+            <button type="button" class="btn btn--outline">
+              Get Vaccine
+            </button>
+            <button type="button" class="btn btn--outline">
+              Help Centre
+            </button>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="hero__visual">
+          <img class="hero__img" src="./assets/images/vaccine1.png" alt="Person receiving COVID-19 vaccine" />
+
+          <div class="hero__badge hero__badge--doctor" aria-hidden="true">
+            <img src="./assets/images/doctor.png" alt="" />
+          </div>
+
+          <div class="hero__badge hero__badge--virus" aria-hidden="true">
+            <img src="./assets/images/virus-pink.png" alt="" />
+          </div>
+
+          <div class="hero__doctors">
+            <div class="doctors__avatars" role="img" aria-label="Team of 20+ medical specialists">
+              <img src="./assets/images/avatar-doctor1.png" aria-hidden="true" alt="" />
+              <img src="./assets/images/avatar-doctor2.png" aria-hidden="true" alt="" />
+              <img src="./assets/images/avatar-doctor3.png" aria-hidden="true" alt="" />
+            </div>
+            <div class="doctors__meta">
+              <span class="doctors__count">20+</span>
+              <span class="doctors__label">Specialists</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SCHEDULER BAR ===================== -->
+    <section class="scheduler" id="schedule">
+      <div class="container">
+        <div class="scheduler__header">
+          <div class="scheduler__field-icon">
+            <img src="./assets/images/icon-clock.svg" alt="Clock Icon" />
+          </div>
+          <span class="scheduler__title">Schedule your Vaccination</span>
+        </div>
+
+        <div class="scheduler__bar">
+          <div class="scheduler__field">
+            <div class="scheduler__field-icon">
+              <img src="./assets/images/icon-map-pin.svg" alt="Location Icon" />
+            </div>
+            <div class="scheduler__field-text">
+              <span class="scheduler__field-label">Location</span>
+              <span class="scheduler__field-value">Ikeja Lagos, Nigeria</span>
+            </div>
+          </div>
+
+          <div class="scheduler__field">
+            <div class="scheduler__field-icon">
+              <img src="./assets/images/icon-calendar.svg" alt="Calendar Icon" />
+            </div>
+            <div class="scheduler__field-text">
+              <span class="scheduler__field-label">Date</span>
+              <span class="scheduler__field-value">29 February, 2022</span>
+            </div>
+          </div>
+
+          <div class="scheduler__field">
+            <div class="scheduler__field-icon">
+              <img src="./assets/images/icon-shield.svg" alt="Shield Icon" />
+            </div>
+            <div class="scheduler__field-text">
+              <span class="scheduler__field-label">Vaccine Type</span>
+              <span class="scheduler__field-value">Moderna</span>
+            </div>
+          </div>
+          <button type="button" class="btn btn--primary">Submit</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <main>
+    <!-- ===================== BRANDS ===================== -->
+    <section class="brands" aria-label="Vaccine brands">
+      <div class="container">
+        <div class="brands__logos">
+          <img src="./assets/images/logo-moderna.png" alt="Moderna Logo" />
+          <img src="./assets/images/logo-pfizer.png" alt="Pfizer Logo" />
+          <img src="./assets/images/logo-astrazeneca.png" alt="AstraZeneca Logo" />
+          <img src="./assets/images/logo-sinovac.png" alt="Sinovac Logo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CHECKER ===================== -->
+    <section class="checker" aria-label="Check COVID-19 result">
+      <div class="container">
+        <div class="checker__card">
+          <h2 class="checker__title">
+            Check your COVID-19 result on our Database
+          </h2>
+
+          <form class="checker__form" aria-label="Check COVID-19 result">
+            <input type="text" class="input" placeholder="Okeowo" />
+
+            <input type="text" class="input" placeholder="NIK Number" />
+
+            <button type="submit" class="btn btn--accent">Check</button>
+          </form>
+
+          <div class="checker__hint">
+            <p>Need a certificate for your COVID-19 result? Please click</p>
+            <a href="#">here</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WHY VACCINATE ===================== -->
+    <section class="reasons" id="services" aria-labelledby="reasons-title">
+      <div class="container">
+        <div class="reasons__header">
+          <h2 id="reasons-title" class="reasons__title">
+            Why get vaccinated today?
+          </h2>
+          <p class="reasons__desc">
+            Magna adipiscing at elit at ornare lectus nibh lorem. <br />
+            Ac, sed ac lorem pellentesque vestibulum risus mattis. <br />
+            In molestie condimentum malesuada non.
+          </p>
+        </div>
+
+        <div class="reasons__grid">
+          <!-- Primary card -->
+          <div class="card card--primary">
+            <div class="card__icon">
+              <img src="./assets/images/icon-shield.svg" alt="Shield icon representing immune protection" />
+            </div>
+            <h3 class="card__title">
+              Protects your immune <br />
+              system against viruses
+            </h3>
+            <p class="card__desc">
+              Velit ut consectetur mauris, orci amet, faucibus. <br />
+              Sit turpis fringilla ipsum pretium, dictum. Dolor eget vel nulla
+              lorem ac.
+            </p>
+            <a href="#" class="card__link">
+              <span>Read more</span>
+              <svg class="card__arrow" viewBox="0 0 30 30" aria-hidden="true">
+                <path d="M6.237 14.9688H23.7006" />
+                <path d="M14.9688 6.23706L23.7006 14.9689L14.9688 23.7007" />
+              </svg>
             </a>
+          </div>
+
+          <!-- Secondary cards -->
+          <div class="reasons__secondary-cards">
+            <div class="card card--secondary">
+              <div class="card__icon">
+                <img src="./assets/images/icon-human.svg" alt="Human figure icon representing virus transmission" />
+              </div>
+              <h3 class="card__title">Minimize the spread of the Virus</h3>
+              <a href="#" class="card__link">
+                <span>Read more</span>
+                <svg class="card__arrow" viewBox="0 0 30 30" aria-hidden="true">
+                  <path d="M6.237 14.9688H23.7006" />
+                  <path d="M14.9688 6.23706L23.7006 14.9689L14.9688 23.7007" />
+                </svg>
+              </a>
+            </div>
+
+            <div class="card card--secondary">
+              <div class="card__icon">
+                <img src="./assets/images/icon-thermometer.svg" alt="Thermometer icon representing health monitoring" />
+              </div>
+              <h3 class="card__title">Protect yourself</h3>
+              <a href="#" class="card__link">
+                <span>Read more</span>
+                <svg class="card__arrow" viewBox="0 0 30 30" aria-hidden="true">
+                  <path d="M6.237 14.9688H23.7006" />
+                  <path d="M14.9688 6.23706L23.7006 14.9689L14.9688 23.7007" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== REGISTRATION ===================== -->
+    <section class="registration" id="contact" aria-labelledby="registration-title">
+      <div class="container registration__inner">
+        <!-- LEFT: Form -->
+
+        <h2 id="registration-title" class="registration__title">
+          Get your vaccine registration today
+        </h2>
+        <div class="registration__form-wrap">
+          <form class="registration__form" aria-label="Vaccine registration">
+            <label class="registration__label" for="full-name">Patient's Full Name</label>
+            <input id="full-name" type="text" class="registration__input" placeholder="Full name" required />
+
+            <label class="registration__label" for="phone">Mobile Number</label>
+            <p class="registration__hint">
+              Notifications for appointment and reminders will be sent to this
+              provided number
+            </p>
+
+            <div class="phone-field">
+              <div class="phone-field__input-wrap">
+                <button type="button" class="phone-field__select-trigger" aria-label="Select country code">
+                  <img src="./assets/images/icon-flag-nigeria.svg" class="phone-field__flag" alt="Nigeria flag" />
+
+                  <img src="./assets/images/icon-chevron-down.svg" class="phone-field__chevron" alt=""
+                    aria-hidden="true" />
+                </button>
+
+                <span class="phone-field__divider"></span>
+
+                <input id="phone" type="tel" class="registration__input" placeholder="Phone number" required />
+              </div>
+
+              <button type="button" class="btn btn--primary">Verify</button>
+            </div>
+
+            <div class="registration__submit">
+              <button type="submit" class="btn btn--primary">Submit</button>
+            </div>
+          </form>
+
+          <p class="registration__login-hint">
+            <a href="#">Already registered?</a>
+            <a href="#">Check your status</a>
+          </p>
+        </div>
+
+        <!-- RIGHT: Card -->
+        <div class="registration__card-wrap">
+          <img src="./assets/images/virus-red.png" alt="" class="registration__virus" aria-hidden="true" />
+
+          <div class="vaccine-card">
+            <h3 class="vaccine-card__title">COVID-19<br />Vaccine</h3>
+            <img src="./assets/images/vaccine2.png" alt="Vaccine illustration" class="vaccine-card__img" />
+            <button type="button" class="btn btn--ghost vaccine-card__btn">
+              Verify Status
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SYMPTOMS ===================== -->
+    <section class="symptoms" aria-labelledby="symptoms-title">
+      <div class="container symptoms__inner">
+        <div class="symptoms__header">
+          <p class="symptoms__subtitle">Covid-19 Prevention</p>
+          <h2 id="symptoms-title" class="symptoms__title">
+            <span>COVID-19</span> Symptoms
+          </h2>
+          <p class="symptoms__desc">
+            <span>Adipiscing nec etiam tortor elit quisque.</span>
+            <span>Arcu aliquet convallis aenean eu velit.</span>
+            <span>Mi vestibulum, ullamcorper venenatis imperdiet augue arcu donec
+              neque.</span>
+          </p>
+        </div>
+
+        <div class="symptoms__content">
+          <img class="symptoms__visual" src="./assets/images/headache-man.png"
+            alt="Man wearing mask holding head due to COVID-19 symptoms" />
+
+          <ul class="symptoms__grid">
+            <li class="symptoms__item">High Fever</li>
+            <li class="symptoms__item">Loss of sense of taste</li>
+            <li class="symptoms__item">Dry Cough</li>
+            <li class="symptoms__item">Difficulty Breathing</li>
+            <li class="symptoms__item">Loss sense of smell</li>
+            <li class="symptoms__item">Sore Throat</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="testimonials" aria-labelledby="testimonials-title">
+      <div class="testimonials__bg" aria-hidden="true">
+        <img src="./assets/images/vaccine3.png" alt="" class="testimonials__bg-img" />
+        <img src="./assets/images/vaccine3.png" alt="" class="testimonials__bg-img" />
+        <img src="./assets/images/vaccine3.png" alt="" class="testimonials__bg-img" />
+      </div>
+
+      <div class="container">
+        <div class="testimonials__header">
+          <p class="testimonials__subtitle">FEEDBACK</p>
+          <h2 id="testimonials-title" class="testimonials__title">
+            What our Patients Think
+          </h2>
+          <p class="testimonials__desc">
+            <span>Adipiscing nec etiam tortor elit quisque.</span>
+            <span>Arcu aliquet convallis aenean eu velit.</span>
+            <span>
+              Mi vestibulum, ullamcorper venenatis imperdiet augue arcu ue.
+            </span>
+          </p>
+          <p class="testimonials__desc-long">
+            <span>Adipiscing nec etiam tortor elit quisque.</span>
+            <span>Arcu aliquet convallis aenean eu velit.</span>
+            <span>
+              Mi vestibulum, ullamcorper venenatis imperdiet augue arcu donec
+              neque.
+            </span>
+          </p>
+        </div>
+
+        <div class="testimonials__list">
+          <article class="testimonial">
+            <div class="testimonial__user">
+              <img src="./assets/images/avatar-patient1.png" alt="Photo of Oyindamola Maja" />
+              <div>
+                <p class="testimonial__name">Oyindamola Maja</p>
+                <span class="testimonial__location">Badagry, Lagos</span>
+              </div>
+            </div>
+            <p class="testimonial__quote">
+              &ldquo;Been stressing about a close centre to get the
+              <span class="testimonial__highlight">covid-19</span> vaccine,
+              until i tried Vaccination.ng&rdquo;
+            </p>
+          </article>
+
+          <article class="testimonial">
+            <div class="testimonial__user">
+              <img src="./assets/images/avatar-patient2.png" alt="Photo of Okeowo Lekan" />
+              <div>
+                <p class="testimonial__name">Okeowo Lekan</p>
+                <span class="testimonial__location">Ikeja, Lagos</span>
+              </div>
+            </div>
+            <p class="testimonial__quote">
+              &ldquo;Got my vaccine very close to my house. Was very easy
+              scheduling an appointment.&rdquo;
+            </p>
+          </article>
+
+          <article class="testimonial">
+            <div class="testimonial__user">
+              <img src="./assets/images/avatar-patient3.png" alt="Photo of Kafaru Temitope" />
+              <div>
+                <p class="testimonial__name">Kafaru Temitope</p>
+                <span class="testimonial__location">Obanikoro, Lagos</span>
+              </div>
+            </div>
+            <p class="testimonial__quote">
+              &ldquo;Been stressing about a close centre to get the
+              <span class="testimonial__highlight">covid-19</span> vaccine,
+              until i tried Vaccination.ng&rdquo;
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <!-- ===================== NEWSLETTER ===================== -->
+    <section class="newsletter" aria-labelledby="newsletter-title">
+      <div class="container">
+        <div class="newsletter__wrapper">
+          <div class="newsletter__card">
+            <h2 id="newsletter-title" class="newsletter__title">
+              Get a quote
+            </h2>
+            <p class="newsletter__desc">
+              Please do enter your email address below
+            </p>
+
+            <form class="newsletter__form" aria-label="Get a quote">
+              <input id="email" type="email" placeholder="lenux.ng@gmail.com" class="newsletter__input" />
+              <button type="submit" class="newsletter__submit" aria-label="Submit email">
+                <img src="./assets/images/icon-send.svg" alt="" aria-hidden="true" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container site-footer__inner">
+      <a href="#" class="logo">Vaccination.ng</a>
+
+      <nav class="menu menu--footer" aria-label="Footer navigation">
+        <ul class="menu__list">
+          <li class="menu__item menu__item--active">
+            <a href="#home">Home</a>
+          </li>
+          <li class="menu__item">
+            <a href="#services">Services</a>
+          </li>
+          <li class="menu__item">
+            <a href="#schedule">Schedule</a>
+          </li>
+          <li class="menu__item">
+            <a href="#contact">Contact us</a>
           </li>
         </ul>
-      </div>
-    </footer>
-  </body>
+      </nav>
+
+      <ul class="site-footer__social" aria-label="Social media links">
+        <li class="site-footer__social-item">
+          <a href="#" aria-label="YouTube">
+            <img src="./assets/images/icon-youtube.svg" alt="" />
+          </a>
+        </li>
+
+        <li class="site-footer__social-item">
+          <a href="#" aria-label="Instagram">
+            <img src="./assets/images/icon-instagram.svg" alt="" />
+          </a>
+        </li>
+
+        <li class="site-footer__social-item">
+          <a href="#" aria-label="Twitter">
+            <img src="./assets/images/icon-twitter.svg" alt="" />
+          </a>
+        </li>
+
+        <li class="site-footer__social-item">
+          <a href="#" aria-label="Facebook">
+            <img src="./assets/images/icon-facebook.svg" alt="" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>

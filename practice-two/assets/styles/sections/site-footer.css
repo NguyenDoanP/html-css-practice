@@ -71,7 +71,7 @@
 }
 
 .site-footer__social li:last-child {
-  margin-left: -0.3125rem;
+  margin-left: calc(-1 * var(--spacing-2));
 }
 
 .site-footer__social img {
